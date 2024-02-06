@@ -1,0 +1,462 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+nav {
+   width: 25%;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right:75%;
+  display: block;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+.firstButton {
+  margin-top: 160px;
+  width: 100%;
+  /*background-color: rgb(3, 134, 123);*/
+  
+
+
+}
+/* .sidenav .bitch a:nth-child(2) {
+  padding-top: 160px;
+}*/
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: blue;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: white;
+  color: green;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  text-align: right;
+  width: 85%;
+  /*background-color: rgb(3, 134, 123);*/
+  margin-left: 15%;
+  border-left: 2px solid black;
+  background-color: white;
+}
+
+.btn {
+  background-color: white  ;
+  border-radius: 3px;
+}
+
+
+/* Optional: Style the caret down icon color*/
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+.body {
+  min-height: 100vh;
+}
+
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+
+}
+
+.main {
+    padding:100px 20px 20px;
+    width: 50%;
+    border-left: 2px solid black;  
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    overflow-wrap: break-word;
+}
+
+p {
+  font-size: 20px;
+  width: 90%;
+  padding-top: 20px;
+
+}
+
+.summ {
+  font-size: 25px;
+  border: 2px solid white;
+  height: 140x;
+
+}
+
+.scroll {
+  scroll-margin-top: 90px;
+
+}
+
+.sumValue {
+  color: #1299e7;
+  font-size: 25px;
+}
+
+.sumIndex {
+  color: red;
+  font-size: 25px;
+}
+.moreExamples {
+  font-weight: bold;
+}
+
+.example
+{
+  font-size: 25px;
+  padding-left: 30px;
+  text-decoration: underline;
+}
+
+.red {
+  color:red;
+}
+
+.blueMine {
+  color: #1299e7;
+}
+
+.break {
+  display: flex;
+}
+
+.exampleNoPadding
+{
+  font-size: 22px;
+}
+
+.empty {
+  height: 480px;
+  width: 100%;
+  padding-top: 200px;
+  font-size: 18px;
+  padding-left: 5%;
+}
+
+.answer {
+  margin: 10px;
+}
+
+.shiftAnswer{
+  padding-left: 13px;
+}
+
+hr.redLine {
+  border-top: 1px solid red;
+}
+
+hr.blueLine {
+  border-top: 1px solid blue;
+}  
+
+.sollutions {
+  padding-top: 10px;
+  padding-left: 5%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.smaller {
+  font-size: 16px;
+}
+.size17 {
+  font-size: 17px;
+}
+.container2 {
+  display: flex;
+}
+
+.firstSet {
+  padding-top: 20px;
+  width: 45%;
+  font-size: 23px;
+}
+
+.middleSet {
+  padding-top: 25px;
+  width: 10%;
+  font-size: 20px;
+}
+.secondSet {
+  padding-top: 20px;
+  width: 45%;
+  font-size: 23px;
+
+}
+
+.explanation1 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.exp2 {
+  padding-left: 30%;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.sumarrow {
+  font-size: 40px;
+  color: blue;
+  border: 2px solid black;
+}
+
+
+.headingss { 
+  font-size: 30px; 
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+
+aside {
+    width: 25%;
+}
+
+.studyTopic{
+    color: blue; 
+    width: 70%;
+    border: 2px black solid;
+    margin-top: 80px;
+    padding: 6px;
+}
+
+
+.logo {
+  top:0;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+  padding:25px;
+  width: 100%;
+  font-size: 35px;
+  color:#6CB4EE;
+ /* text-shadow: 1px 1px 2px black , 0 0 10px blue, 0 0 5px rgb(177, 177, 190);*/
+}
+
+
+.small {
+  color: black;
+  font-size: 25px;
+}
+
+.logo .firstUl {
+  width: 25%;
+  /*border: 2px solid black;*/
+}
+
+.logo .secondUl {
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid #73AD21;
+
+}
+
+.logo .thirdUl {
+  width: 25;
+  text-align: center;
+}
+
+#start {
+  font-size: 30px;
+  width: 50%;
+  border: 2px solid black;
+
+
+}
+
+#end {
+  font-size: 30px;
+  margin-top: 100px;
+  width: 50%;
+  border: 2px solid black;
+
+}
+
+.firstSet {
+  padding-left: 5%;
+}
+
+h2 {
+  margin-top: 60px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+@media (min-width: 1150px) {  
+
+  .general {
+    padding-left: 5%;
+  }
+
+  p {
+    padding-left: 5%;
+  }
+}
+
+
+
+@media (min-width: 791px) {
+ 
+ 
+  aside {
+    display: none;
+  }
+  
+  .main{
+    width: 60%;
+  }
+
+  .logo .secondUl {
+    width: 60%;
+    text-align: center;
+  }
+
+  .container {
+    justify-content:left;
+  }
+
+  .sidenav .bitch a:first-child {
+    display: none;
+
+}
+
+  .logo .firstUl li:first-child {
+    display: none;
+ }
+ 
+}
+
+@media (max-width: 790px) {
+    .sidenav {
+    display: none;
+  }
+
+ .sidenav a:first-child {
+     display: block;
+
+}
+
+.logo {
+  padding: 25px 0px;
+  
+ }
+
+.logo .firstUl li:first-child {
+  display: block;
+ }
+
+ .logo .secondUl {
+  width: 60%
+}
+
+.logo .thirdUl {
+  display: none;
+}
+
+ ul {
+  list-style-type: none;
+ } 
+
+  .main {
+    width: 85%;
+    padding-top: 150px;
+  }
+
+  .container {
+    justify-content: center; 
+  }
+
+  .secondSet {
+    padding-left: 5%;
+
+  }
+
+  .containerChange {
+    flex-direction: column;
+  }
+}
+   
+@media (max-width: 500px) {
+  .sidenav {
+  display: none;
+}
+
+  .sidenav a:first-child {
+   display: block;
+
+}
+
+ nav {
+  width: 0%;
+ }
+
+ .main {
+  width: 99%;
+  padding-top: 180px;
+ }
+
+ aside {
+  width: 1%;
+ }
+}
+
+@media (max-width: 280px) {
+  .summ {
+    font-size: 23px;
+  }
+  .main {
+    padding-top: 200px;
+  }
+}
