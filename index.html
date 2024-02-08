@@ -1,8 +1,9 @@
- <!DOCTYPE html>
+ <!DOCTYPE html >
+ <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML, CSS and JavaScript demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Summation symbol Sigma</title>
   <link rel="stylesheet" href="style2.css"  />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
@@ -43,21 +44,30 @@
   <div class="sidenav">
 
    <div class="bitch">
-  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
 </div>
   <button class="dropdown-btn firstButton btn"> Summation symbol (Sigma notation)
     <i class="fa fa-caret-down" style="font-size:30px"></i> 
   </button>
+  
   <div class="dropdown-container">
     <a href="#">Summation symbol</a>
     <a href="#summation1Student">Examples on summation symbol for you</a>
     <a href="#summationOfConstant">Summation of a constant</a>
     <a href="#summationOfConstantExamples">Examples on summation of a constant for you</a>
     <a href="sumIndexShift.html">Summation index shift</a>
-
-
 </div>
 
+<button class="dropdown-btn btn"> Another topic
+  <i class="fa fa-caret-down" style="font-size:30px"></i>
+</button>
+<div class="dropdown-container">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+   <a href="#contact">Search</a>
+  </div>
   </nav>
 
   <div class="main">
@@ -89,12 +99,15 @@
        <p class="moreExamples">Let's solve more similar examples:</p>
       <p class="example"> <i>Example 1:</i> <br><br>
        $ \sum_{\color{red}{i=1}} ^{\color{red}{5}}{\color{#1299e7}{\textit{i}}} = ?$
-      </p>
-      <p > <span class="bold">Solution</span>: we simply plug in numbers for <i class="sumValue">i</i> from 1 to 5 and sum them: $ \sum_{i=1} ^{5}{{\textit{i}}} =1+2+3+4+5=15$  </p>
+      </p><br>
+      <p class="hideMobile" > <span class="bold">Solution</span>: we simply plug in numbers for <i class="sumValue">i</i> from 1 to 5 and sum them: $ \sum_{i=1} ^{5}{{\textit{i}}} =1+2+3+4+5=15$  </p>
+      <p class="showMobile" > <span class="bold">Solution</span>: we simply plug in numbers for <i class="sumValue">i</i> from 1 to 5 and sum them: $ \sum_{i=1} ^{5}{{\textit{i}}} =1+2+3+4+5=\\=15$  </p>
+
        <br>
       <p class="example"><i>Example 2:</i><br><br>
-        $ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{2\cdot i}} =?$ </p>
-        <p > <span class="bold">Solution</span>: multiply each number from 1 to 3 by 2 and sum them: $ \sum_{i=1} ^{3}{\color{blue}{2}\cdot i} =\color{blue}{2}\cdot1+\color{blue}{2}\cdot2+\color{blue}{2}\cdot3=12$  </p>
+        $ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{2\cdot i}} =?$ </p><br>
+        <p class="hideMobile" > <span class="bold">Solution</span>: multiply each number from 1 to 3 by 2 and sum them: $ \sum_{i=1} ^{3}{\color{blue}{2}\cdot i} =\color{blue}{2}\cdot1+\color{blue}{2}\cdot2+\color{blue}{2}\cdot3=12$  </p>
+        <p class="showMobile" > <span class="bold">Solution</span>: multiply each number from 1 to 3 by 2 and sum them: $ \sum_{i=1} ^{3}{\color{blue}{2}\cdot i} =\color{blue}{2}\cdot1+\color{blue}{2}\cdot2+\\+\color{blue}{2}\cdot3=12$  </p>
         <br><br>
         <p>What if the summation index does not start from 1? In such cases,
            we simply plug in the values from the starting point:</p>
@@ -142,17 +155,19 @@
        <p > <span class="bold">Solution</span>: because <i class="bold">i</i> goes from 1 to 3, we sum 2 three times: $ \sum_{i=1} ^{3}{{2}} =2+2+2=3\cdot 2=6$  </p>
         <br>
        <p class="example"><i>Example 2:</i><br><br>
-         $ \sum_{\color{red}{i=0}} ^{\color{red}{3}}{\color{#1299e7}{2}} =?$ </p>
-         <p > <span class="bold">Solution</span>: because <i class="bold">i</i> goes from 0 to 3: 0,1,2,3 - we sum 2 four times: $ \sum_{i=0} ^{3}{{2}} =2+2+2+2=4\cdot 2=8$  </p>
+         $ \sum_{\color{red}{i=0}} ^{\color{red}{3}}{\color{#1299e7}{2}} =?$ </p><br>
+         <p class="hideMobile"> <span class="bold">Solution</span>: because <i class="bold">i</i> goes from 0 to 3: 0,1,2,3 - we sum 2 four times: $ \sum_{i=0} ^{3}{{2}} =2+2+2+2=4\cdot 2=8$  </p>
+         <p class="showMobile"> <span class="bold">Solution</span>: because <i class="bold">i</i> goes from 0 to 3: 0,1,2,3 - we sum 2 four times: $ \sum_{i=0} ^{3}{{2}} =2+2+2+2=\\=4\cdot 2=8$  </p>
          <p class="example"> <i>Example 3:</i> <br><br>
           $ \sum_{\color{red}{i=4}} ^{\color{red}{8}}{\color{#1299e7}{1}} = ?$
-         </p>
-         <p > <span class="bold">Solution</span>: <i class="bold">i</i> goes from 4 to 8: 4,5,6,7,8 so there are 5 numbers. Therfore we sum 1 five times: $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=5\cdot 1=5$  </p>
+         </p><br>
+         <p class="hideMobile" > <span class="bold">Solution</span>: <i class="bold">i</i> goes from 4 to 8: 4,5,6,7,8 so there are 5 numbers. Therfore we sum 1 five times: $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=5\cdot 1=5$  </p>
+         <p class="showMobile" > <span class="bold">Solution</span>: <i class="bold">i</i> goes from 4 to 8: 4,5,6,7,8 so there are 5 numbers. Therfore we sum 1 five times: $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=\\=5\cdot 1=5$  </p>
          <p class="bold"><i>So, how many times do we sum the constant?</i> </p>
          <p>Subtract the lower from the upper bound and add one. In the example above: $8-4+1=5$. So 5 times.<br>
           Why do we add one? Because we subtracted the lower bound, but it should be included.
         </p>
-         <p class="bold forStudent scroll " id="summationOfConstantExamples" > Now, a couple examples for you to solve <span class="smaller">(you can check solutions at the bottom of this page)</span>:</p>
+         <p class="bold forStudent scroll " id="summationOfConstantExamples" > Now, a couple examples for you to solve, <span class="red">find the sum:</span> <span class="smaller">(you can check solutions at the bottom of this page)</span>:</p>
          <div class="container2">
         <div class="firstSet " >
           6. $ \sum_{i=1} ^{7}{1}$ <br>
@@ -219,7 +234,7 @@
         const sidenav = document.querySelector(".sidenav")
         sidenav.style.display = "block"
         const screenWidth = window.innerWidth;
-        if (screenWidth < 790) {
+        if (screenWidth < 870) {
           sidenav.style.left = "0";
     }
   }
@@ -237,17 +252,17 @@
       const screenWidth = window.innerWidth;
 
 
-      if (screenWidth > 790 && sidenav.style.display === "none") {
+      if (screenWidth > 870 && sidenav.style.display === "none") {
         sidenav.style.display = "block";
         sidenav.style.left = "unset";
         sidenav.style.right = "75%";
 
-      } else if (screenWidth > 790 && sidenav.style.display === "block")
+      } else if (screenWidth > 870 && sidenav.style.display === "block")
           {
           sidenav.style.left = "unset";
           sidenav.style.right = "75%";
 
-      } else if (screenWidth < 790 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
+      } else if (screenWidth < 870 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
         sidenav.style.display = "none";     
       }
     }
