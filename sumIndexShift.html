@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Summation index shift explained with examples to practise">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+  <meta name="description" content="Summation index shift explained with examples to practise">
   <title>Summation index shift</title>
   <link rel="stylesheet" href="style2.css"  />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script async type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
-  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+    jax: ["input/TeX", "output/SVG"]}
+   );
+  </script> 
+  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js¨"></script> 
+  <script async src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js¨"></script> 
   
  </head>
 
@@ -55,11 +60,20 @@
     <a href="index.html#summation1Student">Examples on summation symbol for you</a>
     <a href="index.html#summationOfConstant">Summation of a constant</a>
     <a href="index.html#summationOfConstantExamples">Examples on summation of a constant for you</a>
-    <a href="#summationOfConstantExamples">Summation index shift</a>
+    <a href="sumIndexShift.html">Summation index shift</a>
 
 
 </div>
-
+<button class="dropdown-btn btn"> Another topic
+  <i class="fa fa-caret-down" style="font-size:30px"></i>
+</button>
+<div class="dropdown-container">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+   <a href="#contact">Search</a>
+  </div>
   </nav>
 
   <div class="main">
@@ -69,10 +83,14 @@
        <p class="general"> In some examples, we may want to change the limits (boundaries) of summation.
          The terms that we sum must stay the same, so the operation is equivalence. <br>
          To better understand, let's look at an example where we will change the boundaries: </p> 
+        <div class="bigScreenHide">
          <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{\textit{i}}} = \color{#1299e7}{1+2+3}$}\]</p>
+         <p > here we start from 1. Let's say we want to start from 2:  </p>
+         <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=2}}^{?}{\color{#1299e7}{\textit{i}}}=\color{#1299e7}{2+3+4+...}$}\]</p> 
+        </div>
+         
+     <img class="smallScreenHide" src="/SummationIndex/summationIndexShift.png" alt="Moving summation index" style="width: 800px; padding-left: 35px;">
 
-      <p > here we start from 1. Let's say we want to start from 2:  </p>
-      <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=2}}^{?}{\color{#1299e7}{\textit{i}}}=\color{#1299e7}{2+3+4+...}$}\]</p>
       <p> we must keep the summation terms the same as in the first summation! 
         But now each summation term is greater by one in comparison to 
         the initial sum. So, we will subtract 1 as follows:</p>
@@ -87,21 +105,39 @@
     </p>
         <p class="summ" id="element2"> </p>
       <p>because we shifted the lower bound from 1 to 2, we also had to shift the upper bound
-         by one, up from 3 to 4 — so we sum three numbers as before. Done. <br><br>
-         From the above, we can conclude that the following equality holds:</p>
+         by one, up from 3 to 4 — so we sum three numbers as before. Done. </p>
+      <div class="bigScreenHide">
+        <p> From the above, we can conclude that the following equality holds:</p>
       <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{\textit{i}}} = \sum_{\color{red}{i=2}}^{\color{red}{4}}{\color{#1299e7}{(i-1)}} $}\]</p>
       <p>And in general, to shift up by 1:</p>
       <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=m}} ^{\color{red}{n}}{\color{#1299e7}{\textit{i}}} = \sum_{\color{red}{i=m+1}}^{\color{red}{n+1}}{\color{#1299e7}{(i-1)}} $}\]</p>
+      </div>
+
+      <img class="smallScreenHide" src="/SummationIndex/IndexShift.png" alt="Summation shift rules" style="width: 600px; padding-left: 35px;">
+
+
+      
+
+      <div class="bigScreenHide">
       <p>And to shift by any whole number <i><span class="bold">p:</span></i></p>
       <p class="summ" id="element2"> \[ \text{$ \sum_{\color{red}{i=m}} ^{\color{red}{n}}{\color{#1299e7}{\textit{i}}} = \sum_{\color{red}{i=m+p}}^{\color{red}{n+p}}{\color{#1299e7}{(i-p)}} $}\]</p>
       <p class="exp2">where <i class="red">m</i> is any whole number - the lower bound we start from</p>
       <p>Let's do more similar examples together, and then you will do a couple on your own.</p>
+      </div>
       
-      <p ><span class="bold" ><i>Example</i></span> 1: shift summation index up by 1 for:
-      <p class="exampleNoPadding" > \[ \text{$ \sum_{k=-1} ^{1}{k} $}\]</p>
-      <p > <span class="bold">Solution</span>: $ \sum_{k=-1} ^{1}{k}=-1+0+1$. Now, let's shift the lower and upper bounds by 
-       one according to the formula above: $ \sum_{k=0} ^{2}{(k-1)=-1+0+1}.$ Great, everything works. <br>
-       <p> <span class="bold">Final solution:</span> $ \sum_{k=-1} ^{1}{k}=\sum_{k=0}^{2}{(k-1)}$</p>
+      <img class="smallScreenHide" src="/SummationIndex/summation-Index-Shift-Formula.png" alt="Summation index shift rules" style="width: 800px; padding-left: 35px;">
+
+
+      <div class="bigScreenHide">
+        <p ><span class="bold" ><i>Example</i></span> 1: shift summation index up by 1 for:</p>
+        <p class="exampleNoPadding" > \[ \text{$ \sum_{k=-1} ^{1}{k} $}\]</p>
+        <p > <span class="bold">Solution</span>: $ \sum_{k=-1} ^{1}{k}=-1+0+1$. Now, let's shift the lower and upper bounds by 
+         one according to the formula above: $ \sum_{k=0} ^{2}{(k-1)=-1+0+1}.$ Great, everything works.</p>
+      </div>
+       <br>
+       <img class="smallScreenHide" src="/SummationIndex/summation-Index-Shift-Example.png" alt="Summation index shift examples" style="width: 850px; padding-left: 35px;">
+
+       <p > <span class="bold">Final solution:</span> $ \sum_{k=-1} ^{1}{k}=\sum_{k=0}^{2}{(k-1)}$</p>
           
        <p class="red"> Now it is your turn! </p>
        <p>"Student, Example 1":</p>
@@ -115,15 +151,22 @@
         two. Then subtract two from summation variable: <span class="bigInlineSum">$ \sum_{i=4} ^{5}{(i-2)=(4-2)+(5-2)=2+3}.$</span> Good. 
         <p> <span class="bold">Final solution:</span> $ \sum_{i=2} ^{3}{i}=\sum_{i=4} ^{5}{(i-2})$</p>
 
+
+      <div class="bigScreenHide">
         <p ><span class="bold" ><i>Example 3</i></span>: shift the summation index up by 3 for:
-            <p class="exampleNoPadding" > \[ \text{$ \sum_{j=0} ^{2}{(j+1)} $}\]</p>
-             <p><span class="bold">Solution</span>: we have:  \begin{equation} 
+          <p class="exampleNoPadding" > \[ \text{$ \sum_{j=0} ^{2}{(j+1)} $}\]</p>
+           <p><span class="bold">Solution</span>: we have:</p>
+      </div>    
+      <br>
+      <img class="smallScreenHide" src="/SummationIndex/summation-Index-Shift-Example3.png" alt="Shift index of summation" style="width: 550px; padding-left: 20px;">
+
+               \begin{equation} 
                 \begin{split}
                 \sum_{j=0}^{2} (j+1) &= (0+1)+(1+1)+\\
                  & +(2+1)=\\&=1+2+3
                 \end{split}
                 \end{equation} 
-            shifting the boundaries by 3 we get:</p> 
+            <p>shifting the boundaries by 3 we get:</p> 
             <p> \begin{equation} 
                 \begin{split}
                 \sum_{j=0}^{2} (j+1) &= \sum_{j=\color{red}{3}}^{\color{red}{5}} (j+1\color{red}{-3})=\\
@@ -133,13 +176,12 @@
              <p> <span class="bold">Final solution:</span> $ \sum_{j=0} ^{2}{(j+1)}=\sum_{j=3} ^{5}{(j-2})$</p>
            
        
-
-   
-
-      
     
       <p id="summation1Student" class="bold forStudent scroll"> <br>Now it is your turn!<br> Solve summation index shift examples <span class="smaller">(you can check sollutions on the buttom of this page)</span>:</p>
-      <p><i>Shift the summation index up by 1:</i></p>
+      
+
+      <div class="bigScreenHide">
+        <p><i>Shift the summation index up by 1:</i></p>
         <div class="container2">
             <div class="firstSet">
               
@@ -180,6 +222,12 @@
               <br>
             </div>   
         </div>
+      </div>
+      
+      
+      <img class="smallScreenHide" src="/SummationIndex/summation-Index-Shift-Examples.png" alt="How to shift index of summation" style="width: 600px; padding-left: 35px;">
+
+      
         
 
         <div class="empty">
