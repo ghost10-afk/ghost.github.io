@@ -182,6 +182,10 @@ fixed sidenav, full height */
   color: #1299e7;
 }
 
+.blue {
+  color: blue;
+}
+
 .break {
   display: flex;
 }
@@ -269,6 +273,12 @@ hr.blueLine {
   font-size: 20px;
 }
 
+.exp3 {
+  padding-left: 17%;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
 .sumarrow {
   font-size: 40px;
   color: blue;
@@ -333,6 +343,66 @@ h2 {
 }
 
 
+/* -----------CLASSES FOR IMAGES ---------------------*/
+
+.padding20 {
+
+}
+
+.imageStyle {
+  padding-left: 20%;
+  height:160px;
+
+}
+
+.exper{
+  padding-left: 20%;
+  max-width: 400px;
+  /*border: 3px solid green;*/
+}
+
+.formulaSize150 {
+  height: 160px;
+
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* BIG and SMALL screens*/
+
+.sizeBigScreen {
+  width: 800px;
+}
+
+
+
+@media (min-width: 1360px) {  
+
+  .general {
+    padding-left: 5%;
+  }
+
+  p {
+    padding-left: 5%;
+  }
+
+
+  .bigScreenHide{
+    display: none;
+  }
+}
+
+@media (max-width: 1359px) {  
+
+  .smallScreenHide{
+    display: none;
+  }
+}
+
+
 @media (min-width: 1150px) {  
 
   .general {
@@ -342,6 +412,7 @@ h2 {
   p {
     padding-left: 5%;
   }
+
 }
 
 
@@ -479,6 +550,17 @@ h2 {
 
  aside {
   width: 1%;
+
+}
+
+.formulaSize150 {
+  height: 160px;
+}
+
+.exper{
+  padding-left: 2%;
+ 
+}
 
 }
 
