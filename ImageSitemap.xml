@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://mathuniversecompass.com/</loc>
+	<lastmod>2024-02-19T00:11:10+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://mathuniversecompass.com/sumIndexShift.html</loc>
+	<lastmod>2024-02-19T00:11:10+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/summationIndexShift.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/IndexShift.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/summation-Index-Shift-Formula.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/summation-Index-Shift-Example.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/summation-Index-Shift-Example3.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://mathuniversecompass.com/SummationIndex/summation-Index-Shift-Examples.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://mathuniversecompass.com/index.html</loc>
+	<lastmod>2024-02-19T00:11:10+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
