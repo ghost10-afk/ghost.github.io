@@ -8,6 +8,7 @@ p {
   font-size: 20px;
   width: 90%;
   padding-top: 20px;
+  padding-left: 10px;
 }
 
 .body {
@@ -137,8 +138,6 @@ fixed sidenav, full height */
     padding:100px 20px 20px;
     width: 50%;
     border-left: 2px solid black;  
-    border-top: 2px white solid;
-    border-bottom: 2px white solid;
     overflow-wrap: break-word;
 }
 
@@ -170,7 +169,23 @@ fixed sidenav, full height */
 .example
 {
   font-size: 25px;
-  padding-left: 30px;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+.example23px {
+  font-size: 23px;
+  padding-left: 20px;
+}
+
+.blockPractice {
+  border: 2px solid #1299e7;
+  margin-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+.lineunder {
   text-decoration: underline;
 }
 
@@ -262,6 +277,10 @@ hr.blueLine {
   display: none;
 }
 
+.showOnMobile500 {
+  display: none;
+}
+
 .explanation1 {
   padding-top: 20px;
   font-size: 20px;
@@ -285,7 +304,9 @@ hr.blueLine {
   border: 2px solid black;
 }
 
-
+.solutionSize {
+  font-size: 22px;
+}
 
 .headingss { 
   font-size: 30px; 
@@ -342,12 +363,15 @@ h2 {
   text-align: center;
 }
 
+.onPageContent {
+  list-style-type: disc;
+  font-size: 18px;
+  padding: 20px 10px 30px;
+}
+
 
 /* -----------CLASSES FOR IMAGES ---------------------*/
 
-.padding20 {
-
-}
 
 .imageStyle {
   padding-left: 20%;
@@ -448,10 +472,12 @@ h2 {
  
 }
 
+
 @media (max-width: 870px) {
-    .sidenav {
+  .sidenav {
     display: none;
     border-right: 2px solid black;
+
   }
 
  .sidenav a:first-child {
@@ -481,7 +507,7 @@ h2 {
  } 
 
   .main {
-    width: 85%;
+    width: 100%;
     padding-top: 150px;
   }
 
@@ -515,15 +541,12 @@ h2 {
   }
 }
    
-@media (max-width: 500px) {
-  .sidenav {
-  display: none;
-  border-right: 2px solid black;
-}
+@media (max-width: 560px) {
 
 
 
-  .sidenav a:first-child {
+
+.sidenav a:first-child {
    display: block;
 
 }
@@ -539,12 +562,12 @@ h2 {
   width: 100%;
 }
 
- nav {
+nav {
   width: 0%;
  }
 
  .main {
-  width: 100%;
+  width: 95%;
   padding-top: 180px;
  }
 
@@ -559,7 +582,14 @@ h2 {
 
 .exper{
   padding-left: 2%;
- 
+}
+
+.hideOnMobile500 {
+  display: none;
+}
+
+.showOnMobile500 {
+  display: inline;
 }
 
 }
