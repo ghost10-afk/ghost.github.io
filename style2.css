@@ -367,7 +367,9 @@ h2 {
   font-size: 18px;
   padding: 20px 10px 30px;
 }
-
+ .onPageContent li {
+  padding-bottom: 15px;
+}
 
 /* -----------CLASSES FOR IMAGES ---------------------*/
 
