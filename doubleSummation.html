@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Double summation exaplanation with examples and solutions">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>How to calculate double summation?</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/android-chrome-192x192.png">
+  <link rel="stylesheet" href="style2.css"  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+     jax: ["input/TeX", "output/SVG"]}
+    );
+   </script> 
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js¨"></script> 
+  
+ </head>
+
+
+
+<body>
+
+<div class="logo">
+   
+   <div class="firstUl">
+    <ul>
+        <li  onclick=showSidebar() class="openMenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+    </ul>
+   </div>
+
+    <div class="secondUl">
+        <ul>
+            <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="thirdUl">
+     
+    </div>
+
+</div>
+
+<div class="container">
+ <nav>
+
+  <div class="sidenav">
+
+   <div class="bitch">
+  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+  <button class="dropdown-btn firstButton btn"> Summation symbol (Sigma notation)
+    <i class="fa fa-caret-down" style="font-size:30px"></i> 
+  </button>
+  <div class="dropdown-container">
+    <a href="index.html">Summation symbol</a>
+    <a href="index.html#summation1Student">Examples on summation symbol for you</a>
+    <a href="index.html#summationOfConstant">Summation of a constant</a>
+    <a href="index.html#summationOfConstantExamples">Examples on summation of a constant for you</a>
+    <a href="sumIndexShift.html">Summation index shift</a>
+    <a href="doubleSummation.html">Double summation</a>
+
+    
+</div>
+
+  </nav>
+
+  <div class="main">
+
+    <div style="font-size: 18px;"><b>Page content</b></div>
+    <ul class="onPageContent">
+      <li>
+        <a href="#">How to calculate double summation?</a>
+      </li>
+      <li>
+        <a href="doubleSummation.html#productDoubleSum">Product in double summation</a>
+      </li>
+      <li><a href="doubleSummation.html#doubleSumOneVariable">One variable in double summation</a></li>
+      <li><a href="doubleSummation.html#doubleSumConstant">Double summation of a constant</a></li>
+
+    </ul>  
+    
+     <h1 class="headingss"><i>How to calculate double summation?</i></h1>
+      
+        
+       <div class="explanation1 general"> Double summation is represented by the following notation:
+       </div>   
+       <p class="summ" id="element2"> \[ \text{$\sum_{\color{blue}{i=1}} ^{2} \sum_{\color{red}{j=1}} ^{3}{\color{blue}{\color{blue}{i}+\color{red}{j}}} $}\]</p>
+       <div class=" exp2"> <i>the left sum is called the <span class="bold blue">outer</span> sum and the right sum is called the <span class="bold red"> inner</span> sum</i>  </div>  
+       <br><br>
+       <div class=" exp3"> <span class="bold">STEP 1:</span> calculate the inner sum as usual, <i class="red">j</i> is variable,  <i class="blue">i</i> is treated as a constant.<br>
+         Drag the outer sum along with it:</div> 
+       <br>
+       <div class=" exp2"> <i>Not confident in summation notation? First, check the <a href="index.html">Summation symbol</a></i> </div>  
+ 
+       <p class="showOnMobile500" style="font-size: 20px;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} \sum_{\color{red}{j=1}} ^{3}{ \color{blue}{i}+\color{red}{j}} &= 
+        \sum_{\color{blue}{i=1}}^{2}(\color{blue}{i}+\color{red}{1})+\\&+
+        (\color{blue}{i}+\color{red}{2})+\\&+(\color{blue}{i}+\color{red}{3})=\\ only\hspace{0.4em} \color{red}{j}\hspace{0.4em}
+         was \\ \hspace{0.4em} changing..!\\
+        blue\\\hspace{0.4em}remained\hspace{0.4em}\\ constant\\
+
+         & =\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+\color{red}{6})
+        \end{split}
+        \end{equation} 
+       </p>
+       <p class="hideOnMobile500" style="font-size: 22px; padding-left: 12%;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} \sum_{\color{red}{j=1}} ^{3}{ \color{blue}{i}+\color{red}{j}} &= 
+        \sum_{\color{blue}{i=1}}^{2}(\color{blue}{i}+\color{red}{1})+(\color{blue}{i}+\color{red}{2})+(\color{blue}{i}+\color{red}{3})=\\ 
+        \ only\hspace{0.4em} \color{red}{j}\hspace{0.4em}
+         was \\ \hspace{0.4em} changing..!\\
+        blue\\\hspace{0.4em}remained\hspace{0.4em}\\ constant\\
+         & =\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+\color{red}{6})
+        \end{split}
+        \end{equation} 
+       </p>
+       
+
+      <br>
+      <div class=" exp3"> <span class="bold">STEP 2:</span> Then calculate the outer sum as usual, so changing <span class="blue">i </span> we get</div>  
+      <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+        \begin{equation}
+        \begin{split}
+        &\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+6)=\\&=(3\cdot \color{blue}{1}+6)+\\&+(3\cdot \color{blue}{2}+6)=\\&
+         =9+12=21
+        \end{split}
+        \end{equation}
+      </p>
+
+      <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 15%;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+6)&=(3\cdot \color{blue}{1}+6)+(3\cdot \color{blue}{2}+6)=\\&
+        =9+12=21
+        \end{split}
+        \end{equation}
+      </p>
+
+      
+       <p class="general">
+        Not that scary, right?<br> Now you can <span class="red">try to calculate the following example</span> yourself! 
+        You can check the solution as usual at the bottom of this page. 
+          </p>
+
+      <div class="blockPractice">
+      <p class="example"> <i>Example 1</i> (to practice): <br><br>
+        \begin{equation}
+        \begin{split}
+        \sum_{{i=1}}^{4}\sum_{{j=1}}^{2} i+j=?
+        \end{split}
+        \end{equation}
+      </p>
+      </div>
+      <p > The example above is very similar to the one I explained, 
+        so you shouldn't have any problems while
+         following <span class="bold">STEP 1</span> and <span class="bold"> STEP 2</span>. </p>
+      <br>
+      <br>
+      <br>
+
+      <p>What <span class="red">MISTAKE</span> can you probably make 
+        during calculation? This one</p> <br>
+        <div style="border: 2px solid red; padding-left: 15px;" >
+        <p style="color:red">
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)\neq 1+2$
+         </p>
+         <p>but</p>
+         <p>
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)=(1+1)+\\ \hspace{5em}+(2+2)$
+         </p>
+         <p> So, you should plug in 1 and 2 in each of the two i's!</p>
+         <p>or just simplify and add</p>
+         <p style="font-size: 19px;">
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)=\sum_{{i=1}}^{2} \color{blue}{2\cdot i}\\
+          \hspace{5em}=2\cdot 1+2\cdot 2$
+         </p>
+         <br>
+        </div>
+     
+      <hr style="text-align:left;margin-left:0">
+    
+       <br>
+       <br>
+       <br>
+       
+       <h2 style="font-size: 27px;">Now let's do more examples together:
+        </h2>
+      <p>Remember, the summation index can be any letter; 
+        <i class="bold">i</i> and <i class="bold">j</i> are just the most popular ones.<br>
+        We will go against the world and use <i class="bold">l</i> and <i class="bold">k</i> in the following example
+        so you will get used to see different letters. 
+        Be happy I didn't choose $\xi$ (ksi) and $\eta$ (eta) from the Greek alphabet.
+      </p>
+      <p
+       class="example"> <i>Example </i> </p>
+      <p class="example">
+         \begin{equation}
+        \begin{split}
+        \sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)=
+        \end{split}
+        \end{equation}
+      </p>
+        <p > <span class="bold">Solution</span>: We will do it just as in the previous two 
+          examples, following the steps written 
+          at the top of the page.<br><br>
+          So first inner sum:</p>
+          <p  class="solutionSize hideOnMobile500">
+            \begin{equation}
+            \begin{split}
+            \sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)&=
+            \sum_{k=2} ^{4}(2\cdot k -1)+(2\cdot k-2)\\&=
+            \sum_{k=2} ^{4}(4\cdot k-3) \\now \hspace{0.4em} outer\hspace{0.4em}\\ sum\hspace{0.4em} as\hspace{0.4em}\\ usual:
+            \\&=(4\cdot 2-3)+(4\cdot 3 -3)+
+            \\&+(4\cdot 4-3)
+            \\and\hspace{0.4em}after\hspace{0.4em} \\adding\hspace{0.4em} we\\ \hspace{0.4em} get:
+            \\&=27
+            \end{split}
+            \end{equation}
+          </p> 
+
+          <p  class="solutionSize showOnMobile500" style="font-size: 20px;">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)\\&=
+            \sum_{k=2} ^{4}(2\cdot k -1)+(2\cdot k-2)\\&=
+            \sum_{k=2} ^{4}(4\cdot k-3) 
+            \\&=(4\cdot 2-3)+(4\cdot 3 -3)+
+            \\&+(4\cdot 4-3)
+            \\&=27
+            \end{split}
+            \end{equation}
+          </p> 
+
+       
+
+        <p>
+          Now it's your turn. Solve the following two examples. You have the knowledge needed for it.
+           You can check the solutions at the bottom of the page.
+        </p>
+        <div class="blockPractice">
+      <p class="example" style="font-size: 22px;"><i>Example 2</i> (to practice)<br><br>
+          $ \sum_{k=3}^{5}\sum_{l=1}^{3} (k-2\cdot l)$ </p>
+      <br>
+
+      <p class="example"><i>Example 3</i> (to practice)<br><br>
+            $ \sum_{k=2}^{4}\sum_{l=2}^{4} (-k+l)$ </p>  
+        </div>
+      <br>
+      <br>
+      <br id="productDoubleSum">
+      <br >
+      <br>
+      <br >
+      <br>
+  <h2 >Product in the double summation</h2>
+      <p class="example"> <i>Let's solve together</i>: 
+        <p> Find the summation of $xy$ </p>
+        <p>First, we calculate the inner sum, plugging in values from 1 
+          to 2 into variable y. After that, we calculate the single 
+          sum with the index variable x:</p>
+        <p class="example hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{x=1}}^{2}\sum_{{y=1}}^{2} (x\cdot y)&=\sum_{{x=1}}^{2}(x\cdot 1)+(x\cdot 2)
+          \\&=(1\cdot 1 + 1\cdot 2) + (2\cdot 1 + 2\cdot 2)
+          \\&=1+2+2+4
+          \\&=9
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="example showOnMobile500">
+          \begin{equation}
+          \begin{split}
+          &\sum_{{x=1}}^{2}\sum_{{y=1}}^{2} (x\cdot y)=\\&=\sum_{{x=1}}^{2}(x\cdot 1)+(x\cdot 2)
+          \\&=(1\cdot 1 + 1\cdot 2) +\\&+ (2\cdot 1 + 2\cdot 2)
+          \\&=1+2+2+4
+          \\&=9
+          \end{split}
+          \end{equation}
+        </p>
+
+      </p>
+      <hr style="text-align:left;margin-left:0">
+      <p>
+        Now let's consider another similar 
+        double summation example with division:
+      </p>
+      <p class="example"> <i>Let's solve together</i>: 
+        <p class="example hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{i=5}}^{6}\sum_{{j=1}}^{2} \frac{j^2}{i}&=\sum_{{i=5}}^{6} \frac{1^2}{i}
+          +\frac{2^2}{i}
+          \\&=\sum_{{i=5}}^{6}\Big(\frac{1^2}{5}+\frac{2^2}{5}\Big) 
+          +\Big(\frac{1^2}{6}+\frac{2^2}{6}\Big)
+          \\&=\Big(\frac{1+4}{5}\Big)+\Big(\frac{1+4}{6}\Big)
+          \\&=1+\frac{5}{6}=\frac{11}{6}
+
+          
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="example showOnMobile500" style="font-size: 19px;">
+          \begin{equation}
+          \begin{split}
+          &\sum_{{i=5}}^{6}\sum_{{j=1}}^{2} \frac{j^2}{i}=\\&=\sum_{{i=5}}^{6} \frac{1^2}{i}
+          +\frac{2^2}{i}
+          \\&=\sum_{{i=5}}^{6}\Big(\frac{1^2}{5}+\frac{2^2}{5}\Big) 
+          +\Big(\frac{1^2}{6}+\frac{2^2}{6}\Big)
+          \\&=\Big(\frac{1+4}{5}\Big)+\Big(\frac{1+4}{6}\Big)
+          \\&=1+\frac{5}{6}=\frac{11}{6}
+
+          
+          \end{split}
+          \end{equation}
+        </p>
+
+        
+      <hr style="text-align:left;margin-left:0">
+      <p>And another one, there is never enough!</p>
+      <p class="example"> <i>Let's solve together</i>: 
+        <p class="example23px hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{i=7}}^{8}\sum_{{j=3}}^{4} \frac{j+1}{(i-1)^2}&=\sum_{{i=7}}^{8} \frac{3+1}{(i-1)^2}
+          + \frac{4+1}{(i-1)^2}
+          \\&= \Big(\frac{3+1}{(7-1)^2}+ \frac{4+1}{(7-1)^2}\Big)+
+          \\&+\Big(\frac{3+1}{(8-1)^2}+ \frac{4+1}{(8-1)^2}\Big)
+          \\&=\Big(\frac{4}{36}+\frac{5}{36}\Big)
+          +\Big(\frac{4}{49}+\frac{5}{49}\Big)
+          \\&=\frac{3}{12}+\frac{9}{49}
+          \\&=\frac{255}{588}=\frac{85}{196}
+
+          
+          \end{split}
+          \end{equation}
+          </p>
+
+          <p class="example23px showOnMobile500" style="font-size: 19px;">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{i=7}}^{8}\sum_{{j=3}}^{4} \frac{j+1}{(i-1)^2}=\\&=\sum_{{i=7}}^{8} \frac{3+1}{(i-1)^2}
+            + \frac{4+1}{(i-1)^2}
+            \\&= \Big(\frac{3+1}{(7-1)^2}+ \frac{4+1}{(7-1)^2}\Big)+
+            \\&+\Big(\frac{3+1}{(8-1)^2}+ \frac{4+1}{(8-1)^2}\Big)
+            \\&=\Big(\frac{4}{36}+\frac{5}{36}\Big)
+            +\Big(\frac{4}{49}+\frac{5}{49}\Big)
+            \\&=\frac{3}{12}+\frac{9}{49}
+            \\&=\frac{255}{588}=\frac{85}{196}
+  
+            
+            \end{split}
+            \end{equation}
+            </p>
+
+          <hr style="text-align:left;margin-left:0">
+          <p class="bold">Cool looking example <span class="red">with <span class="blue">j</span> to the power of 
+            <span class="blue">i</span> </span>(easy as all of them):</p>
+
+            <p class="example "> <i>Let's solve together</i>: 
+              <p class="example23px hideOnMobile500">
+                \begin{equation}
+                \begin{split}
+                \sum_{{i=3}}^{4}\sum_{{j=1}}^{2} \frac{i^2}{1+j^i}&=
+                \sum_{{i=3}}^{4} \frac{i^2}{1+1^i}
+                + \frac{i^2}{1+2^i}\\common\hspace{0.4em}\\mistake
+                \\& \color{red} {\neq \frac{3^2}{1+1^3}+\frac{4^2}{1+1^4}}\\
+                plug\hspace{0.4em}in\hspace{0.4em}3\hspace{0.4em}and\hspace{0.4em}4\\
+                \hspace{0.4em}in\hspace{0.4em}each\hspace{0.4em}of\hspace{0.4em}2\\
+                \hspace{0.4em}fractions:
+
+                \\&= \frac{\color{red}{3^2}}{1+1^\color{red}{3}}+
+                \frac{\color{red}{3^2}}{1+2^\color{red}{3}}+
+                \\&+\frac{\color{red}{4^2}}{1+1^\color{red}{4}}+
+                \frac{\color{red}{4^2}}{1+2^\color{red}{4}}
+                \\&=\frac{9}{2}+\frac{9}{9}+\frac{16}{2}+\frac{16}{17}
+                \\&=\frac{1377+306+2448+288}{306}
+                \\&=\frac{4419}{306}\\divide\hspace{0.4em}each\hspace{0.4em}
+                by\hspace{0.4em}9
+                \\&=\frac{491}{34}
+
+                \end{split}
+                \end{equation}
+              </p>
+
+                <p class="example23px showOnMobile500">
+                  \begin{equation}
+                  \begin{split}
+                  &\sum_{{i=3}}^{4}\sum_{{j=1}}^{2} \frac{i^2}{1+j^i}\\&=
+                  \sum_{{i=3}}^{4} \frac{i^2}{1+1^i}
+                  + \frac{i^2}{1+2^i}  
+                  \end{split}
+                  \end{equation}
+                  </p>
+                  <p class="showOnMobile500"><b style="font-size: 23px;">Common mistake:</b></p>
+
+                  <p class="example23px showOnMobile500">
+                  \begin{equation}
+                  \begin{split}
+                  & \color{red} {\neq \frac{3^2}{1+1^3}+\frac{4^2}{1+1^4}}\\
+                  \end{split}
+                  \end{equation}
+                  
+                  <p class="showOnMobile500"><b style="font-size: 23px;">Plug in 3 and 4 in each of 2 fractions:</b></p>
+
+                  <p class="example23px showOnMobile500" style="font-size: 21px;">
+                  \begin{equation}
+                  \begin{split}
+                  \\&= \frac{\color{red}{3^2}}{1+1^\color{red}{3}}+
+                  \frac{\color{red}{3^2}}{1+2^\color{red}{3}}+
+                  \\&+\frac{\color{red}{4^2}}{1+1^\color{red}{4}}+
+                  \frac{\color{red}{4^2}}{1+2^\color{red}{4}}
+                  \\&=\frac{9}{2}+\frac{9}{9}+\frac{16}{2}+\frac{16}{17}
+                  \\&=\frac{1377+306+2448+288}{306}
+                  \\&=\frac{4419}{306}
+                 
+                  \\&=\frac{491}{34}
+  
+                  \end{split}
+                  \end{equation}
+                  </p>
+                </p>
+
+
+
+          <p>Now it is <span class="red">your turn to practice</span> to become more confident in 
+            double summation.
+            <span class="bold">Many examples to practice are coming!</span> <br><br>
+            If any problem, look at the <b>STEP 1</b> and <b>STEP 2</b>, and at the solved examples.<br>
+            You can check the solution at the bottom of the page as usual.</p>    
+
+       <div class="blockPractice">
+      <p class="example"><i>Example 4</i> (to practice)<br><br>
+        $ \sum_{i=5}^{8}\sum_{j=3}^{5} j^3\cdot i^2$ </p>  
+          
+     <p class="example"><i>Example 5</i> (to practice)<br><br>
+          $ \sum_{i=0}^{1}\sum_{j=1}^{2} j^2+ i^2$ </p>  
+
+     <p class="example"><i>Example 6</i> (to practice)<br><br>
+        $ \sum_{i=5}^{7}\sum_{j=10}^{12} \frac{j^2\cdot i}{2}$ </p>  
+            
+    <p class="example"><i>Example 7</i> (to practice)<br><br>
+       $ \sum_{i=1}^{2}\sum_{j=1}^{3} \frac{j-i}{j}$ </p>       
+       
+    <p class="example"><i>Example 8</i> (to practice)<br><br>
+        $ \sum_{i=1}^{2}\sum_{j=1}^{3}j^i$</p>     
+
+      </div>
+     <br id="doubleSumOneVariable">
+     <br>
+    <h2 >Double summation with one summation variable</h2>
+     <p>Now we will look at the double summation with one
+       summation variable. So we will have 2 summation indexes
+        (i and j, for example), but next to two summation signs,
+         there will be only one variable (i or j).</p>   
+     
+         <p class="example"> <i>Example</i>: 
+          <p class="example">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&
+                       
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p><b>Solution:</b> We solve this example in the same way as the previous ones. 
+            <br>
+            <br>So <b>first</b>, we will sum the inner sum with summation variable j: </p>
+            <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+              \begin{equation}
+              \begin{split}
+
+              \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&=\sum_{{i=1}}^{5} (1+2+3+4)
+              \\&=\sum_{{i=1}}^{5} 10
+
+              \end{split}
+              \end{equation} 
+             </p>
+
+             <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+              \begin{equation}
+              \begin{split}
+
+              &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j=\\&=\sum_{{i=1}}^{5} (1+2+3+4)
+              \\&=\sum_{{i=1}}^{5} 10
+
+              \end{split}
+              \end{equation} 
+             </p>
+
+             <p>Now we have a <b>summation of a constant</b>. Since there is no summation variable 
+              'i' next to the summation sign (so everything else except 'i' is
+               treated as a constant).</p><br>
+               <div class=" exp2"> <i>Not confident in
+                 summation of a constant? First, check the <a href="index.html">Summation symbol</a></i> and <br>
+                 <a href="index.html#summationOfConstant">Summation of a constant</a> </div>  
+            <p>And second, we add the constant 10 five times, 
+              as we learned from the previous sections:</p>
+              <p class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+                \begin{equation}
+                \begin{split}
+  
+                \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&=\sum_{{i=1}}^{5} (1+2+3+4)
+                \\&=\sum_{{i=1}}^{5} 10
+                \\&=10 +10+10+10+10
+                \\&=50
+  
+                \end{split}
+                \end{equation} 
+               </p>
+
+               <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+                \begin{equation}
+                \begin{split}
+  
+                &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j=\\&=\sum_{{i=1}}^{5} (1+2+3+4)
+                \\&=\sum_{{i=1}}^{5} 10
+                \\&=10 +10+10+10+10
+                \\&=50
+  
+                \end{split}
+                \end{equation} 
+               </p>
+
+              <p><i>The end of the example</i></p> 
+              <hr style="text-align:left;margin-left:0">
+
+              <p>Let's have another one but this time with variable "i". Then you will solve 
+                a couple yourself.</p>
+              
+                <p class="example"> <i>Example</i>: 
+                  <p class="example">
+                    \begin{equation}
+                    \begin{split}
+                    \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2&
+                               
+                    \end{split}
+                    \end{equation}
+                  </p>
+        
+    <p><b>Solution:</b> Let's solve the inner sum first. The
+       summation index is 'j,' but we don't have it next to a
+        summation sign. Therefore, we will add $i^2$
+        four times, as it is treated as a constant,
+         and the index 'j' goes from 1 to 4 (see <a href="index.html#summationOfConstant">Summation of a constant</a>)
+         <br> So:
+         <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+          \begin{equation}
+          \begin{split}
+
+          \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2&=\sum_{{i=1}}^{5} 4\cdot i^2\\ \\
+          and\hspace{0.4em} now \hspace{0.4em} we\\\hspace{0.4em}solve\hspace{0.4em}
+          as\hspace{0.4em} usual:
+          \\&=\sum_{{i=1}}^{5} 4\cdot 1^2 +4\cdot 2^2+
+          \\&+4\cdot 3^2+4\cdot 4^2+ 4\cdot 5^2
+          \\&=4\cdot (1+4+9+16+25)
+          \\&=4\cdot 55
+          \\&=220
+
+          \end{split}
+          \end{equation} 
+         </p>
+
+         <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+          \begin{equation}
+          \begin{split}
+
+          &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2=\\&=\sum_{{i=1}}^{5} 4\cdot i^2
+          \\&=\sum_{{i=1}}^{5} 4\cdot 1^2 +4\cdot 2^2+
+          \\&+4\cdot 3^2+4\cdot 4^2+ 4\cdot 5^2
+          \\&=4\cdot (1+4+9+16+25)
+          \\&=4\cdot 55
+          \\&=220
+
+          \end{split}
+          \end{equation} 
+         </p>
+
+         <hr style="text-align:left;margin-left:0"> 
+         <p> And the last one together. Then it will be your turn!</p>
+        
+         <p class="example"> <i> Let's solve together</i>: 
+          <p class="example23px">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}                    
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p>So, during the first step, we will
+             solve the inner sum as usual. Again,
+              $i^{2\cdot i}$ is just a constant since there isn't any 'j'
+               variable. So, how many times do we add $i^{2\cdot i}$? We
+                add it as many times as there are numbers between 10 and 15,
+                 including both 10 and 15. Therefore, it's $15-10+1=6$ times
+                  (check: 10, 11, 12, 13, 14, 15). <br>So we have:
+          </p>
+
+          <p class="example23px hideOnMobile500">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}&= \sum_{{i=5}}^{7} 6\cdot i^{2\cdot i}    
+            \\and\hspace{0.4em}now\hspace{0.4em}as\hspace{0.4em}usual
+            \\&=6\cdot 5^{2\cdot 5}+6\cdot 6^{2\cdot 6}+6\cdot 7^{2\cdot 7}
+            \\&=6\cdot( 5^{10}+6^{12}+7^{14})
+            \\thats\hspace{0.4em}huge
+            \\&=4082457724860
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p class="example23px showOnMobile500">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}=\\&= \sum_{{i=5}}^{7} 6\cdot i^{2\cdot i}    
+            \\&=6\cdot 5^{2\cdot 5}+6\cdot 6^{2\cdot 6}+6\cdot 7^{2\cdot 7}
+            \\&=6\cdot( 5^{10}+6^{12}+7^{14})
+            \\&=4082457724860
+            \end{split}
+            \end{equation}
+          </p>
+
+
+          <p> Now it's your time to shine.
+             Answers as always are at the bottom of the page.
+              You have everything necessery to solve them. 
+              If any problem look on examples we solved together or 
+              follow the links to previous topics mentioned on this page.
+
+          </p>
+
+           <br>
+          <div class="blockPractice">
+            <p class="example"><i>Example 9</i> (to practice)<br><br>
+              $ \sum_{i=8}^{9}\sum_{j=1}^{5} i$ </p>    
+              <p class="example"><i>Example 10</i> (to practice)<br><br>
+                $ \sum_{i=1}^{3}\sum_{j=15}^{20} (i-3)^2$ </p> 
+                <p class="example"><i>Example 11</i> (to practice)<br><br>
+                  $ \sum_{i=10}^{12}\sum_{j=2}^{4} j^3$ </p>  
+                  <p class="example"><i>Example 12</i> (to practice)<br><br>
+                    $ \sum_{i=1}^{3}\sum_{j=30}^{32} i^i$ </p>      
+      
+            </div>
+
+            <br id="doubleSumConstant">
+            <p>What about if there isn't any index variable next to a summation sign?</p>
+
+            <h2 >Double summation of a constant (no variable)</h2>
+            <p>Let's consider following double summation 
+              example with index variables "i" and "j":</p>
+
+              <p class="example"> <i>Example</i>: 
+                <p class="example">
+                  \begin{equation}
+                  \begin{split}
+                  \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k&
+                             
+                  \end{split}
+                  \end{equation}
+                </p>
+
+              <p><b>Solution:</b> as you can see, we have only constant next to summation signs - 5k.
+              <br>
+              Meaning that we add 5k four times (as j goes from 1 to 4), getting:   
+            </p>
+            <p class="hideOnMobile500">
+             <b>1.</b> $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=\sum_{{i=1}}^{5}4\cdot 5k=\sum_{{i=1}}^{5}20k$
+            </p>
+            <p class="showOnMobile500">
+              <b>1.</b> $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=\sum_{{i=1}}^{5}4\cdot 5k=
+              \\ =\sum_{{i=1}}^{5}20k$
+             </p>
+            <p><b>2.</b> Now we solve single summation of a constant as usual:<br>
+              $\sum_{{i=1}}^{5}20 k=5\cdot 20k=100k$
+            </p>
+            <p><b> Final answer:</b> 
+              $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=100k$
+            </p>
+            <br>
+            <hr style="text-align:left;margin-left:0"> 
+            <br>
+            <br>
+           <p>Constants can be anything, not just letters. When there is a constant in a double summation,
+             we simply need to add it the correct number of times:
+          </p>
+          <p class="example"> <i>Let's solve together</i>: 
+            <p class="example23px">
+              \begin{equation}
+              \begin{split}
+              \sum_{{i=1}}^{5}\sum_{{j=1}}^{6} &#128515;&
+                         
+              \end{split}
+              \end{equation}
+            </p>
+            <p><b>Solution:</b> first we add emoji 6x: <br> <br>
+              $\sum_{{i=1}}^{5}\sum_{{j=1}}^{6} &#128515;=\sum_{{i=1}}^{5}6\cdot  &#128515;$ <br><br>
+             And then 5x again:<br><br>
+             $\sum_{{i=1}}^{5}6\cdot  &#128515;=5\cdot 6\cdot &#128515;=30\cdot &#128515;$
+            </p>
+            
+            <p>Remember! Everything that is not the index variable is a constant for 
+              the given summation sign. Is it important to start from the inner sum? No,
+               you can start from the outer one as well, as it is not that hard to see. 
+               Verify for yourself. </p>
+
+
+               <br>
+               <div class="blockPractice">
+                 <p class="example"><i>Example 13</i> (to practice)<br><br>
+                   $ \sum_{i=0}^{6}\sum_{j=3}^{8} p$ </p>    
+                   <p class="example"><i>Example 14</i> (to practice)<br><br>
+                    $ \sum_{i=1}^{6}\sum_{j=4}^{9} 1$ </p>     
+                    <p class="example"><i>Example 15</i> (to practice)<br><br>
+                      $ \sum_{i=7}^{10}\sum_{j=1}^{12} &#128508;$ </p> 
+                    
+           
+                 </div>
+       
+
+                 <div class="empty">
+                  Solutions are at the bottom on purpose. First, do them yourself :)) and then scroll down.
+                </div>
+                <p class="blueMine"><b>Solutions</b></p>
+              <p>The sums are:</p> 
+              <div class="sollutions " style="font-size: 20px;">
+                  <b>1.</b> 32<br>
+                  <b>2.</b> 0 <br>
+                  <b>3.</b> 0<br>
+                  <b>4.</b> 37584<br>
+                  <b>5.</b> 12<br>
+                  
+                  <b>6.</b> 3285<br>
+                  <b>7.</b> 0.5<br>
+                  <b>8.</b> 20<br><br>
+                  <b>9.</b> 85<br>
+                  <b>10.</b> 30<br>            
+                  <b>11.</b> 297<br>
+                  <b>12.</b> 96<br>
+                  <br>
+                  <b>13.</b> 42p<br>
+                  <b>14.</b> 36<br>
+                  <b>15.</b> 48&#128508;<br>
+
+          
+              </div>
+</div>
+ 
+<aside>
+    aside
+</aside>    
+</div>
+
+
+<script>
+ /*var startElement = document.getElementById('start'),
+  endElement = document.getElementById('end');
+
+  new LeaderLine(
+  endElement,
+  LeaderLine.pointAnchor(startElement, {
+    x: 80,
+    y: 30
+  }),
+  {endLabel: LeaderLine.pathLabel('lalalllla')}
+  ); */
+
+    function showSidebar() {
+        const sidenav = document.querySelector(".sidenav")
+        sidenav.style.display = "block"
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 790) {
+          sidenav.style.left = "0";
+    }
+  }
+    function hideSidebar()
+    {
+        const sidenav = document.querySelector(".sidenav")
+        sidenav.style.display = "none";
+        sidenav.style.left = "unset";
+        sidenav.style.right = "75%";
+
+    }
+
+    function handleResize() {
+      const sidenav = document.querySelector(".sidenav");
+      const screenWidth = window.innerWidth;
+      //sidenav.style.display = "block";
+
+
+      if (screenWidth > 790 && sidenav.style.display === "none") {
+        // Make nav visible when screen is larger than 700px
+        sidenav.style.display = "block";
+        sidenav.style.left = "unset";
+        sidenav.style.right = "75%";
+
+      } else if (screenWidth > 790 && sidenav.style.display === "block")
+          {
+          sidenav.style.left = "unset";
+          sidenav.style.right = "75%";
+
+      } else if (screenWidth < 790 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
+        sidenav.style.display = "none";     
+      }
+    }
+
+    // Event listeners
+    window.addEventListener("resize", handleResize);
+
+    // Initial check on page load
+    handleResize();
+
+
+  
+
+</script>
+</body>
+
+</html>
