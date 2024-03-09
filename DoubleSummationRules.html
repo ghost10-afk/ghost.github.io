@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Double summation exaplanation with examples and solutions">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to calculate double summation?</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.ico">
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+   loader: {load: ['ui/lazy']},
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+     jax: ["input/TeX", "output/SVG"]}
+    );
+   </script> 
+  <script async  type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  
+
+
+ </head>
+
+<body>
+
+<div class="logo">
+   
+   <div class="firstUl">
+    <ul>
+        <li  onclick=showSidebar() class="openMenu"><a href="#showSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+    </ul>
+   </div>
+
+    <div class="secondUl">
+        <ul>
+            <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7	"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="thirdUl">
+     
+    </div>
+
+</div>
+
+<div class="container">
+ <nav>
+
+  <div class="sidenav">
+
+   <div class="bitch">
+  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+  <button class="dropdown-btn firstButton btn"> Summation symbol (Sigma notation)
+    <i class="fa fa-caret-down" style="font-size:30px"></i> 
+  </button>
+  <div class="dropdown-container">
+    <a href="index.html">Summation symbol</a>
+    <a href="index.html#summation1Student">Examples on summation symbol for you</a>
+    <a href="index.html#summationOfConstant">Summation of a constant</a>
+    <a href="index.html#summationOfConstantExamples">Examples on summation of a constant for you</a>
+    <a href="#summationOfConstantExamples">Summation index shift</a>
+</div>
+
+  </nav>
+
+  <div class="main">
+
+    <div style="font-size: 18px; text-decoration: underline;"><b>Page Content:</b></div>
+    <ul class="onPageContent" >
+      <li>
+        <b>Identity 1<br> Double Summation of a Constant Rule. </b> 
+        <a href="#Identity1"> Explanation and examples</a>
+      </li>
+    </ul>
+        <p  class="hideOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} C &=C\sum_{{i=n}}^{k}\sum_{{j=s}}^{t}1
+          \\&=C\cdot (k-n+1)(t-s+1)
+          \end{split}
+          \end{equation}
+        </p>
+        <p  class="showOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          &\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} C =C\sum_{{i=n}}^{k}\sum_{{j=s}}^{t}1
+          \\&=C\cdot (k-n+1)(t-s+1)
+          \end{split}
+          \end{equation}
+        </p>
+        <p>Where C is a constant - any expression that <br> doesn't involve index variables</p>
+         
+        <ul class="onPageContent"> <li>
+          <b> Identity 2 <br>
+            Distributivity. </b> 
+           <a href="#Identity2"> Explanation and examples</a>
+        </li>
+      </ul>
+        <p class="hideOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          \Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)= \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j
+          \end{split}
+          \end{equation}
+        </p>
+        <p class="showOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          &\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)=\\&= \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j
+          \end{split}
+          \end{equation}
+        </p>
+      
+        <ul class="onPageContent"> 
+          <li>
+            <b>Identity 3 <br>
+              Distributivity Special Case.</b>
+            <a href="#Identity3"> Explanation with examples</a>
+          </li>
+        </ul>
+        
+        <p class="hideOnMobile500" >
+          \begin{equation} 
+          \begin{split}
+          \Big(\sum_{i=1}^{n} x_i\Big)^2 =\Big(\sum_{i=1}^{n} x_i^2\Big)+\sum_{i=1 \\ \quad \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j
+          \end{split}
+          \end{equation}
+        </p>
+        <p class="showOnMobile500" >
+          \begin{equation} 
+          \begin{split}
+          \Big(\sum_{i=1}^{n} x_i\Big)^2 &=\Big(\sum_{i=1}^{n} x_i^2\Big)+\\&+\sum_{i=1 \\ \quad \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j
+          \end{split}
+          \end{equation}
+        </p>
+      
+         <ul class="onPageContent">
+          <li>
+            <b>Identity 4 <br> Distributivity Allows Factorization</b>
+            <a href="#Identity4">Product in Double Summation</a>
+          </li>
+         </ul>
+        
+        <p class="hideOnMobile500" >
+          \begin{equation} 
+          \begin{split}
+          \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j=\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="showOnMobile500 font17" >
+          \begin{equation} 
+          \begin{split}
+          \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j=\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)
+          \end{split}
+          \end{equation}
+        </p>
+
+        <ul class="onPageContent">
+          <li> 
+            <b>Same index in lower-upper limit <br>
+              How to solve the following expression?</b>
+             <a href="doubleSummation.html#doubleSumConstant">Explanation with examples to practice</a></li>
+          </li>
+        </ul>
+        <p >
+          \begin{equation} 
+          \begin{split}
+          \sum_{{\color{red}{i}=k}}^{n}\sum_{{j=k}}^{\color{red}{i}}a_i b_j =?
+          \end{split}
+          \end{equation}
+        </p>
+
+       
+         <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+     <br> <br>
+     <h1 class="headingss"><i>Double Summation Rules</i></h1>
+     <p> The following rules apply to finite sums (both upper and lower limits are integers)</p>
+     <br>
+     <p id="Identity1" >If you are not confident in double summation, check first <a href="doubleSummation.html">How
+      to calculate double summation?
+     </a></p>
+     <br>
+
+     <hr style="text-align:left;margin-left:0">
+    
+     <p  class="rule">1.  Double Summation of a Constant Rule.</p>
+     <p  class="example hideOnMobile500">
+      \begin{equation} 
+      \begin{split}
+      \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} C &=C\sum_{{i=n}}^{k}\sum_{{j=s}}^{t}1
+      \\&=C\cdot (k-n+1)(t-s+1)
+      \end{split}
+      \end{equation}
+    </p>
+    <p  class="example showOnMobile500 font21">
+      \begin{equation} 
+      \begin{split}
+      &\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} C =C\sum_{{i=n}}^{k}\sum_{{j=s}}^{t}1
+      \\&=C\cdot (k-n+1)(t-s+1)
+      \end{split}
+      \end{equation}
+    </p>
+
+    <p>The rule tells us we can pull the constant C out of the summations signs. Then
+      the sum is equal to the product of the difference of an upper and lower limit plus one.<br>
+      Check <a href="doubleSummation.html#doubleSumConstant">Double Summation of a Constant</a>. 
+    </p>
+    <p>Let's see how it works with an example:</p>
+    <p class="example25 hideOnMobile500">
+      $\sum_{i=5}^8\sum_{j=2}^7 10=10\sum_{i=5}^8\sum_{j=2}^7=\\
+      =10\cdot (8-5+1)\cdot (7-2+1)=\\
+      =10\cdot 4\cdot 6=240$ 
+    </p>
+    <p class="example25 showOnMobile500">
+      $\sum_{i=5}^8\sum_{j=2}^7 10=\\10\sum_{i=5}^8\sum_{j=2}^7=\\
+      =10\cdot (8-5+1)\times \\ \times (7-2+1)=\\
+      =10\cdot 4\cdot 6=240$ 
+    </p>
+
+    <br>
+    <p> <b>Proof:</b>
+    </p>
+    <p class="example25">
+      $\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} C= $
+    </p>
+    <p>
+      Let's emphasize the order of operations:
+   </p>
+    <p class="example25">
+      $=\sum_{{i=n}}^{k}\Big(\sum_{{j=s}}^{t} C\Big)= $
+    </p>
+    <p>
+      Calculating the inner sum (there are t-s+1 of C):
+    </p>
+    <p class="example25">
+      $=\sum_{{i=n}}^{k}C (t-s+1)= $
+    </p>
+     <p>
+      Again, $C\cdot (t-s+1)$ is just a constant, because there isn't any index variable <b>"i"</b>. 
+      So there is $(k-n+1)$ times constant $C(t-s+1).$ So:
+     </p>
+     <p class="example25">
+      $=C\cdot (t-s+1)\times \\ \times (k-n+1) $
+    </p>
+    <br><br><br>
+    <p id="summation1Student" class="bold forStudent scroll"> <span class="red">Examples to practice:</span><br> 
+    <p>Use the above rule to solve:</p>
+     <p> <span class="smaller">(you can check solutions below)</span></p>
+       
+      <div class="blockPractice">
+        <p class="example"><i>Example 1</i> (to practice)<br><br>
+          $ \sum_{i=1} ^{10}\sum_{j=1}^7 5$ </p>  
+            
+       <p class="example"><i>Example 2</i> (to practice)<br><br>
+        $ \sum_{i=0} ^{5}\sum_{j=1}^{20} p$</p>    
+        
+        <p class="example"><i>Example 3</i> (to practice)<br><br>
+          $ \sum_{i=12} ^{50}\sum_{j=1}^{8} 1$</p>   
+
+          <p  class="example"><i>Example 4</i> (to practice)<br><br>
+            $ \sum_{i=25} ^{35}\sum_{j=22}^{28} k^2$</p> 
+            <span id="Identity2"></span>   
+        </div>
+        
+        <br ><br>
+        <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+
+      <p class="rule">2.  Distributivity: <i> </i></p>
+
+      <p class="example hideOnMobile500">
+        \begin{equation} 
+        \begin{split}
+        \Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)=\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j
+        \end{split}
+        \end{equation}
+      </p>
+      <p class="example showOnMobile500">
+        \begin{equation} 
+        \begin{split}
+        &\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)=\\& =\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j
+        \end{split}
+        \end{equation}
+      </p>
+
+      <p> Where $a_i$ is anything involving <b>"i"</b> (e.g. $2i$, $i^2$, $(i+1)$, member of a set and so on) <br>
+      - $b_j$ any expression involving index <b>"j"</b> 
+      </p>
+      <br>
+      <p><b>Explanation</b> <span  style="padding-left: 10px;"><a href="#randomEx">Example</a></span></p>
+      <div class="blackBox">
+      <p><span class="red">What is the difference?</span><br> <br>
+      The <b>left</b> side is the product of two summations. The <b>right</b> side tells you do
+       the inner summation first,
+    then the outer summation.</p>
+
+      <p><b>Let's show the left-hand side is the same as the right-hand side in following example:</b></p>
+      <p class="example hideOnMobile500">
+       $\color{green}{ \Big(\sum_{{i=3}} ^{4}i\Big) \Big(\sum_{j=5}^{6}j\Big)} \stackrel{?}{=} 
+       \color {red}{\sum_{{i=3}}^{4}\sum_{{j=5}}^{6} i\cdot j} $
+      </p>
+      <p class="example showOnMobile500 font21">
+        <br>
+        $\color{green}{ \Big(\sum_{{i=3}} ^{4}i\Big) \Big(\sum_{j=5}^{6}j\Big)} \stackrel{?}{=} \\
+        \quad \stackrel{?}{=} \color {red}{\sum_{{i=3}}^{4}\sum_{{j=5}}^{6} i\cdot j} $
+       </p>
+      <p > <span class="bold">Solution</span>: <br> Let's first write what the <span style="color: green">LEFT</span>-hand side is: </p>
+      <p class="example hideOnMobile500">
+        $\color{green}{ \Big(\sum_{{i=3}} ^{4}i\Big) \Big(\sum_{j=5}^{6}j\Big)}=(3+4)\cdot (5+6) $
+       </p>
+       <p class="example showOnMobile500 font21">
+        <br>
+        $\color{green}{ \Big(\sum_{{i=3}} ^{4}i\Big) \Big(\sum_{j=5}^{6}j\Big)}=\\ \quad=(3+4)\cdot (5+6) $
+       </p>
+
+       <p> And the <span class="red">RIGHT</span>-hand side is:</p>
+       <p class="example25"> 
+        $\color {red}{\sum_{{i=3}}^{4}\sum_{{j=5}}^{6} i\cdot j}=$ <br> <b>|</b> Let's calculate the inner sum first (we add brackets
+        to highlight the order)<br><b>|</b>=$\color {red}{\sum_{{i=3}}^{4}\color{black}{\Big(}\sum_{{j=5}}^{6} i\cdot j}\color{black}{\Big)}=
+        $|<i>"i"</i> is constant in the inner sum, so we can pull it out of the sum|:=<br>$= 
+        \color{red}{\sum_{i=3}^4 \color{black}{\Big(}i\cdot \sum_{j=5}^6 j\color{black}{\Big)} } $=|and calculating the inner sum we get:|
+        <br>$=\color{red}{\sum_{i=3}^4} \Big(\color{red}{i}\cdot(5+6)\Big)$=|and now inserting 3 and 4:|
+        <br>$=\color{red}{3} (5+6)+\color{red}{4}(5+6)$=|factoring out the common term (5+6)|:
+        <br>$=(3+4)(5+6)$
+
+        <p ><b>OK! Finally,</b> compare the <span style="color: green">LEFT</span>-hand side and the
+           <span id="randomEx" class="red">RIGHT</span>-hand side. They are the same. So the identity works on that example. <br>
+          It will work in every case when the limits of the summation are finite. You will always get the same set of pairs
+        $i\cdot j$. Try to imagine it in general case.</p>
+        <br >
+      </div>
+        <hr style="text-align:left;margin-left:0">
+
+        <p class="example"> <i>Let's solve together an example using Identity 2:</i> </p>
+        <p>
+         \begin{equation} 
+           \begin{split}
+            \Big(\sum_{{i=1}}^{3}i^3\Big)\Big(\sum_{{j=1}}^{2}j\Big)=
+            \end{split}
+           \end{equation}
+        </p>
+        <p > <span class="bold">Solution:</span></p>
+       <p>Using Identity 1, we can write:</p>
+       <p class="example25 hideOnMobile500">
+       $\Big(\sum_{{i=1}}^{3}i^3\Big)\Big(\sum_{{j=1}}^{2}j\Big)= \sum_{{i=1}}^{3}\sum_{{j=1}}^{2}i^3j=$
+       </p>
+       <p class="example25 showOnMobile500">
+        $\Big(\sum_{{i=1}}^{3}i^3\Big)\Big(\sum_{{j=1}}^{2}j\Big)=\\= \sum_{{i=1}}^{3}\sum_{{j=1}}^{2}i^3j=$
+        </p>
+
+       <p>Solving the inner summation, we get:</p>
+       <p class="example25">$=\sum_{{i=1}}^{3}i^31+i^32 =$</p>
+       <p>Factoring out $i^3:$</p>
+       <p class="example25 hideOnMobile500"> $=\sum_{{i=1}}^{3} i^3(1+2)=\sum_{{i=1}}^{3} i^3\cdot 3$ </p>
+       <p class="example25 showOnMobile500"> $=\sum_{{i=1}}^{3} i^3(1+2)=\\= \sum_{{i=1}}^{3} i^3\cdot 3$ </p>
+
+       <p>Pulling 6 out of the summation sign:</p>
+       <p class="example25">$=3\sum_{{i=1}}^{3} i^3$ </p>
+       <p>Now, calculating the simple single sum :</p>
+       <p class="example25">$=3(1+2^3+3^3)=108$ </p>
+        <br><br><br><br>
+        <p><b><i>NOTE</i></b>
+        <br>Sometimes you can also see the following equivalent expression without 
+        brackets and a multiplication dot - the last one:</p>
+       </p>
+       <div style="border: 2px solid red;">
+        <p class="example hideOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          \Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j\Big)&=\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j\\&=
+           \sum_{{i=n}}^{k}a_i \sum_{{j=s}}^{t} b_j
+          
+          \end{split}
+          \end{equation}
+        </p>
+        <p class="example showOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          &\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j\Big)=\\&=\sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j\\&=
+           \sum_{{i=n}}^{k}a_i \sum_{{j=s}}^{t} b_j
+          
+          \end{split}
+          \end{equation}
+        </p> 
+
+        <p>In the last expression, $a_i$ was pulled out as a constant</p>
+       </div>
+       <br><br>
+       <p ><b>Example on the third summation in <i>NOTE:</i></b></p>
+       <p class="example"> <i>Let's solve together</i>: </p>
+       <p>
+        \begin{equation} 
+          \begin{split}
+           \sum_{{j=1}}^{3}j^2 \sum_{{i=0}}^{2} i+1=
+           \end{split}
+          \end{equation}
+       </p>
+       <p><b>1.</b> So, calculating the inner sum, we get:</p>
+      <p id="Identity3" class="example25">$\sum_{{j=1}}^{3}j^2\big(1+2+3 \big)\\
+        = \sum_{{j=1}}^{3}j^2\cdot 6$ <br>
+        $=6\cdot \sum_{j=1}^3 j^2
+        \\=6(1^2+2^2+3^2)
+        \\=6\cdot 14=84 $</p>
+        <br><br>
+        <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+      
+    
+    <p class="rule"> 3. Distributivity, Special Case: <i> </i></p>
+    <p class="example hideOnMobile500">
+     \begin{equation} 
+     \begin{split}
+     \Big(\sum_{i=1}^{n} x_i\Big)^2 =\Big(\sum_{i=1}^{n} x_i^2\Big)+\sum_{i=1 \\ \quad \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j
+     \end{split}
+     \end{equation}
+   </p>
+   <p class="example showOnMobile500 font21">
+    \begin{equation} 
+    \begin{split}
+    \Big(\sum_{i=1}^{n} x_i\Big)^2 &=\Big(\sum_{i=1}^{n} x_i^2\Big)+\\&+\sum_{i=1 \\ \quad \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j
+    \end{split}
+    \end{equation}
+  </p>
+
+   <p> <b>Intuition:</b> </p>
+
+   <div class="blackBox">
+   <p> Let's rewrite the left-hand side:
+  </p>
+  <p class="example hideOnMobile500">
+    $\Big(\sum_{i=1}^{n} x_i\Big)^2=\Big(\sum_{i=1}^{n} x_i\Big)\Big(\sum_{j=1}^{n} x_j\Big)=$
+  </p>
+  <p class="example showOnMobile500 font21">
+    $\Big(\sum_{i=1}^{n} x_i\Big)^2=\\ =\Big(\sum_{i=1}^{n} x_i\Big)\Big(\sum_{j=1}^{n} x_j\Big)$
+  </p>
+  
+
+   <p>Using identity 3, we can write</p>
+   <p class="example"> 
+    $=\sum_{i=1}^{n} \sum_{j=1}^{n} x_i x_j=$
+   </p>
+   <p>
+    This double summation represents all possible product pairs $x_i x_j$ where i,j go from 1 to n.
+    <br>
+    We can rewrite that double sum and split it as $x_i x_i$ where i goes from 1 to n, and 
+    $x_i x_j$ where i and j also go from 1 to n, not including indexes where i and j are the same
+    as we already wrote those pairs in $x_ix_i$. So:
+   </p>
+   <p class="hideOnMobile500">
+    $=\Big(\sum_{i=1}^{n} x_i^2\Big)+\sum_{i=1 \\ \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j$
+   </p>
+   <p class="showOnMobile500">
+    <br>
+    $=\Big(\sum_{i=1}^{n} x_i^2\Big)+\\+\sum_{i=1 \\ \color{red}{i\neq j}}^{n}\sum_{j=1}^{n} x_i x_j$
+   </p>
+
+   </div>
+   
+   <p> <b>Example:</b>
+  </p>
+
+
+  <p class="example25">
+   Express the following double summation using Identity 3 and find the sum:
+  </p>
+  <p class="example25">
+    $\Big(\sum_{i=1}^{n} 2i\Big)^2=$
+  </p>
+  <p> <b>Solution:</b> <br>
+  </p>
+
+  <p class="hideOnMobile500" >
+    $\Big(\sum_{i=1}^{3} 2i\Big)^2=\Big(\sum_{i=1}^{3} 2i\Big)\Big(\sum_{j=1}^{3} 2i\Big)=$
+  </p>
+  <p class="showOnMobile500">
+    $\Big(\sum_{i=1}^{3} 2i\Big)^2=\Big(\sum_{i=1}^{3} 2i\Big)\times \\ \times \Big(\sum_{j=1}^{3} 2j\Big)=$
+  </p>
+
+  <p>
+    Using Identity 3, we can write:
+  </p>
+  <p>
+    $=\sum_{i=1}^{3} \sum_{j=1}^{3} 2i\cdot 2j=$
+  </p>
+  <p>
+    pulling the constant out:
+  </p>
+  <p>
+    $=4\sum_{i=1}^{3} \sum_{j=1}^{3}ij=$
+  </p>
+  <p>
+    and finally, using our identity:
+  </p>
+  <p>
+    $=4\Big(\sum_{i=1}^{3}ii +\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij\Big)$
+  </p>
+  <p>
+    splitting the sums:
+  </p>
+  <p>
+    $=4\sum_{i=1}^{3}ii +4\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij$
+  </p>
+   
+  <div class="blackBox">
+    <p>
+      The first sum is easy:
+    </p>
+    <p class="hideOnMobile500">
+      $=4\sum_{i=1}^{3}ii=4\Big(1 +2^2+3^2\Big)=4\cdot 14=56$
+    </p>
+    <p class="showOnMobile500">
+      $=4\sum_{i=1}^{3}ii=\\=4\Big(1 +2^2+3^2\Big)=\\=4\cdot 14=56$
+    </p>
+
+    <p>
+      In the second sum, we can take the constant <b>"i"</b> out of the inner sum: 
+    </p>
+    <p class="hideOnMobile500">
+      $4\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij=
+      4\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} i\sum_{j=1}^{3}j=$
+    </p>
+    <p class="showOnMobile500">
+      <br>
+      $4\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij=\\=
+      4\sum_{i=1 \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} i\sum_{j=1}^{3}j=$
+    </p>
+
+    <p>
+      and calculate as we did in the NOTE <br> when we say <b>"i"</b> is 1, then j can be 2 and 3
+      but can't be 1, and so on:
+    </p>
+    <p class="hideOnMobile500">
+      $=4(1\cdot(2+3)+2\cdot(1+3)+3\cdot(1+2))=\\
+      =4\cdot 22=88 $
+    </p>
+    <p class="showOnMobile500">
+      $=4(1\cdot(2+3)+\\+2\cdot(1+3)+3\cdot(1+2))\\
+      =4\cdot 22=88 $
+    </p>
+
+  </div>
+  <p>
+    finally, summing results:
+  </p>
+  <p>
+    $= 56+88=144$
+  </p>
+  <p>
+    <b>Final solution:</b>
+  </p>
+  <p class="hideOnMobile500">
+    $\Big(\sum_{i=1}^{3} 2i\Big)^2=4\sum_{i=1}^{3} i^2+4\sum_{i=1 
+      \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij=\\
+      =56+88=144$
+  </p>
+  <p class="showOnMobile500">
+    <br>
+    $\Big(\sum_{i=1}^{3} 2i\Big)^2=4\sum_{i=1}^{3} i^2+\\+4\sum_{i=1 
+      \\ \hspace{0.1em}\color{red}{i\neq j}}^{3} \sum_{j=1}^{3}ij=\\
+      =56+88=144$
+  </p>
+
+
+  <p>Note: to calculate the above sum, it is easier to use Identity 2</p>
+ 
+
+  <div class="blockPractice">
+    <p  class="example"><i>Example 5</i> (to practice)<br><br>
+      $\Big( \sum_{i=1} ^4 i \Big)^2=$ </p> 
+      <span id="Identity4"></span>   
+  </div> 
+  <br>
+  <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+
+  <p class="rule">4.  Distributivity Allows Factorization: <i> </i></p>
+        <p>The previous formula reversed. From Identity 1, it is obvious that 
+          the following reversed identity will also work:
+        </p>
+        <p class="example hideOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j=\Big(\sum_{{i=n}}^{k}a_i \Big)\cdot \Big( \sum_{{j=s}}^{t} b_j \Big)
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="example showOnMobile500">
+          \begin{equation} 
+          \begin{split}
+          \sum_{{i=n}}^{k}\sum_{{j=s}}^{t} a_i b_j&=\Big(\sum_{{i=n}}^{k}a_i \Big)\times \\&\times \Big( \sum_{{j=s}}^{t} b_j \Big)
+          \end{split}
+          \end{equation}
+        </p>
+         
+        <p class="example"> <i>Let's solve together an example using Identity 2</i>: </p>
+       <p>
+        \begin{equation} 
+          \begin{split}
+           \sum_{{j=7}}^{9}\sum_{{i=1}}^{3} ji=
+           \end{split}
+          \end{equation}
+       </p>
+       <p > <span class="bold">Solution:</span></p>
+       <p>Using Identity 2, we can write:</p>
+       <p class="example25 hideOnMobile500">
+       $\sum_{{j=7}}^{9}\sum_{{i=1}}^{3} ji= \Big(\sum_{{j=7}}^{9}j\Big)\Big(\sum_{{i=1}}^{3}i\Big)=$
+       </p>
+       <p class="example25 showOnMobile500">
+        <br>
+        $\sum_{{j=7}}^{9}\sum_{{i=1}}^{3} ji=\\= \Big(\sum_{{j=7}}^{9}j\Big)\Big(\sum_{{i=1}}^{3}i\Big)$
+        </p>
+
+       <p>Calculating each of the sums on the right, we get:</p>
+       <p class="example25 hideOnMobile500">  $=(7+8+9)(1+2+3)=24\cdot 6=144$</p>
+
+       <p class="example25 showOnMobile500">
+        <br>
+        $=(7+8+9)(1+2+3)\\=24\cdot 6=144$</p>
+
+       <hr style="text-align:left;margin-left:0; border: 1px solid black; margin-bottom: 20px; margin-top: 20px;"> 
+
+       
+       <p class="example"> <i>Let's solve another one together, and then you will do a couple on your own:</i>: </p>
+       <p>
+        \begin{equation} 
+          \begin{split}
+           \sum_{{i=3}}^{5}\sum_{{j=20}}^{21} i^i j^2=
+           \end{split}
+          \end{equation}
+       </p>
+      
+       <p > <span class="bold">Solution:</span></p>
+       <p>Using Identity 2, we can write:</p>
+       <p class="example25 hideOnMobile500">
+       $ \sum_{{i=3}}^{5}\sum_{{j=20}}^{21} i^i j^2= 
+       (\sum_{{i=3}}^{5} i^i )(\sum_{{j=20}}^{21}j^2)=$
+       </p>
+       <p class="example25 showOnMobile500">
+        $ \sum_{{i=3}}^{5}\sum_{{j=20}}^{21} i^i j^2= \\
+        \\=(\sum_{{i=3}}^{5} i^i )(\sum_{{j=20}}^{21}j^2)$
+        </p>
+
+       <p>Calculating the sums and multiplying, we get:</p>
+       <p class="example23 hideOnMobile500">  $=(3^3+4^4+5^5)(20^2+21^2)=3408\cdot 841=$</p>
+       <p class="example23 showOnMobile500"> <br>  $=(3^3+4^4+5^5)(20^2+21^2)\\=3408\cdot 841=$</p>
+ 
+
+       <p class="example23">$=2866128$</p>
+
+
+      <br><br>
+    
+      <p id="summation1Student" class="bold forStudent scroll"> <span class="red">Now, it is your turn!</span><br> 
+        Solve the following
+        double summation examples using Identity 2
+         <span class="smaller">(you can check solutions below)</span>:</p>
+         
+        <div class="blockPractice">
+          <p class="example"><i>Example 6</i> (to practice)<br><br>
+            $ \sum_{i=1} ^{2}\sum_{j=1}^3{i^2j^2}$ </p>  
+              
+         <p class="example"><i>Example 7</i> (to practice)<br><br>
+          $ \sum_{i=1} ^{3}\sum_{j=1}^2\frac{i}{3}(j+1)$</p>  
+    
+         <p class="example"><i>Example 8</i> (to practice)<br><br>
+          $  \sum_{i=10} ^{12}\sum_{j=11}^ {13} 5ij$  </p>  
+                
+        <p class="example"><i>Example 9</i> (to practice)<br><br>
+          $ \sum_{i=2} ^{3}\sum_{j=2} ^{3}i^ij^j$ </p>  
+           
+           
+        <p class="example hideOnMobile500"><i>Example 10</i> (to practice)<br><br>
+          $ \sum_{i=8} ^{10}\sum_{j=11} ^{12}(i+3)(j-1)$</p>     
+
+          <p class="example showOnMobile500"><i><br> Example 10</i> (to practice)<br><br>
+            $ \sum_{i=8} ^{10}\sum_{j=11} ^{12} (i+3)\times \\ \times (j-1)$</p>   
+    
+          </div>
+          <br><br>
+          <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+
+          <p class="rule"> Same Index in Both Summation Signs Limits: <i> </i></p>
+      <p>How to solve an expression like that?</p>
+
+      <p class="example">
+        \begin{equation} 
+        \begin{split}
+        \sum_{{\color{red}{i}=k}}^{n}\sum_{{j=k}}^{\color{red}{i}}a_i b_j =?
+        \end{split}
+        \end{equation}
+      </p>
+      <p>It will be easier to show step by step with an example:</p>
+      <p class="example"><i>Example</i><br><br>
+        $\sum_{{\color{red}{i}=1}}^{3}\sum_{{j=1}}^{\color{red}{i}}ij = $</p>   
+      <p>The lower limits are the same and are equal to 1.</p>
+       <p><b>STEPS:</b></p>
+      <div class="blackBox">
+      <p><b>STEP 1:</b> we start from the outer sum - <span class="red">i</span> is equal to 1.
+      <br> Inner sum goes from 1 to <span class="red">1</span>, also we plug in 1 for <b>i</b> in <b>ij</b>:</p>
+      <p class="example25" style="text-decoration: underline; ">
+        outer <span class="red">i=1</span><br>
+      </p>
+      <p>
+        inner sum: 
+      </p>
+      <p class="example25">
+        $\sum_{{j=1}}^{\color{red}{1}}1\cdot j=1\cdot 1=1$
+      </p>
+      <p class="example25" style="text-decoration: underline; ">
+        outer <span class="red">i=2</span><br>
+      </p>
+      <p>
+        inner sum: 
+      </p>
+      <p class="example25 hideOnMobile500">
+        $\sum_{{j=1}}^{\color{red}{2}}2\cdot j=2\cdot 1+2\cdot 2=6$
+      </p>
+      <p class="example25 showOnMobile500">
+        $\sum_{{j=1}}^{\color{red}{2}}2\cdot j=\\=2\cdot 1+2\cdot 2=6$
+      </p>
+
+      <p class="example25" style="text-decoration: underline; ">
+        and finally, outer <span class="red">i=3</span><br>
+      </p>
+      <p>
+        inner sum: 
+      </p>
+      <p class="example25 hideOnMobile500">
+        $\sum_{{j=1}}^{\color{red}{3}}3\cdot j=3\cdot 1+3\cdot 2+\\
+        +3\cdot 3=18$
+      </p>
+      <p class="example25 showOnMobile500">
+        $\sum_{{j=1}}^{\color{red}{3}}3\cdot j=3\cdot 1+\\+3\cdot 2
+        +3\cdot 3=18$
+      </p>
+
+      <br>
+      <p><b>STEP 2:</b> sum the results from each of <span class="red">outer i</span>:</p>
+      <p class="example25">
+       $=1+6+18=25$ the end
+      </p>
+      <p>
+        <b>Final solution in one step:</b>
+      </p>
+      <p class="example25 hideOnMobile500">
+        \begin{equation}
+        \begin{split} 
+        \sum_{{\color{red}{i}=1}}^{3}\sum_{{j=1}}^{\color{red}{i}}ij=&
+        \sum_{{j=1}}^{\color{red}{1}}\color{red}{1}\cdot j+  \sum_{{j=1}}^{\color{red}{2}}\color{red}{2}\cdot j+
+        \\&+\sum_{{j=1}}^{\color{red}{3}}\color{red}{3}\cdot j \\&=1+6+18 \\&=25
+        \end{split}
+        \end{equation}
+      </p>
+
+      <p class="example25 showOnMobile500 font22">
+        \begin{equation}
+        \begin{split} 
+        &\sum_{{\color{red}{i}=1}}^{3}\sum_{{j=1}}^{\color{red}{i}}ij=\\&
+        =\sum_{{j=1}}^{\color{red}{1}}\color{red}{1}\cdot j+ \sum_{{j=1}}^{\color{red}{2}}\color{red}{2}\cdot j +
+        \\&+\sum_{{j=1}}^{\color{red}{3}}\color{red}{3}\cdot j= \\&=1+6+18 \\&=25
+        \end{split}
+        \end{equation}
+      </p>
+
+
+
+    </div>
+    <hr style="text-align:left;margin-left:0; border: 1px solid black; margin-bottom: 20px; margin-top: 20px;"> 
+    <p class="example"> <i>Let's solve together</i>: 
+        \begin{equation} 
+        \begin{split}
+        \sum_{{\color{red}{i}=1}}^{3}\sum_{{j=1}}^{\color{red}{i}}i-j =
+        \end{split}
+        \end{equation}
+      </p>
+      <p>Following the above solution, we will plug in <b>in the upper limit ofthe inner
+        sum</b>
+         numbers from 1 to 3 (as outer "i" goes from 1 to 3) 
+        and then add the sums:
+      </p>
+      <p class="example25 hideOnMobile500">
+        $ = \sum_{{j=1}}^{\color{red}{1}}1-j+\sum_{{j=1}}^{\color{red}{2}}2-j+\\
+        +\sum_{{j=1}}^{\color{red}{3}}3-j=  
+        $
+      </p>
+      <p class="example25 showOnMobile500">
+        $ = \sum_{{j=1}}^{\color{red}{1}}1-j+\\+\sum_{{j=1}}^{\color{red}{2}}2-j+\\
+        +\sum_{{j=1}}^{\color{red}{3}}3-j=  
+        $
+      </p> 
+
+      <p>Now, calculating each of the sums:</p>
+      <p  class="example25 hideOnMobile500"> 
+        $=(1-1)+(2-1+2-2)+\\+(3-1+3-2+3-3)=4$ 
+      </p>
+      <p  class="example25 showOnMobile500 font22" > 
+        <br>
+        $=(1-1)+\\+(2-1+2-2)+\\+(3-1+3-2+3-3)\\=4$ 
+      </p>
+
+      <br><br>
+
+      <p id="summation1Student" class="bold forStudent scroll"> <span class="red">Now it is your turn!</span><br> 
+        Solve the following
+        double summation examples with the same lower-upper index.<br>
+         <span class="smaller">(you can check solutions below)</span>:</p>
+         
+         <div class="blockPractice">
+          <p class="example"><i>Example 11</i> (to practice)<br><br>
+            $ \sum_{i=0}^{2}\sum_{j=0}^{i} 2i-3j$ </p>
+            <p class="example"><i>Example 12</i> (to practice)<br><br>
+              $ \sum_{i=1}^{3}\sum_{j=1}^{i} i^2j$ </p> 
+              <p class="example"><i>Example 13</i> (to practice)<br><br>
+                $ \sum_{i=1}^{4}\sum_{j=1}^{i} i+j$ </p>  
+          
+          </div>
+
+          <br><br>
+
+  <div class="empty">
+    Solutions are at the bottom on purpose. First, calculate yourself :)) and then scroll down.
+  </div>
+  <p class="blueMine"><b>Solutions</b></p>
+<div class="sollutions " style="font-size: 20px;">
+    <b>1.</b> 350<br>
+    <b>2.</b> 120p<br>
+    <b>3.</b> 312<br>
+    <b>4.</b> $77k^2$<br>
+    <br>
+    <b>5.</b> 42p<br>
+    <b>6.</b> 70<br> 
+    <b>7.</b> 10<br>
+    <b>8.</b> 5940<br>
+    <b>9.</b> 961<br>
+    <b>10.</b> 756<br>
+    <br>
+    <b>11.</b> 4<br>            
+    <b>12.</b> 67<br>
+    <b>13.</b> 50<br>
+    
+
+
+
+</div>
+</div>
+ 
+<aside>
+  
+</aside>    
+</div>
+
+
+<script>
+
+
+    function showSidebar() {
+        const sidenav = document.querySelector(".sidenav")
+        sidenav.style.display = "block"
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 790) {
+          sidenav.style.left = "0";
+    }
+  }
+    function hideSidebar()
+    {
+        const sidenav = document.querySelector(".sidenav")
+        sidenav.style.display = "none";
+        sidenav.style.left = "unset";
+        sidenav.style.right = "75%";
+
+    }
+
+    function handleResize() {
+      const sidenav = document.querySelector(".sidenav");
+      const screenWidth = window.innerWidth;
+      //sidenav.style.display = "block";
+
+
+      if (screenWidth > 790 && sidenav.style.display === "none") {
+        // Make nav visible when screen is larger than 700px
+        sidenav.style.display = "block";
+        sidenav.style.left = "unset";
+        sidenav.style.right = "75%";
+
+      } else if (screenWidth > 790 && sidenav.style.display === "block")
+          {
+          sidenav.style.left = "unset";
+          sidenav.style.right = "75%";
+
+      } else if (screenWidth < 790 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
+        sidenav.style.display = "none";     
+      }
+    }
+
+    // Event listeners
+    window.addEventListener("resize", handleResize);
+
+    // Initial check on page load
+    handleResize();
+
+</script>
+</body>
+
+</html>
