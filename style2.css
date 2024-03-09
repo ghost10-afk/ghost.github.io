@@ -1,48 +1,54 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 p {
-  font-size: 20px;
-  width: 90%;
-  padding-top: 20px;
-  padding-left: 10px;
+font-size: 20px;
+width: 90%;
+padding-top: 20px;
+padding-left: 10px;
+}
+
+
+.rule {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .body {
-  min-height: 100vh;
+min-height: 100vh;
 }
 
 /*--------- first main class - logo------------------------*/
 .logo {
-  top:0;
-  display: flex;
-  position: fixed;
-  background-color: white;
-  z-index: 99;
-  padding:25px;
-  width: 100%;
-  font-size: 35px;
-  color:#6CB4EE;
+top:0;
+display: flex;
+position: fixed;
+background-color: white;
+z-index: 99;
+padding:25px;
+width: 100%;
+font-size: 35px;
+color:	#1299e7	;
 }
 
 .logo .firstUl {
-  width: 25%;
-  /*border: 2px solid black;*/
+width: 25%;
+/*border: 2px solid black;*/
 }
 
 .logo .secondUl {
-  width: 50%;
-  text-align: center;
-  border-bottom: 2px solid #73AD21;
+width: 50%;
+text-align: center;
+border-bottom: 2px solid #73AD21;
 
 }
 
 .logo .thirdUl {
-  width: 25;
-  text-align: center;
+width: 25;
+text-align: center;
 }
 
 /* --------------END of first main class and subclasses---------------------------*/
@@ -50,556 +56,578 @@ p {
 /*---------------Second class CONTAINER-------------------------------------------*/
 
 .container {
-  display: flex;
-  height: 100%;
-  justify-content: center;
+display: flex;
+height: 100%;
+justify-content: center;
 }
 
 /*NAV - first subclass of container*/
 
 nav {
-   width: 25%;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+ width: 25%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 
 /* Sidenav in NAV
 fixed sidenav, full height */
 .sidenav {
-  height: 100%;
-  width: 220px;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  background-color: white;
-  overflow-x: hidden;
-  padding-top: 20px;
-  right:75%;
-  display: block;
+height: 100%;
+width: 220px;
+position: fixed;
+z-index: 100;
+top: 0;
+background-color: white;
+overflow-x: hidden;
+padding-top: 20px;
+right:75%;
+display: block;
 }
 
 .sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 20px;
+color: black;
+display: block;
+border: none;
+background: none;
+width:100%;
+text-align: left;
+cursor: pointer;
+outline: none;
 }
 
 .firstButton {
-  margin-top: 160px;
-  width: 100%;
-  /*background-color: rgb(3, 134, 123);*/
-  
+margin-top: 160px;
+width: 100%;
+/*background-color: rgb(3, 134, 123);*/
+
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: blue;
+color: blue;
 }
 
 
 /* An active class to the active dropdown button */
 .active {
-  background-color: white;
-  color: green;
+background-color: white;
+color: green;
 }
 
 /* in NAV -Dropdown container (hidden by default).*/
 .dropdown-container {
-  text-align: right;
-  width: 85%;
-  margin-left: 15%;
-  border-left: 2px solid black;
-  background-color: white;
+text-align: right;
+width: 85%;
+margin-left: 15%;
+border-left: 2px solid black;
+background-color: white;
 }
 
 .btn {
-  background-color: white  ;
-  border-radius: 3px;
+background-color: white  ;
+border-radius: 3px;
 }
 
 
 /* Caret down icon color */
 
 .fa-caret-down {
-  float: right;
-  padding-right: 8px;
+float: right;
+padding-right: 8px;
 }
 
 /*---------Second class of a CONTAINER-------------------*/
 .main {
-    padding:100px 20px 20px;
-    width: 50%;
-    border-left: 2px solid black;  
-    overflow-wrap: break-word;
+  padding:100px 20px 20px;
+  width: 50%;
+  border-left: 2px solid black;  
+  overflow-wrap: break-word;
 }
 
 .summ {
-  font-size: 25px;
-  border: 2px solid white;
-  height: 140x;
+font-size: 25px;
+border: 2px solid white;
+height: 140x;
 
 }
 
 .scroll {
-  scroll-margin-top: 90px;
+scroll-margin-top: 90px;
 
 }
 
 .sumValue {
-  color: #1299e7;
-  font-size: 25px;
+color: #1299e7;
+font-size: 25px;
 }
 
 .sumIndex {
-  color: red;
-  font-size: 25px;
+color: red;
+font-size: 25px;
 }
 .moreExamples {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .example
 {
-  font-size: 25px;
-  text-decoration: underline;
+font-size: 25px;
+text-decoration: underline;
 }
 
 .example23px {
-  font-size: 23px;
-  padding-left: 20px;
+font-size: 23px;
+padding-left: 20px;
 }
 
-.blockPractice {
-  border: 2px solid #1299e7;
-  margin-top: 25px;
-  padding-bottom: 25px;
-
+.example25 {
+  font-size: 25px;
 }
 
-.lineunder {
-  text-decoration: underline;
+.font17 {
+  font-size: 17px;
 }
 
-.red {
-  color:red;
+.font21{
+  font-size: 21px;
 }
 
-.blueMine {
-  color: #1299e7;
-}
-
-.blue {
-  color: blue;
-}
-
-.break {
-  display: flex;
-}
-
-.exampleNoPadding
-{
+.font22{
   font-size: 22px;
 }
 
 
+.blockPractice {
+border: 2px solid #1299e7;
+margin-top: 25px;
+padding-bottom: 25px;
+
+}
+
+.blackBox {
+  border: 2px solid black;
+  margin-top: 25px;
+  padding-bottom: 25px; 
+}
+
+.lineunder {
+text-decoration: underline;
+}
+
+.red {
+color:red	;
+}
+
+.blueMine {
+color: #1299e7;
+}
+
+.blue {
+color: blue;
+}
+
+.break {
+display: flex;
+}
+
+.exampleNoPadding
+{
+font-size: 22px;
+}
+
+
 .empty {
-  height: 480px;
-  width: 100%;
-  padding-top: 200px;
-  font-size: 18px;
-  padding-left: 5%;
+height: 480px;
+width: 100%;
+padding-top: 200px;
+font-size: 18px;
+padding-left: 5%;
 }
 
 .answer {
-  margin: 10px;
+margin: 10px;
 }
 
 .shiftAnswer{
-  padding-left: 13px;
+padding-left: 13px;
 }
 
 hr.redLine {
-  border-top: 1px solid red;
+border-top: 1px solid red;
 }
 
 hr.blueLine {
-  border-top: 1px solid blue;
+border-top: 1px solid blue;
 }  
 
 .sollutions {
-  padding-top: 10px;
-  padding-left: 5%;
+padding-top: 10px;
+padding-left: 5%;
 }
 
 .bold {
-  font-weight: bold;
+font-weight: bold;
 }
 
 
 .smaller {
-  font-size: 16px;
+font-size: 16px;
 }
 .size17 {
-  font-size: 17px;
+font-size: 17px;
 }
 .container2 {
-  display: flex;
+display: flex;
 }
 
 .firstSet {
-  padding-top: 20px;
-  width: 50%;
-  font-size: 23px;
+padding-top: 20px;
+width: 50%;
+font-size: 23px;
 }
 
 .middleSet {
   padding-top: 25px;
   width: 10%;
   font-size: 20px;
-}
+  }
+
 .secondSet {
-  padding-top: 20px;
-  width: 45%;
-  font-size: 23px;
+padding-top: 20px;
+width: 50%;
+font-size: 23px;
 
 }
 
 .showMobile {
-  display: none;
+display: none;
 }
 
 .showOnMobile500 {
-  display: none;
+display: none;
 }
 
 .explanation1 {
-  padding-top: 20px;
-  font-size: 20px;
+padding-top: 20px;
+font-size: 20px;
 }
 
 .exp2 {
-  padding-left: 30%;
-  padding-bottom: 10px;
-  font-size: 20px;
+padding-left: 30%;
+padding-bottom: 10px;
+font-size: 20px;
 }
 
 .exp3 {
-  padding-left: 17%;
-  padding-bottom: 10px;
-  font-size: 20px;
+padding-left: 17%;
+padding-bottom: 10px;
+font-size: 20px;
 }
 
 .sumarrow {
-  font-size: 40px;
-  color: blue;
-  border: 2px solid black;
+font-size: 40px;
+color: blue;
+border: 2px solid black;
 }
 
 .solutionSize {
-  font-size: 22px;
+font-size: 22px;
 }
 
 .headingss { 
-  font-size: 30px; 
-  text-align: center;
+font-size: 30px; 
+text-align: center;
 }
 
 .center {
-  text-align: center;
+text-align: center;
 }
 
 
 aside {
-    width: 25%;
+  width: 25%;
 }
 
 .studyTopic{
-    color: blue; 
-    width: 70%;
-    border: 2px black solid;
-    margin-top: 80px;
-    padding: 6px;
+  color: blue; 
+  width: 70%;
+  border: 2px black solid;
+  margin-top: 80px;
+  padding: 6px;
 }
 
 
 .small {
-  color: black;
-  font-size: 25px;
+color: black;
+font-size: 25px;
 }
 
 
 #start {
-  font-size: 30px;
-  width: 50%;
-  border: 2px solid black;
+font-size: 30px;
+width: 50%;
+border: 2px solid black;
 
 
 }
 
 #end {
-  font-size: 30px;
-  margin-top: 100px;
-  width: 50%;
-  border: 2px solid black;
+font-size: 30px;
+margin-top: 100px;
+width: 50%;
+border: 2px solid black;
 
 }
 
 .firstSet {
-  padding-left: 5%;
+padding-left: 5%;
 }
 
 h2 {
-  margin-top: 60px;
-  font-size: 30px;
-  text-align: center;
+margin-top: 60px;
+font-size: 30px;
+text-align: center;
 }
 
 .onPageContent {
-  list-style-type: disc;
-  font-size: 18px;
-  padding: 20px 10px 30px;
+list-style-type: disc;
+font-size: 18px;
+padding: 10px 10px 0px;
 }
- .onPageContent li {
-  padding-bottom: 15px;
-}
+
 
 /* -----------CLASSES FOR IMAGES ---------------------*/
 
 
 .imageStyle {
-  padding-left: 20%;
-  height:160px;
+padding-left: 20%;
+height:160px;
 
 }
 
 .exper{
-  padding-left: 20%;
-  max-width: 400px;
-  /*border: 3px solid green;*/
+padding-left: 20%;
+max-width: 400px;
+/*border: 3px solid green;*/
 }
 
 .formulaSize150 {
-  height: 160px;
+height: 160px;
 
 }
 
 .responsive {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 /* BIG and SMALL screens*/
 
 .sizeBigScreen {
-  width: 800px;
+width: 800px;
 }
 
 
 
 @media (min-width: 1360px) {  
 
-  .general {
-    padding-left: 5%;
-  }
+.general {
+  padding-left: 5%;
+}
 
-  p {
-    padding-left: 5%;
-  }
+p {
+  padding-left: 5%;
+}
 
 
-  .bigScreenHide{
-    display: none;
-  }
+.bigScreenHide{
+  display: none;
+}
 }
 
 @media (max-width: 1359px) {  
 
-  .smallScreenHide{
-    display: none;
-  }
+.smallScreenHide{
+  display: none;
+}
 }
 
 
 @media (min-width: 1150px) {  
 
-  .general {
-    padding-left: 5%;
-  }
+.general {
+  padding-left: 5%;
+}
 
-  p {
-    padding-left: 5%;
-  }
+p {
+  padding-left: 5%;
+}
 
 }
 
 
 
 @media (min-width: 871px) {
- 
- 
-  aside {
-    display: none;
-  }
-  
-  .main{
-    width: 60%;
-  }
 
-  .logo .secondUl {
-    width: 60%;
-    text-align: center;
-  }
 
-  .container {
-    justify-content:left;
-  }
+aside {
+  display: none;
+}
 
-  .sidenav .bitch a:first-child {
-    display: none;
+.main{
+  width: 60%;
+}
+
+.logo .secondUl {
+  width: 60%;
+  text-align: center;
+}
+
+.container {
+  justify-content:left;
+}
+
+.sidenav .bitch a:first-child {
+  display: none;
 
 }
 
-  .logo .firstUl li:first-child {
-    display: none;
- }
- 
+.logo .firstUl li:first-child {
+  display: none;
+}
+
 }
 
 
 @media (max-width: 870px) {
-  .sidenav {
-    display: none;
-    border-right: 2px solid black;
-
-  }
-
- .sidenav a:first-child {
-     display: block;
-
-}
-
-.logo {
-  padding: 25px 0px;
-  
- }
-
-.logo .firstUl li:first-child {
-  display: block;
- }
-
- .logo .secondUl {
-  width: 60%
-}
-
-.logo .thirdUl {
+.sidenav {
   display: none;
+  border-right: 2px solid black;
+
 }
-
- ul {
-  list-style-type: none;
- } 
-
-  .main {
-    width: 100%;
-    padding-top: 150px;
-  }
-
-  .container {
-    justify-content: center; 
-  }
-
-  .secondSet {
-    padding-left: 5%;
-
-  }
-
-  .containerChange {
-    flex-direction: column;
-  }
-
-  .hideMobile {
-    display: none;
-  }
-
-  .showMobile {
-    display: inline;
-  }
-
-  .bigSum {
-    font-size: 19px;
-  }
-
-  .bigInlineSum {
-    font-size: 15px;
-  }
-}
-   
-@media (max-width: 560px) {
-
-
-
 
 .sidenav a:first-child {
    display: block;
 
 }
 
-.container2  {
+.logo {
+padding: 25px 0px;
+
+}
+
+.logo .firstUl li:first-child {
+display: block;
+}
+
+.logo .secondUl {
+width: 60%
+}
+
+.logo .thirdUl {
+display: none;
+}
+
+ul {
+list-style-type: none;
+} 
+
+.main {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.container {
+  justify-content: center; 
+}
+
+.secondSet {
+  padding-left: 5%;
+
+}
+
+.containerChange {
   flex-direction: column;
 }
 
+.hideMobile {
+  display: none;
+}
+
+.showMobile {
+  display: inline;
+}
+
+.bigSum {
+  font-size: 19px;
+}
+
+.bigInlineSum {
+  font-size: 15px;
+}
+}
+ 
+@media (max-width: 560px) {
+
+
+
+
+.sidenav a:first-child {
+ display: block;
+
+}
+
+.container2  {
+flex-direction: column;
+}
+
 .firstSet {
-  width: 100%;
+width: 100%;
 }
 .secondSet{
-  width: 100%;
+width: 100%;
 }
 
 nav {
-  width: 0%;
- }
+width: 0%;
+}
 
- .main {
-  width: 95%;
-  padding-top: 180px;
- }
+.main {
+width: 95%;
+padding-top: 180px;
+}
 
- aside {
-  width: 1%;
+aside {
+width: 1%;
 
 }
 
 .formulaSize150 {
-  height: 160px;
+height: 160px;
 }
 
 .exper{
-  padding-left: 2%;
+padding-left: 2%;
 }
 
 .hideOnMobile500 {
-  display: none;
+display: none;
 }
 
 .showOnMobile500 {
-  display: inline;
+display: inline;
 }
 
 }
 
 @media (max-width: 280px) {
-  .summ {
-    font-size: 23px;
-  }
-  .main {
-    padding-top: 200px;
-  }
+.summ {
+  font-size: 23px;
+}
+.main {
+  padding-top: 200px;
+}
 }
