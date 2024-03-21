@@ -325,6 +325,14 @@ hr.blueLine {
   padding-bottom: 190px;
 }
 
+.paddingbottom185px {
+  padding-bottom: 190px;
+}
+
+.smallerWorksheet {
+  font-size: 18px;
+}
+
 .secondSetSheet {
   padding-top: 20px;
   width: 50%;
