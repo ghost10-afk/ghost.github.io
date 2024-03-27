@@ -16,6 +16,14 @@
  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
  <link rel="stylesheet" href="style2.css"  />
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <script  src="https://code.jquery.com/jquery.min.js"></script>
+ <script >
+   $.get("navigation.html", function(data){
+       $("#nav-placeholder").replaceWith(data);
+   });
+   </script>
+
  <script async type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
  
@@ -55,29 +63,12 @@
   <div class="bitch">
  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
 </div>
- <button class="dropdown-btn firstButton btn"> Summation symbol (Sigma notation)
-   <i class="fa fa-caret-down" style="font-size:30px"></i> 
- </button>
- 
- <div class="dropdown-container">
-  <a href="index.html">Summation symbol</a>
-    <a href="index.html#summation1Student">Examples on summation symbol for you</a>
-    <a href="index.html#summationOfConstant">Summation of a constant</a>
-    <a href="index.html#summationOfConstantExamples">Examples on summation of a constant for you</a>
-   <a href="sumIndexShift.html">Summation index shift</a>
-   <a href="doubleSummation.html">Double summation</a>
-   <a href="DoubleSummationRules.html">Double Summation Rules</a>
 
-</div>
+  <!--  Navigation  -->
+  <div id="nav-placeholder" style="margin: 0; padding: 0;">
+    <!--  Navigation  -->  
+  
 
-<button class="dropdown-btn btn">
-    Quadratic Equations
-    <i class="fa fa-caret-down" style="font-size: 30px"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Factor Quadratic Worksheet</a>
-    <a href="solving-quadratic-equations-by-completing-the-square-worksheet.html" >Quadratic by Completing the Square Worksheet</a>
-  </div>
 </div>
 </nav>
 
