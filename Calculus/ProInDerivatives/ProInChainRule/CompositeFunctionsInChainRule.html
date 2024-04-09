@@ -1,0 +1,680 @@
+<!DOCTYPE html >
+<html lang="en">
+<head> 
+ <meta charset="UTF-8">
+ <meta name="description" content="understanding composite functions and its use in chain rule with examples">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+ <title>Composite Functions and its Use in Chain Rule</title>
+  <script type="application/ld+json">
+   {
+     "@context" : "https://schema.org",
+     "@type" : "WebSite",
+     "name" : "Math Universe Compass",
+     "url" : "https://mathuniversecompass.com/"
+   }
+ </script>
+ <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
+ <link rel="stylesheet" href="/style2.css"  />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <script  src="https://code.jquery.com/jquery.min.js"></script>
+ <script >
+   $.get("/navigation.html", function(data){
+       $("#nav-placeholder").replaceWith(data);
+   });
+   </script>
+
+ <script async type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
+ <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ 
+ 
+</head>
+
+
+
+<body>
+
+<div class="logo">
+  
+  <div class="firstUl">
+   <ul>
+       <li  onclick=showSidebar() class="openMenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+   </ul>
+  </div>
+
+   <div class="secondUl">
+       <ul>
+           <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7"></i>
+           </li>
+       </ul>
+   </div>
+
+   <div class="thirdUl">
+    
+   </div>
+
+</div>
+
+<div class="container">
+<nav>
+
+ <div class="sidenav">
+
+  <div class="bitch">
+ <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+
+  <!--  Navigation  -->
+  <div id="nav-placeholder" style="margin: 0; padding: 0;">
+    <!--  Navigation  -->  
+  
+
+</div>
+</nav>
+
+ <div class="main" style="line-height: 22pt">
+
+  <div class="NowNext"> 
+
+    <div class="Now" style="margin-right: auto;">
+
+    <a href="BecomeGreatInChainRule.html">
+      <button style = " bottom: 2px; width: auto;  
+       padding: 15px 10px 15px 10px"
+  
+      class=" button-30" role="button"><span style='font-size:30px;'></span> <span style="font-size: 30px; padding-right: 8%;">&#129092; </span>
+      Chain Rule <br> Guide </button>   
+    </div>
+  </a>
+
+    <a >
+    <div class="Next" style="margin-left: auto;">
+    <button style = " bottom: 2px; width: auto; position: relative; float: right; padding: 15px 10px 15px 10px; "
+
+    class=" button-30" role="button"  ><span style='font-size:30px;'></span>
+    Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129094;</span></button>  
+  </div>
+  </a>
+  
+  </div>
+    <br><br><br>
+    <h1 class="headingss"><i><span style="color: blue;">Step 1:</span> Composite Functions -  One outer, one inner function<br> 
+       Derive with Chain Rule</i></h1>
+    <br>
+    <p>
+      Composite function is a composition of 2 or more functions. Where one function serves as 
+      the argument of the other, more outside one. And the Chain Rule is a method to derive such 
+      functions. See examples below.
+    </p>
+    <br>
+    <hr class="redLine">
+    <p>
+        It may be best to start with an example.  Let's say we have the function $f(x)=sin(7x)$ 
+        and want to find its derivative: 
+        <br><br>
+         <b>1.</b> The Chain Rule tells us - find the derivative of
+          the outer function and multiply it by the derivative
+        of the inner function: <br>  </p>
+        
+        <p class=" exp3"><b>The inner function</b> is the one that is simply inside 
+          - the one that is closest to an <b>"x"</b> variable. 
+          In our example, <b>it is 7x</b>. Multiplying by seven is
+           the first action we perform when x is passed. 
+          <br> <br>
+           Now, <b> the outer function</b> - it is the one that has the inner function as an agrument,
+            <b>7x</b> in our example.<br>
+            The outer function is then $\textbf{sin}$ with the argument 7x.<br><br>
+            <b>Remember</b>: the outer function is applied to the inner function!
+             
+        </p> 
+        <p>
+          <b>2. </b>Great! Now let's find the derivative of $f(x)=sin(7x)$
+        </p>
+        <p class="exp3">
+           <b>Inner function derivative</b> - the inner function is 7x, its derivative is 7. 
+           Here, I assume you know how to use the table of derivatives. 
+        </p>
+        <p class="exp3">
+           <b>Outer function derivative</b> - the outer function is sin(), and its derivative is 
+           cos(). We use the inner function as the argument! So final derivative of the outer 
+           function is cos(7x) - remember - derive the outside function and drag the argument.
+
+           <br><br>
+            <b>Derivative of $sin(7x)$</b>:
+            <br>
+            $(sin(7x))'=7\cdot cos(7x)$           
+        </p>
+       <br>
+   
+       <p>
+        <span class="red">Note!</span> <br> From the previous example, you can see that to apply a Chain Rule,
+        it is enough to identify the outer and inner functions and know how to perform basic derivation.
+        Than, you will be able to differentiate any composite function. In this page, it is 
+        assumed that you can differentiate single functions like sine, cosine, polynomials, and so on.
+       </p>
+       <br>
+        <hr class="blueLine">
+       
+       <h2 style="text-align: left; padding-left: 5%; font-size: 20px;"><i></i> 
+        Now, you should practice determining the inner and outer functions:</h2>
+       <p>
+        Determine inner/outer function and find derivative: <br> <br>
+        <b>1.</b> <b>cos(8x)</b> <br><br>
+        <b>outer</b>: cos() <br>- why do I write empty brackets? To emphasise that the 
+        outer function is cosine <br>
+        - and its derivative is -sin(8x) - drag the argument with it<br> <br>
+        <b>inner</b>: 8x, its derivative is 8 <br> <br>
+        
+        <b>derivative of cos(8x) then is:</b> <br> <br>
+        $cos'(8x)=-sin(8x)\cdot 8$
+        <br> <br> <br>
+        </p>
+       <hr class="blueLine">
+        <p>
+        <b>2. sin(5x+2) </b>
+        <br><br>
+        <b>outer:</b> sin() <br>
+        <i>as sine is applied to 5x+2!</i><br>
+        derivative is cos(5x+2) <br><br>
+        <b>inner</b>: 5x+2<br>
+        its derivative is 5 <br> <br>
+        you may make a mistake thinking that inner function is 5x and outer is +2. But
+        +2 is not something you apply to 5x;  it's  linear action. <b>
+          Outer function should act
+        on the inner one!<br>
+        <br>
+        <b>final derivative of this composite function:</b> <br><br>
+        sin'(5x+2)=5cos(5x+2)
+      </p>
+
+       </p>
+       <p class="blockPractice">
+        Now, couple examples for you - identify inner/outer and find derivatives:<br><br>
+         1) cos(10x-5) <br> 2 ) sin(15x) <br> 3) sin(x-9) <br>
+         <br> Answers are on the botoom of the page
+       </p>
+
+       <br>
+       <h3>Let's continue solving the examples:</h3>
+       <p style="font-weight: normal;">
+        <b>3. $\sqrt{x^2+x+1}$</b>
+         <br><br>
+         <b>outer:</b> $\sqrt()$ - square root as it is applied to the inner summation <br>
+         <b>inner:</b> $x^2+x+1$ <br>
+         <br>
+         <b>derivative of the outer:</b> derivative of the square root  $(\sqrt{x})'$ is 
+         $\frac{1}{2}x^{-\frac{1}{2}}$ BUT our argument is not just <b>x</b> but <b>$x^2+x+1$</b>
+         so the final derivative of the outer function is $\frac{1}{2}(x^2+x+1)^{-\frac{1}{2}}$
+         <br><br>
+         <b>derivative of the inner:</b> $(x^2+x+1)'=2x+1$
+         <br><br>
+         final derivative is the product of the inner and outer functions derivatives:
+        <br><br>
+        $(\sqrt{x^2+x+1})'=\frac{1}{2}\frac{2x+1}{(x^2+x+1)^{\frac{1}{2}}}$
+         
+       </p>
+       <br>
+       <hr class="blueLine">
+       <br>
+       <h3 style="font-size: 22px;">Now let's focus only on determining inner and outer functions</h3>
+       <p class="answer"> 4. $(5x+11)^2$ <br>
+      </p> 
+      <p> outer: $()^2$  <br>
+         inner: 5x+11 <br>
+         <span style="font-weight: normal;">as square is applied to 5x+11</span>
+      </p>
+      <br>
+      <hr class="blueLine">
+       <p class="answer"> 5. $(5x^2+x)^{\frac{3}{2}}$</p>
+       <p> outer: $()^\frac{3}{2}$  <br>
+        inner: $5x^2+11$ <br>
+        <span style="font-weight: normal;"> &#x2192; as power $\frac{3}{2}$ is applied to $5x^2+11$
+        <br>
+        or in another words $5x^2+11$ is inside (an argument) of ^ $\frac{3}{2}$</span>
+     </p>
+     <p class="blockPractice">
+      Now, couple examples for you:<br><br>
+       4) $(x^3-2x)^2$ <br><br> 5 ) $\sqrt{x^5-1}$ <br> 
+       <br> Answers are at the botoom of the page
+     </p>
+     <p style="font-weight: normal;">
+      <b>6. $\frac{1}{2}\sqrt{-x-3}$</b>
+       <br><br>
+       <i>what do you think?</i> <br><br>
+       <b>outer:</b> $\frac{1}{2}\sqrt()$ &#x2192; $\frac{1}{2}$ times
+        square root as it is applied to the inner function <br>
+       <b>inner:</b> $-x-3$ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+     <p style="font-weight: normal;">
+      <b>7. $\frac{1}{4}ln(x^4)$</b>
+       <br><br>
+       <i>what do you think?</i> <br><br>
+       <b>outer:</b> $\frac{1}{4}ln() $ &#x2192; as it is applied to $x^4$<br>
+       <b>inner:</b> $x^4$ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+     <p style="font-weight: normal;">
+      <b>8. $e^{x^3+5}$</b>
+       <br><br>
+       <i>what do you think?:)</i> <br><br>
+       <b>outer:</b> $e^{()}$ &#x2192; e it to the power of inner function<br>
+       <b>inner:</b> $x^3+5$ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+     <p style="font-weight: normal;">
+      <b>9. $\frac{1}{5x}$</b>
+       <br><br>
+       we can write $\frac{1}{5x}=(5x)^{-1}$ <br><br>
+       <b>outer:</b> $()^{-1}$ &#x2192; raising to the power of minus one<br>
+       <b>inner:</b> $5x$ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+     <p style="font-weight: normal;">
+      <b>10. $\frac{3}{4x}$</b>
+       <br><br>
+       we can write $\frac{3}{4x}=3\cdot (4x)^{-1}$ <br><br>
+       <i>what do you think?:)</i> <br><br>
+       <b>outer:</b> $3\cdot ()^{-1}$ <br>
+       <b>inner:</b> $4x$ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+     <p style="font-weight: normal;">
+      <b>11. $\frac{2}{3x^2}$</b>
+       <br><br>
+       we can write $\frac{2}{3x^2}=2\cdot (3x^2)^{-1}$ <br><br>
+       <i>what do you think?:)</i> <br><br>
+       <b>outer:</b> $2\cdot ()^{-1}$ <br>
+       <b>inner:</b> $3x^2$ <br>
+       <br> OR
+       <br>
+       we can write equivalently: <br>
+       $\frac{2}{3x^2}=2\cdot (3x^2)^{-1}=\mathbf{2\cdot (3x)^{-2}}$
+       <br><br>
+       <b>outer:</b> $2\cdot ()^{-2}$ <br>
+       <b>inner:</b> $3x$ <br>
+
+     </p>
+     <p class="blockPractice">
+      Now, couple examples for you<br><br>
+      <span style="font-weight: normal;"><i>Identify the inner and outer function:</i></span> <br><br>
+       6) $\frac{5}{(3x)^3}$ <br><br> 7) $\frac{2}{\sqrt {5x}}$  <br><br> 8) $e^{x^4+2}$ <br>
+       <br> 9) $2\cdot ln(2x-10)$ <br>
+       <br> 10) $e^{-x}$   <br>
+       <br> Answers are at the bottom of the page
+     </p>
+     <br><br>
+     <hr class="redLine">
+     <p style="font-weight: normal;">
+      Now, you should be ready to calculate couple examples of derivatives of 
+      composite function. We will do 3 together and you will do 5 on your own. 
+     </p> <br><br>
+     <h3 style="font-size: 20px;">Identify inner/outer function and find derivative</h3>
+
+     <p style="font-weight: normal;">
+      <b>12. $3e^{5x^2-8}$</b>
+       <br><br>
+       <i>what do you think?</i> <br><br>
+       <b>outer:</b> $3e^{()}$ with derivative $3e^{5x^2-8}$ - keep the inner function as 
+       the argument! <br><br>
+       <b>inner:</b> $5x^2-8$ with derivative $10x$ <br><br>
+       <b>derivative:<br>
+      </b>($3\cdot e^{5x^2-8}$)'= $3e^{5x^2-8}\cdot 10x=30xe^{5x^2-8}$ <br>
+
+      <p style="font-weight: normal;">
+        <span class="red">now your turn: </span><br><br>
+        <b><span class="blueMine">11)</span> $2e^{3x^5-x+1}$</b><br><br>
+        <b><span class="blueMine">12)</span> $10e^{x^5-2x^4}$</b>
+         <br> <br> Answers are at the bottom
+
+     </p>
+
+     <p style="font-weight: normal;">
+      <b>13. $\frac{10}{(6x)^4}$</b>
+       <br><br>
+       we can write equivalently: <br>
+       $\frac{10}{(6x)^4}=10\cdot (6x)^{-4}$ <br><br>
+       <b>outer:</b> $10()^{-4}$ and its derivative: $-4\cdot 10()^{-5}$, 
+       plugging in the argument: $-4\cdot 10(6x)^{-5}$
+        <br><br>
+       <b>inner:</b> $ 6x$ with derivative 6 <br><br>
+       <b>final derivative:<br><br>
+      </b>$\Big(\frac{10}{(6x)^4}\Big)$'= $-4\cdot 10(6x)^{-5}\cdot 6 $ <br>
+     </p>
+     <br>
+     <hr class="blueLine">
+
+     <p style="font-weight: normal;">
+      <b>14. $cos(sin(x))$</b>
+       <br><br>
+       
+       <b>outer:</b> $cos()$ and its derivative: $-sin()$, 
+       plugging in the argument in derivative: $-sin(cos(x))$
+        <br><br>
+       <b>inner:</b> $ sin(x)$ with derivative cos(x) <br><br>
+       <b>final derivative:<br><br>
+      </b>$(cos(sin(x)))'$=$ -sin(cos(x))\cdot cos(x) $<br>
+     </p>
+     <br>
+     <hr class="blueLine">
+
+     <p style="font-weight: normal;">
+      <b>15. $ln(\frac{1}{x})$</b>
+       <br><br>
+       
+       <b>outer:</b> $ln()$ and its derivative: $\frac{1}{x}$, <br>
+       plugging in the argument ($\mathbf{\frac{1}{x}}$) in derivative: $\frac{1}{\mathbf{\frac{1}{x}}}=x$
+        <br><br>
+       <b>inner:</b> $\frac{1}{x}=x^{-1} $, and its derivative: $-x^{-2}$ <br><br>
+       <b>final derivative:<br><br>
+      </b>$ln(\frac{1}{x})'$=$ x\cdot (-x^{-2})=-x^{-1} $<br>
+     </p>
+
+     <p style="font-weight: normal;">
+      <span class="red">now your turn: </span><br><br>
+      <b><span class="blueMine">13)</span> $\frac{11}{ln(x)}$</b><br><br>
+      <b><span class="blueMine">14)</span> $sin(cos(x))$</b> <br><br>
+      <b><span class="blueMine">15)</span> $ln(sin(x))$</b> <br><br>
+
+
+        <br> Answers are at the bottom. Step 1 completed.
+
+   </p>
+   <br>
+   <hr class="blueLine">
+   
+
+   <p style="font-weight: normal;"> <b>Now,</b> you should proceed to the <span style="color: blue;"
+    >Step 2 </span>
+    where you will practice harder examples with more that one inner function, like 
+    $ln(cos(x^2))$. Can you already tell what is the most inner, "less inner" and outer 
+    function?
+
+    
+    <div class="Next" style="margin-left: auto;">
+      <button style = " bottom: 2px; width: auto; position: relative; float: right; padding: 15px 10px 15px 10px; "
+  
+      class=" button-30" role="button"  ><span style='font-size:30px;'></span>
+      Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129094;</span></button>  
+    </div>
+    
+   </p>
+ 
+
+      
+   <div class="empty">
+    
+  </div>
+
+  <p class="blueMine"><b>Solutions</b> </p>
+  <hr class="blueLine">
+
+<div class="sollutions" style="font-weight: normal;">
+ <p> <b>1) $cos(10x-5)$</b>
+  <br><br>
+  
+  <b>outer:</b> $cos()$ and its derivative: $-sin()$ <br> 
+  plugging in the argument $\mathbf{-sin(10x-5)}$ 
+   <br><br>
+  <b>inner:</b> $10x-5 $, and its derivative: 10 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(cos(10x-5))'$=$ -sin(10x-5)\cdot 10 $<br><br>
+
+</p>
+<hr class="blueLine">
+
+<p> <b>2) $sin(15x)$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(15x)}$ 
+   <br><br>
+  <b>inner:</b> $15x $, and its derivative: 15 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(15x))'$=$ cos(15x)\cdot 15 $<br><br>
+ 
+</p>
+<hr class="blueLine">
+
+<p> <b>3) $sin(x-9)$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(x-9)}$ 
+   <br><br>
+  <b>inner:</b> $x-9 $, and its derivative: 1 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(x-9))'$=$ cos(x-9)\cdot 1$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>4) $(x^3-2x)^2$</b>
+  <br><br>
+  
+  <b>outer:</b> $()^2$ and its derivative: $2()^1$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{2(x^3-2x)}$ 
+   <br><br>
+  <b>inner:</b> $x^3-2x $, and its derivative: $3x^2-2$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$((x^3-2x)^2)'$=$ 2(x^3-2x)\cdot (3x^2-2)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>5) $\sqrt{-x-3}$</b>
+  <br><br>
+  
+  <b>outer:</b> $\sqrt{()}$ 
+   <br><br>
+  <b>inner:</b> $-x-3 $ <br><br>
+
+</p>
+
+<hr class="blueLine">
+
+<p> <b>6) $\frac{5}{(3x)^3}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{5}{(3x)^3}=5\cdot (3x)^{-3}$ <br><br>
+  <b>outer:</b> $5\cdot ()^{-3}$ 
+  <br><br>
+ <b>inner:</b> $3x $ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>7) $\frac{2}{\sqrt{5x}}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{2}{\sqrt{5x}}=2\cdot (5x)^{-\frac{1}{2}}$ <br><br>
+  <b>outer:</b> $2\cdot ()^{-\frac{1}{2}}$ 
+  <br><br>
+ <b>inner:</b> $5x $ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>8) $e^{x^4+2}$</b>
+  <br><br>
+  
+  <b>outer:</b> $e^{()}$ 
+  <br><br>
+ <b>inner:</b> $x^4+2$ <br><br>
+</p>
+  
+<hr class="blueLine">
+
+<p> <b>9) $2ln(2x-10)$</b>
+  <br><br>
+  
+  <b>outer:</b> $2ln()$ 
+  <br><br>
+ <b>inner:</b> $2x-10$ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>10) $e^{-x}$</b>
+  <br><br>
+  
+  <b>outer:</b> $e^{()}$ 
+  <br><br>
+ <b>inner:</b> $-x$ <br><br>
+</p>
+  
+
+<hr class="blueLine">
+
+<p> <b>11) $2e^{3x^5-x+1}$</b>
+  <br><br>
+  
+  <b>outer:</b> $2e^{()}$ and its derivative: $2e^{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{2e^{(3x^5-x+1)}}$ 
+   <br><br>
+  <b>inner:</b> $3x^5-x+1 $, and its derivative: $15x^4-1$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(2e^{3x^5-x+1})'$=$ 2e^{(3x^5-x+1)}\cdot (15x^4-1)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>12) $10e^{x^5-2x^4}$</b>
+  <br><br>
+  
+  <b>outer:</b> $10e^{()}$ and its derivative: $10e^{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{10e^{x^5-2x^4}}$ 
+   <br><br>
+  <b>inner:</b> $x^5-2x^4 $, and its derivative: $5x^4-8x^3$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(10e^{x^5-2x^4})'$=$ 10e^{x^5-2x^4}\cdot (5x^4-8x^3)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>13) $\frac{11}{ln(x)}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{11}{ln(x)}=11\cdot (ln(x))^{-1}$ <br><br>
+  
+  <b>outer:</b> $11()^{-1}$ and its derivative: $-11()^{-2}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{-11(ln(x))^{-2}}$ 
+   <br><br>
+  <b>inner:</b> $ln(x)$, and its derivative: $\frac{1}{x}$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$\Big(\frac{11}{ln(x)}\Big)'$=$ -11(ln(x))^{-2}\cdot \frac{1}{x}$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>14) $sin(cos(x))$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(cos(x))}$ 
+   <br><br>
+  <b>inner:</b> $cos(x)$, and its derivative: $-sin(x)$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(cos(x)))'$=$ cos(cos(x))\cdot (-sin(x))$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>15) $ln(sin(x))$</b>
+  <br><br>
+  
+  <b>outer:</b> $ln()$ and its derivative: $\frac{1}{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{\frac{1}{(sin(x))}}$ 
+   <br><br>
+  <b>inner:</b> $sin(x)$, and its derivative: $cos(x)$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(cos(x)))'$=$ \frac{1}{(sin(x))}\cdot cos(x)$<br><br>
+ 
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<aside>
+   
+</aside>    
+</div>
+
+
+<script>
+
+
+   function showSidebar() {
+       const sidenav = document.querySelector(".sidenav")
+       sidenav.style.display = "block"
+       const screenWidth = window.innerWidth;
+       if (screenWidth < 870) {
+         sidenav.style.left = "0";
+   }
+ }
+   function hideSidebar()
+   {
+       const sidenav = document.querySelector(".sidenav")
+       sidenav.style.display = "none";
+       sidenav.style.left = "unset";
+       sidenav.style.right = "75%";
+
+   }
+
+   function handleResize() {
+     const sidenav = document.querySelector(".sidenav");
+     const screenWidth = window.innerWidth;
+
+
+     if (screenWidth > 870 && sidenav.style.display === "none") {
+       sidenav.style.display = "block";
+       sidenav.style.left = "unset";
+       sidenav.style.right = "75%";
+
+     } else if (screenWidth > 870 && sidenav.style.display === "block")
+         {
+         sidenav.style.left = "unset";
+         sidenav.style.right = "75%";
+
+     } else if (screenWidth < 870 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
+       sidenav.style.display = "none";     
+     }
+   }
+
+   window.addEventListener("resize", handleResize);
+
+   handleResize();
+
+
+ 
+
+</script>
+</body>
+
+</html>
