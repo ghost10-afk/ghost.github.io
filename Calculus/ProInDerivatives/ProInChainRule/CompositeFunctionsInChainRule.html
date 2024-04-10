@@ -24,8 +24,15 @@
    });
    </script>
 
- <script async type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
- <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+loader: {load: ['ui/lazy']},
+ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  jax: ["input/TeX", "output/SVG"]}
+ );
+</script> 
+<script async  type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
  
  
 </head>
@@ -87,14 +94,14 @@
     </div>
   </a>
 
-    <a >
+    
     <div class="Next" style="margin-left: auto;">
     <button style = " bottom: 2px; width: auto; position: relative; float: right; padding: 15px 10px 15px 10px; "
 
     class=" button-30" role="button"  ><span style='font-size:30px;'></span>
     Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129094;</span></button>  
   </div>
-  </a>
+  
   
   </div>
     <br><br><br>
