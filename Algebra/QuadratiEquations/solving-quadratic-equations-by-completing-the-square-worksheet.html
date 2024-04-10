@@ -15,14 +15,14 @@
    }
  </script>
  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
- <link rel="stylesheet" href="style2.css"  />
+ <link rel="stylesheet" href="/style2.css"  />
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script async type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> 
  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  <script  src="https://code.jquery.com/jquery.min.js"></script>
  <script >
-   $.get("navigation.html", function(data){
+   $.get("/navigation.html", function(data){
        $("#nav-placeholder").replaceWith(data);
    });
    </script>
