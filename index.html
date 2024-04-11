@@ -217,55 +217,8 @@
 </aside>    
 </div>
 
+<script src="/javascript.js"></script>
 
-<script>
-
-
-   function showSidebar() {
-       const sidenav = document.querySelector(".sidenav")
-       sidenav.style.display = "block"
-       const screenWidth = window.innerWidth;
-       if (screenWidth < 870) {
-         sidenav.style.left = "0";
-   }
- }
-   function hideSidebar()
-   {
-       const sidenav = document.querySelector(".sidenav")
-       sidenav.style.display = "none";
-       sidenav.style.left = "unset";
-       sidenav.style.right = "75%";
-
-   }
-
-   function handleResize() {
-     const sidenav = document.querySelector(".sidenav");
-     const screenWidth = window.innerWidth;
-
-
-     if (screenWidth > 870 && sidenav.style.display === "none") {
-       sidenav.style.display = "block";
-       sidenav.style.left = "unset";
-       sidenav.style.right = "75%";
-
-     } else if (screenWidth > 870 && sidenav.style.display === "block")
-         {
-         sidenav.style.left = "unset";
-         sidenav.style.right = "75%";
-
-     } else if (screenWidth < 870 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
-       sidenav.style.display = "none";     
-     }
-   }
-
-   window.addEventListener("resize", handleResize);
-
-   handleResize();
-
-
- 
-
-</script>
 </body>
 
 </html>

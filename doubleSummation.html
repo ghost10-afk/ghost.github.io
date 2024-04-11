@@ -772,68 +772,9 @@
 </div>
 
 
-<script>
- /*var startElement = document.getElementById('start'),
-  endElement = document.getElementById('end');
+<script src="/javascript.js"></script>
 
-  new LeaderLine(
-  endElement,
-  LeaderLine.pointAnchor(startElement, {
-    x: 80,
-    y: 30
-  }),
-  {endLabel: LeaderLine.pathLabel('lalalllla')}
-  ); */
-
-    function showSidebar() {
-        const sidenav = document.querySelector(".sidenav")
-        sidenav.style.display = "block"
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 790) {
-          sidenav.style.left = "0";
-    }
-  }
-    function hideSidebar()
-    {
-        const sidenav = document.querySelector(".sidenav")
-        sidenav.style.display = "none";
-        sidenav.style.left = "unset";
-        sidenav.style.right = "75%";
-
-    }
-
-    function handleResize() {
-      const sidenav = document.querySelector(".sidenav");
-      const screenWidth = window.innerWidth;
-      //sidenav.style.display = "block";
-
-
-      if (screenWidth > 790 && sidenav.style.display === "none") {
-        // Make nav visible when screen is larger than 700px
-        sidenav.style.display = "block";
-        sidenav.style.left = "unset";
-        sidenav.style.right = "75%";
-
-      } else if (screenWidth > 790 && sidenav.style.display === "block")
-          {
-          sidenav.style.left = "unset";
-          sidenav.style.right = "75%";
-
-      } else if (screenWidth < 790 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
-        sidenav.style.display = "none";     
-      }
-    }
-
-    // Event listeners
-    window.addEventListener("resize", handleResize);
-
-    // Initial check on page load
-    handleResize();
-
-
-  
-
-</script>
+ 
 </body>
 
 </html>
