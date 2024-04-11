@@ -7,7 +7,7 @@
   <title>Summation index shift</title>
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
   <link rel="stylesheet" href="style2.css"  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/font-awesome4/css/font-awesome.min.css" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
@@ -288,55 +288,8 @@
 </aside>    
 </div>
 
+<script src="/javascript.js"></script>
 
-<script>
- 
-
-    function showSidebar() {
-        const sidenav = document.querySelector(".sidenav")
-        sidenav.style.display = "block"
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 790) {
-          sidenav.style.left = "0";
-    }
-  }
-    function hideSidebar()
-    {
-        const sidenav = document.querySelector(".sidenav")
-        sidenav.style.display = "none";
-        sidenav.style.left = "unset";
-        sidenav.style.right = "75%";
-
-    }
-
-    function handleResize() {
-      const sidenav = document.querySelector(".sidenav");
-      const screenWidth = window.innerWidth;
-
-
-      if (screenWidth > 790 && sidenav.style.display === "none") {
-        sidenav.style.display = "block";
-        sidenav.style.left = "unset";
-        sidenav.style.right = "75%";
-
-      } else if (screenWidth > 790 && sidenav.style.display === "block")
-          {
-          sidenav.style.left = "unset";
-          sidenav.style.right = "75%";
-
-      } else if (screenWidth < 790 && sidenav.style.display === "block" && sidenav.style.left ==="unset") {
-        sidenav.style.display = "none";     
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-
-  
-
-</script>
 </body>
 
 </html>
