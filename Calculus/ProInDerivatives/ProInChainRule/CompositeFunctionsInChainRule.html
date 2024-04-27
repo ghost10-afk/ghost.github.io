@@ -111,10 +111,12 @@ loader: {load: ['ui/lazy']},
 
     
     <div class="Next" style="margin-left: auto;">
+    <a href="#step2">
     <button style = " bottom: 2px; width: auto; position: relative; float: right; padding: 15px 10px 15px 10px; "
 
     class=" button-30" role="button"  ><span style='font-size:30px;'></span>
-    Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129094;</span></button>  
+    Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129095;</span></button>  
+</a>
   </div>
   
   
@@ -410,23 +412,184 @@ loader: {load: ['ui/lazy']},
    <br>
    <hr class="blueLine">
    
-
-   <p style="font-weight: normal;"> <b>Now,</b> you should proceed to the <span style="color: blue;"
+   <p id="step2" style="font-weight: normal;"> <b>Now,</b> you should proceed to the <span style="color: blue;"
     >Step 2 </span>
     where you will practice harder examples with more that one inner function, like 
     $ln(cos(x^2))$. Can you already tell what is the most inner, "less inner" and outer 
     function?
+   </p>
+   
 
-    
-    <div class="Next" style="margin-left: auto;">
-      <button style = " bottom: 2px; width: auto; position: relative; float: right; padding: 15px 10px 15px 10px; "
-  
-      class=" button-30" role="button"  ><span style='font-size:30px;'></span>
-      Chain Rule <br> Step 2 <span style="font-size: 30px; padding-left: 8%;"> &#129094;</span></button>  
-    </div>
+   <br><br><br>
+   <h2 style="font-size: 27px;" class="headingss"><span style="color: blue;">Step 2: </span> Two Inner Function Composition Chain Rule </h2>
+   <br>
+   <p>
+    Assuming you are confident in identifying the inner/outer
+    function for simple composite functions like $tan(x^3)$, we can move to Step 2. Here, we will have two inner functions,
+   like $tan(ln(5x))$. <br>
     
    </p>
+   <p>
+    Let's go! As usual, identify the inner/outer functions and differentiate.
+  </p>
+   <br>
+   <hr class="redLine">
  
+   <p>
+    We will start with an example. Let's consider a function: <br> <br>
+    <span style="padding-left: 50%;">$sin(ln(x^2))$ </span>    
+    <br><br> My preference is to always start
+    from the most inner function. So, it must be the first thing we apply to <b>x</b> - here we 
+    square it. <br><br> 
+    &#11106;</span> So, the <span class="red"> most inner function </span> is $x^2$. <br><br>
+    Then we take natural logarithm of it - ln()
+    <br><br> 
+    &#11106;</span> So, the <span class="red">second inner function</span> is natural logarithm $ln()$. <br><br>
+    Then finally we apply outer function to it - sine: <br>
+    &#11106; <span class="red">outer function </span>is sin() <br><br>
+    
+     <b></b> Now the derivative of $sin(ln(x^2))$ is as you know from the Step 1
+     the product of derivatives of each inner and outer functions:  </p>
+     <p>
+      &#11106; <b>first inner function is $x^2$</b> with derivative <b>2x</b> <br>
+     </p>
+     <p>
+      &#11106; <b>second inner function is ln(argument)</b> with derivative $\frac{1}{argument}$, in our 
+      case the argument is $x^2$, so we just plug it in: the derivative is $\frac {1}{x^2}$ 
+     </p>
+     <p>
+      &#11106; <b>outer function sin()</b> with derivative <b>cos()</b>  and plugging in the argument we
+      get: $cos(ln(x^2))$
+     </p>
+    <p>
+  Final derivative is: $(sin(ln(x^2)))'=2x\cdot \frac{1}{x^2}\cdot cos(ln(x^2))$
+</p>
+<br>
+
+
+<hr class="blueLine">
+       
+       <h2 style="text-align: left; padding-left: 5%; font-size: 20px;"><i></i> 
+        Let's do 3 more examples together, and than you will do a couple on your own</h2>
+       <p>
+        Identify first inner, second inner and outer function and differentiate: <br> <br>
+        <b>16.</b> <b>$e^{ln(x^2+1)}$</b> <br><br>
+        <b>first inner</b>: $x^2+1$ <br><br>
+        - and its derivative: 2x<br> <br>
+        <b>second inner</b>: ln(), its derivative is $\frac{1}{()}$ where in empty 
+        brackets is the argument of ln(): $x^2+1$. So $\frac{1}{x^2+1}$. <br> <br>
+        <b>outer</b>: $e^{()}$, its derivative is $e^{()}$ where in empty 
+        brackets is the argument of $e^{()}$: $ln(x^2+1)$. So $e^{ln(x^2+1)}$. <br> <br>
+
+        
+        <b>derivative of $e^{ln(x^2+1)}$ then is:</b> <br> <br>
+        $(e^{ln(x^2+1)})'=e^{ln(x^2+1)}\cdot \frac{1}{x^2+1}\cdot 2x$
+        <br> <br> <br>
+        </p>
+       <hr class="blueLine">
+        <p>
+        <b>17. sin(cos(5x+2)) </b>
+        <br><br>
+        <b>first inner:</b> 5x+2 <br>
+        derivative is <b>5</b> <br><br>
+        <b>second inner</b>: cos()<br>
+        its derivative is -sin() <br>
+       plugging in the argument: $-sin(5x+2)$ 
+        </p>
+        <p style="font-weight: normal;">
+        <b>outer:</b> sin() <br>
+        derivative is <b>cos()</b>, plugging in its argument: $cos(cos(5x+2))$ 
+        </p>
+        <p>final derivative of this composite function:</p> 
+        <p>
+          $(sin(cos(5x+2)))'=cos(cos(5x+2))(-sin(5x+2))\cdot 5$
+        </p>
+        <br>
+ 
+
+        <hr class="blueLine">
+        <br>
+
+        <p>
+        <b>18. $e^{cos^{2}(x)}$ </b>
+        <br><br>
+        <b>first inner:</b> cos(x) - because first cosine is applied to x and 
+         only after it is being squared<br> 
+        derivative is <b>-sin(x)</b> <br><br>
+        <b>second inner</b>: $()^2$ <br>
+        with derivative: $2cos(x)$ 
+        </p>
+        <p style="font-weight: normal;">
+        <b>outer:</b> $e^{()}$ <br>
+        derivative is function itself <b>$e^{()}$</b>,<br>
+         plugging in its argument: $e^{cos^{2}(x)}$ 
+        </p>
+        <p>final derivative:</p> 
+        <p>
+          $(e^{cos^{2}(x)})'=e^{cos^{2}(x)} 2cos(x)(-sin(x)) $
+        </p>
+
+
+       <p class="blockPractice">
+        Now, a couple similar examples for you - identify inner/outer and find derivatives:<br><br>
+        16) $e^{cos(ln(x))}$ <br> 17) cos(sin(15x)) <br> 18) sin(sin(x+2)) <br>
+        <br> Answers are at the botoom of the page
+       </p>
+
+       <br>
+       <h3>Let's continue solving the examples:</h3>
+       <p style="font-weight: normal;">
+        <b>19. $tan(\sqrt{x^2+x+1})$</b>
+         <br><br>
+         <b>first inner:</b> $x^2+x+1$ with derivative 2x+1<br> <br>
+         <b>second inner:</b> $()^{\frac{1}{2}}$ with derivative $\frac{1}{2}()^{-\frac{1}{2}}$ 
+         plugging in the argument: $\frac{1}{2}(x^2+x+1)^{-\frac{1}{2}}$ <br>
+         <br>
+         <b>outer:</b> $tan()$ with derivative $sec ^{2}()$, <br> plugging in the argument:
+         $sec ^{2}(\sqrt{x^2+x+1})$ - I will do it in one step from now
+         <br> <br>
+
+         <b>final answer:</b> <br>
+         $(tan(\sqrt{x^2+x+1}))'=\\=( 2x+1)\cdot \frac{1}{2}(x^2+x+1)^{-\frac{1}{2}}\cdot sec ^{2}(\sqrt{x^2+x+1})$
+         <br><br>
+      
+       </p>
+
+       <p class="blockPractice">
+         Example for you: Identify and Derive<br>
+        <b>19)</b> $ tan(cos^{2}(x))$
+       </p>
+
+       <br>
+       <hr class="blueLine">
+       <br>
+       <h3 style="font-size: 22px;">Let's do more together:</h3>
+       <p class="answer"> 20. $(log_{8}(log_{10}(x)-5))^2$ <br>
+      </p> 
+      <p> first inner: $log_{10}(x)-5$  <br>
+        with derivative $\frac{1}{xln(10)}$  <b>(</b>have the table of derivatives with you:) <b>)</b><br><br>
+         second inner: $log_{10}()$  <br>
+         with derivative: $\frac{1}{(log_{10}(x)-5)ln(10)}$ <br><br>
+         outer $()^2$<span style="font-weight: normal;"> as square is applied to everything that is inside </span> <br>
+         with derivative : $2(log_{10}(log_{10}(x)-5))$
+         <br> <br>
+         <b>final answer:</b>
+         <br>
+        $ \Big((log_{10}(log_{10}(x)-5))^2\Big)'= \\= \frac{1}{xln(10)}\frac{1}{(log_{10}(x)-5)ln(10)} 2(log_{10}(log_{10}(x)-5))$
+      </p>
+      <br>    
+     
+     <p class="blockPractice">
+      Finally, couple examples for you and Step 2 <br> is done<br><br>
+      <span style="font-weight: normal;"><i>Identify the inner and outer function:</i></span> <br><br>
+       20) $log_{8}e^{2x}$ <br><br> 
+       21) $log_{5}^2 (sin(x))$  <br><br> 
+       
+       <br> Answers are at the bottom of the page
+     </p>
+    
+
+
 
       
    <div class="empty">
@@ -633,6 +796,107 @@ loader: {load: ['ui/lazy']},
   <b>inner:</b> $sin(x)$, and its derivative: $cos(x)$ <br><br>
   <b>final derivative:<br><br>
  </b>$(sin(cos(x)))'$=$ \frac{1}{(sin(x))}\cdot cos(x)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>16) $e^{cos(ln(x))}$</b>
+  <br><br>
+  
+  <b>first inner:</b> $ln(x)$ and its derivative: $\frac{1}{x}$ <br> <br>
+  you may say that first inner function is "x", but its derivative is one,
+  so it doesn't make difference as we would multiply by 1. So, we skip it. <br><br>
+  
+  <b>second inner:</b> $cos()$, and its derivative: $-sin(ln(x))$ <br><br>
+  <b>outer: </b>  $e^{()}$ with derivative $e^{cos(ln(x))}$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(e^{cos(ln(x))})'=-sin(ln(x))\frac{e^{cos(ln(x))}}{x}$
+ 
+</p>
+<br>
+
+<hr class="blueLine">
+
+<p> <b>17) $cos(sin(15x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $15x$ and its derivative 15 <br> <br>
+  
+  <b>second inner:</b> $sin()$ and its derivative: $cos(15x)$ <br><br>
+  <b>outer: </b>  $cos()$ with derivative $-sin(sin(15x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(cos(sin(15x)))'=-15cos(15x)sin(sin(15x))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>18) $sin(sin^2(x+2))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $sin(x+2)$ and its derivative $cos(x+2)$ <br> <br>
+  
+  <b>second inner:</b> $()^2$ and its derivative: $2sin(x+2)$ <br><br>
+  <b>outer: </b>  $sin()$ with derivative $cos(sin^2(x+2))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(sin(sin^2(x+2)))'=\\ =cos(x+2)2sin(x+2)cos(sin^2(x+2))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>19) $tan(cos^2(x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $cos(x)$ and its derivative $-sin(x)$ <br> <br>
+  
+  <b>second inner:</b> $()^2$ and its derivative: $2cos(x)$ <br><br>
+  <b>outer: </b>  $tan()$ with derivative $sec^2(cos^2(x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(tan(cos^2(x)))'=\\ =-2sin(x)cos(x)sec^2(cos^2(x))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>20) $log_8 e^{2x}$</b>
+  <br><br>
+  
+  <b>first inner:</b> $2x$ and its derivative 2 <br> <br>
+  
+  <b>second inner:</b> $e^{()}$ and its derivative: $e^{2x}$ <br><br>
+  <b>outer: </b>  $log_8 ()$ with derivative $\frac{1}{e^{2x}ln(8)}$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(log_8 e^{2x})'=\\ =\frac{2e^{2x}}{e^{2x}ln(8)}=\frac{2}{ln(8)}$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>21) $log_5 ^2 (sin(x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $sin(x)$ and its derivative $cos(x)$ <br> <br>
+  
+  <b>second inner:</b> $log_5 ()$ and its derivative: $\frac{1}{sin(x)ln(5)}$ <br><br>
+  <b>outer: </b>  $()^2$ with derivative $2log_5 (sin(x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(log_5 ^2 (sin(x)))'=\\ =\frac{2cos(x)log_5 (sin(x))}{sin(x)ln(5)}$
  
 </p>
 
