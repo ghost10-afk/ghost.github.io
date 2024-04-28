@@ -1,0 +1,449 @@
+<!DOCTYPE html >
+<html lang="en">
+<head> 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-664WHLFRFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-664WHLFRFZ');
+</script>
+
+ <meta charset="UTF-8">
+ <meta name="description" content="you will understand composite functions and how to differentiate them - starting from easy examples with one inner function up to 2 and more inner functions">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+ <title>What Composite Function is and how to differentiate it</title>
+  <script type="application/ld+json">
+   {
+     "@context" : "https://schema.org",
+     "@type" : "WebSite",
+     "name" : "Math Universe Compass",
+     "url" : "https://mathuniversecompass.com/"
+   }
+ </script>
+  <link rel="stylesheet" href="/font-awesome4/css/font-awesome.min.css" />
+
+ <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
+ <link rel="stylesheet" href="/style2.css" />
+
+
+
+
+ <script src="https://code.jquery.com/jquery.min.js"></script>
+ <script >
+   $.get("/navigation.html", function(data){
+       $("#nav-placeholder").replaceWith(data);
+   });
+   </script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+loader: {load: ['ui/lazy']},
+ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  jax: ["input/TeX", "output/SVG"]}
+ );
+</script> 
+<script async  type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+ 
+ 
+</head>
+
+
+
+<body>
+
+<div class="logo">
+  
+  <div class="firstUl">
+   <ul>
+       <li  onclick=showSidebar() class="openMenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+   </ul>
+  </div>
+
+   <div class="secondUl">
+       <ul>
+           <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7"></i>
+           </li>
+       </ul>
+   </div>
+
+   <div class="thirdUl">
+    
+   </div>
+
+</div>
+
+<div class="container">
+<nav>
+
+ <div class="sidenav">
+
+  <div class="bitch">
+ <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+
+  <!--  Navigation  -->
+  <div id="nav-placeholder" style="margin: 0; padding: 0;">
+    <!--  Navigation  -->  
+  
+
+</div>
+</nav>
+
+ <div class="main" style="line-height: 22pt">
+
+    <div class="NowNext"> 
+
+        <div class="Now" style="margin-right: auto;">
+    
+        <a href="CompositeFunctionsInChainRule.html">
+          <button style = " bottom: 2px; width: auto;  
+           padding: 15px 10px 15px 10px"
+      
+          class=" button-30" role="button"><span style='font-size:30px;'></span> <span style="font-size: 30px; padding-right: 8%;">&#129092; </span>
+          Step 1<br> and Step 2 </button>   
+        </div>
+      </a>
+    
+        
+    
+    </div>
+
+<h1 class="headingss" style="font-size: 28px;"> <span style="color: blue;">Step 1</span> and <span style="color: blue;">Step 2</span> <br> <i>Answers</i> </h1>
+
+
+<br>
+<br>
+<div class="sollutions" style="font-weight: normal;">
+ <p> <b>1) $cos(10x-5)$</b>
+  <br><br>
+  
+  <b>outer:</b> $cos()$ and its derivative: $-sin()$ <br> 
+  plugging in the argument $\mathbf{-sin(10x-5)}$ 
+   <br><br>
+  <b>inner:</b> $10x-5 $, and its derivative: 10 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(cos(10x-5))'$=$ -sin(10x-5)\cdot 10 $<br><br>
+
+</p>
+<hr class="blueLine">
+
+<p> <b>2) $sin(15x)$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(15x)}$ 
+   <br><br>
+  <b>inner:</b> $15x $, and its derivative: 15 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(15x))'$=$ cos(15x)\cdot 15 $<br><br>
+ 
+</p>
+<hr class="blueLine">
+
+<p> <b>3) $sin(x-9)$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(x-9)}$ 
+   <br><br>
+  <b>inner:</b> $x-9 $, and its derivative: 1 <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(x-9))'$=$ cos(x-9)\cdot 1$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>4) $(x^3-2x)^2$</b>
+  <br><br>
+  
+  <b>outer:</b> $()^2$ and its derivative: $2()^1$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{2(x^3-2x)}$ 
+   <br><br>
+  <b>inner:</b> $x^3-2x $, and its derivative: $3x^2-2$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$((x^3-2x)^2)'$=$ 2(x^3-2x)\cdot (3x^2-2)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>5) $\sqrt{-x-3}$</b>
+  <br><br>
+  
+  <b>outer:</b> $\sqrt{()}$ 
+   <br><br>
+  <b>inner:</b> $-x-3 $ <br><br>
+
+</p>
+
+<hr class="blueLine">
+
+<p> <b>6) $\frac{5}{(3x)^3}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{5}{(3x)^3}=5\cdot (3x)^{-3}$ <br><br>
+  <b>outer:</b> $5\cdot ()^{-3}$ 
+  <br><br>
+ <b>inner:</b> $3x $ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>7) $\frac{2}{\sqrt{5x}}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{2}{\sqrt{5x}}=2\cdot (5x)^{-\frac{1}{2}}$ <br><br>
+  <b>outer:</b> $2\cdot ()^{-\frac{1}{2}}$ 
+  <br><br>
+ <b>inner:</b> $5x $ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>8) $e^{x^4+2}$</b>
+  <br><br>
+  
+  <b>outer:</b> $e^{()}$ 
+  <br><br>
+ <b>inner:</b> $x^4+2$ <br><br>
+</p>
+  
+<hr class="blueLine">
+
+<p> <b>9) $2ln(2x-10)$</b>
+  <br><br>
+  
+  <b>outer:</b> $2ln()$ 
+  <br><br>
+ <b>inner:</b> $2x-10$ <br><br>
+</p>
+
+<hr class="blueLine">
+
+<p> <b>10) $e^{-x}$</b>
+  <br><br>
+  
+  <b>outer:</b> $e^{()}$ 
+  <br><br>
+ <b>inner:</b> $-x$ <br><br>
+</p>
+  
+
+<hr class="blueLine">
+
+<p> <b>11) $2e^{3x^5-x+1}$</b>
+  <br><br>
+  
+  <b>outer:</b> $2e^{()}$ and its derivative: $2e^{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{2e^{(3x^5-x+1)}}$ 
+   <br><br>
+  <b>inner:</b> $3x^5-x+1 $, and its derivative: $15x^4-1$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(2e^{3x^5-x+1})'$=$ 2e^{(3x^5-x+1)}\cdot (15x^4-1)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>12) $10e^{x^5-2x^4}$</b>
+  <br><br>
+  
+  <b>outer:</b> $10e^{()}$ and its derivative: $10e^{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{10e^{x^5-2x^4}}$ 
+   <br><br>
+  <b>inner:</b> $x^5-2x^4 $, and its derivative: $5x^4-8x^3$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(10e^{x^5-2x^4})'$=$ 10e^{x^5-2x^4}\cdot (5x^4-8x^3)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>13) $\frac{11}{ln(x)}$</b>
+  <br><br>
+  we can write:  <br><br>
+  $\frac{11}{ln(x)}=11\cdot (ln(x))^{-1}$ <br><br>
+  
+  <b>outer:</b> $11()^{-1}$ and its derivative: $-11()^{-2}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{-11(ln(x))^{-2}}$ 
+   <br><br>
+  <b>inner:</b> $ln(x)$, and its derivative: $\frac{1}{x}$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$\Big(\frac{11}{ln(x)}\Big)'$=$ -11(ln(x))^{-2}\cdot \frac{1}{x}$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+
+<p> <b>14) $sin(cos(x))$</b>
+  <br><br>
+  
+  <b>outer:</b> $sin()$ and its derivative: $cos()$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{cos(cos(x))}$ 
+   <br><br>
+  <b>inner:</b> $cos(x)$, and its derivative: $-sin(x)$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(cos(x)))'$=$ cos(cos(x))\cdot (-sin(x))$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>15) $ln(sin(x))$</b>
+  <br><br>
+  
+  <b>outer:</b> $ln()$ and its derivative: $\frac{1}{()}$ <br> 
+  plugging in the argument into derivative <br>
+  $\mathbf{\frac{1}{(sin(x))}}$ 
+   <br><br>
+  <b>inner:</b> $sin(x)$, and its derivative: $cos(x)$ <br><br>
+  <b>final derivative:<br><br>
+ </b>$(sin(cos(x)))'$=$ \frac{1}{(sin(x))}\cdot cos(x)$<br><br>
+ 
+</p>
+
+<hr class="blueLine">
+
+<p> <b>16) $e^{cos(ln(x))}$</b>
+  <br><br>
+  
+  <b>first inner:</b> $ln(x)$ and its derivative: $\frac{1}{x}$ <br> <br>
+  you may say that first inner function is "x", but its derivative is one,
+  so it doesn't make difference as we would multiply by 1. So, we skip it. <br><br>
+  
+  <b>second inner:</b> $cos()$, and its derivative: $-sin(ln(x))$ <br><br>
+  <b>outer: </b>  $e^{()}$ with derivative $e^{cos(ln(x))}$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(e^{cos(ln(x))})'=-sin(ln(x))\frac{e^{cos(ln(x))}}{x}$
+ 
+</p>
+<br>
+
+<hr class="blueLine">
+
+<p> <b>17) $cos(sin(15x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $15x$ and its derivative 15 <br> <br>
+  
+  <b>second inner:</b> $sin()$ and its derivative: $cos(15x)$ <br><br>
+  <b>outer: </b>  $cos()$ with derivative $-sin(sin(15x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(cos(sin(15x)))'=-15cos(15x)sin(sin(15x))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>18) $sin(sin^2(x+2))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $sin(x+2)$ and its derivative $cos(x+2)$ <br> <br>
+  
+  <b>second inner:</b> $()^2$ and its derivative: $2sin(x+2)$ <br><br>
+  <b>outer: </b>  $sin()$ with derivative $cos(sin^2(x+2))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(sin(sin^2(x+2)))'=\\ =cos(x+2)2sin(x+2)cos(sin^2(x+2))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>19) $tan(cos^2(x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $cos(x)$ and its derivative $-sin(x)$ <br> <br>
+  
+  <b>second inner:</b> $()^2$ and its derivative: $2cos(x)$ <br><br>
+  <b>outer: </b>  $tan()$ with derivative $sec^2(cos^2(x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(tan(cos^2(x)))'=\\ =-2sin(x)cos(x)sec^2(cos^2(x))$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>20) $log_8 e^{2x}$</b>
+  <br><br>
+  
+  <b>first inner:</b> $2x$ and its derivative 2 <br> <br>
+  
+  <b>second inner:</b> $e^{()}$ and its derivative: $e^{2x}$ <br><br>
+  <b>outer: </b>  $log_8 ()$ with derivative $\frac{1}{e^{2x}ln(8)}$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(log_8 e^{2x})'=\\ =\frac{2e^{2x}}{e^{2x}ln(8)}=\frac{2}{ln(8)}$
+ 
+</p>
+
+<br>
+
+<hr class="blueLine">
+
+<p> <b>21) $log_5 ^2 (sin(x))$</b>
+  <br><br>
+  
+  <b>first inner:</b> $sin(x)$ and its derivative $cos(x)$ <br> <br>
+  
+  <b>second inner:</b> $log_5 ()$ and its derivative: $\frac{1}{sin(x)ln(5)}$ <br><br>
+  <b>outer: </b>  $()^2$ with derivative $2log_5 (sin(x))$<br> <br>
+
+ <b>final derivative:</b> <br>
+ $(log_5 ^2 (sin(x)))'=\\ =\frac{2cos(x)log_5 (sin(x))}{sin(x)ln(5)}$
+ 
+</p>
+
+   
+      
+   <div class="empty">
+    
+  </div>
+
+  
+
+</div>
+
+
+</div>
+
+
+
+<aside>
+   
+</aside>    
+</div>
+
+
+<script src="/javascript.js"></script>
+
+ 
+
+</body>
+
+</html>
