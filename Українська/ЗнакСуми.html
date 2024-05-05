@@ -132,7 +132,20 @@
        <p class="example"><i>Приклад 3:</i><br><br>
          $ \sum_{\color{red}{i=7}} ^{\color{red}{10}}{\color{#1299e7}{\frac{1}{i}}} =?$ </p>
        <p > <span class="bold">Рішення: підставляємо числа від 7 до 10 і додаємо вирази:</span> $ \sum_{i=7} ^{10}{\frac{1}{i}} =\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10}\approx 0.48$  </p>
+        
+       <p class="example"><i>Приклад 4:</i><br><br>
+        $ \sum_{\color{red}{i=3}} ^{\color{red}{5}}{\color{#1299e7}{i-2}} =?$ </p>
+      <p > <span class="bold">Рішення: від кожного <span class="blueMine">i</span> віднімаємо 2 і додаємо: <br>
+        </span> $ \sum_{i=3} ^{5}{i-2} =(3-2)+(4-2)+\\+(5-2)
+        =5$  </p>
 
+        <p class="example"><i>Приклад 5:</i><br><br>
+          $ \sum_{\color{red}{i=8}} ^{\color{red}{9}}{\color{#1299e7}{\frac{(-1)^{i}}{i-1}}} =?$ </p>
+        <p > <span class="bold">Рішення: просто підставляємо за <span class="blueMine">i</span> і додаємо <br>
+          </span> $ \sum_{\color{red}{i=8}} ^{\color{red}{9}}{\color{#1299e7}{\frac{(-1)^{i}}{i-1}}} 
+          =\frac{(-1)^8}{8-1}+\frac{(-1)^9}{9-1}=\\
+          =\frac{1}{7}+\frac{(-1)}{8}\approx 0.018
+          $  </p>
    
      <p id="summation1Student" class="bold forStudent scroll"> <br>Тепер твоя черга!<br>
       Розпиши і порахуй суму:
@@ -146,11 +159,16 @@
              2. $ \sum_{i=1} ^{5}{3\cdot i}$ <br>
              <br>
              3.  $ \sum_{i=1} ^{4}{-i}$ <span class="size17">:) </span>
+             <br> <br>
+             4. $ \sum_{i=6} ^{10}{i}$ <br>
            </div>
            <div class="secondSet">
-             4. $ \sum_{i=6} ^{10}{i}$ <br>
+             5. $ \sum_{k=2} ^{5}{\frac{1}{k}}$ <span class="size17">- літера може бути будь-якою  </span><br>
              <br>
-             5. $ \sum_{k=2} ^{5}{\frac{1}{k}}$ <span class="size17">- літера може бути будь-якою  </span>
+             6. $ \sum_{k=2} ^{5} k+4$ <span class="size17"></span>
+             <br><br>
+             7. $\sum_{i=2}^3 \frac{(-1)^i}{2i}$
+
            </div>
        </div>
 
@@ -158,7 +176,7 @@
       <img class="smallScreenHide" src="СумаКартинка/Знак суми.png" alt="Знак Сигма в математиці " style="width: 75%; padding-left: 27%; padding-top: 4%; padding-bottom: 2%;">
 
       <img  class ="bigScreenHide"
-      src="СумаКартинка/Знак суми.png" alt="Знак Сигма в математиці " style="width: 95%; padding-left: 27%; padding-top: 4%; padding-bottom: 2%;"> </img>
+      src="СумаКартинка/Знак суми.png" alt="Знак Сигма в математиці " style="width: 98%; padding-left: 27%; padding-top: 4%; padding-bottom: 2%;"> </img>
 
 
      <!--<p class="summ" id="element2" style="font-size: 40px;"> \[ \text{$ \sum_{\color{#1299e7}{i} \color{red} {=\enspace 1}  } ^{\color{red}{3}}x_{\color{#1299e7}{i}} = x_{\color{#1299e7}{1}}
@@ -166,7 +184,7 @@
       \]</p>   -->
 
       <div class=" exp2">
-        - тобто замість <span class="blueMine">"і"</span>, 
+        - тобто замість <span class="blueMine">"і"</span> 
          ми підставляємо числа від одного
           до трьох 
           і додаємо  <br><br>
@@ -183,7 +201,7 @@
 
       
       <p>Порахуємо декілька прикладів разом:</p>
-      <p> <span class="example"><i>Приклад 4:</i></span> <br><br>
+      <p> <span class="example"><i>Приклад 6:</i></span> <br><br>
         Нехай $ x_1=10, x_2=-3, x_3=4, x_4=6.$ Знайдіть суму: <br><br> 
         
         $a) \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{\textit{$x_i$}}} = ?$
@@ -202,11 +220,74 @@
        <p   >
         
         <b>b)
-        </b> Всюди, де є <i class="blueMine">i</i> ми підставляємо числа від 2 до 4 включно: <br><br>
+        </b> Всюди, де є <i class="blueMine">i</i> ми підставляємо числа від 2 до 4 включно і додаємо: <br><br>
         $\sum_{\color{red}{i=2}} ^{\color{red}{4}}{\color{#1299e7}{\textit{$i\cdot x_i$}}} = 
         2\cdot x_2+3\cdot x_3+ 4\cdot x_4=\\
-        =2 $
+        =2\cdot (-3)+3\cdot 4+4\cdot 6=30 $
        </p>
+
+
+
+       <h2>
+        І ще один спосіб запису за допомогою знаку суми: 
+       </h2>
+
+       <p class="summ" id="element2" style="font-size: 40px;"> \[ \sum_{\color{#1299e7} {x \in X} }
+        \color{#1299e7} {x} \]</p> 
+        <p>
+          - означає, що ми додаємо всі <span class="blueMine">x</span>, 
+          які належать (знак "$\in$") до множини <span class="blueMine">X</span>. <br>
+           Наприклад якщо
+          <span class="blueMine">x</span> $\in \{1,7,12,9\}$, тоді ми додамо всі числа з цієї множини:
+        </p>
+        <p class="example"> 
+          \[ \sum_{\color{#1299e7} {x \in X} }
+        \color{#1299e7} {x}= 1+7+12+9=29 \]
+        </p>
+
+        <h2>
+          Запишіть послідовність за допомогою знаку суми 
+        </h2>
+        <p>
+          Тепер обернена задача - записати суму використовуючи знак $\sum$. <br> <br>
+           Наприклад найпростіший приклад 1+2+3+4: <br>
+           $\sum_{i=1}^4 i$
+           <br><br>
+           Зверніть увагу, сума не мусить обов'язково починатися з і=1. 
+           Нижня межа може бути наприклад 0, чи будь-яким іншим числом.
+            Але тоді вираз біля суми мусить бути зміненим так, щоб ми отримали нашу 
+            послідовність 1+2+3+4. Якщо нижня межа буде 0, тоді сума виглядатиме так: <br>
+            $\sum_{i=0}^3 i+1$. (Перевірте)
+        </p>
+        <br>
+        <hr style="text-align:left;margin-left:0">
+
+        <p>
+          Чи 10+11+12: <br>
+          $\sum _{10}^{12} i$
+        </p>
+        <p>
+          Як би ви записали: 15+16+...+21? (відповідь внизу, приклад 8)
+        </p>
+        <p>
+          Якщо нам треба записати 2+4+6+8+10?
+Тут потрібно щоб коли і=1 перше число було 2, коли і=2 друге число було 4 ітд....тобто:
+<br>
+        $\sum _{i=1}^{5} 2i$
+        </p>
+
+        <p>
+          Як би ви записали: 3+6+9+12? (відповідь внизу, приклад 9)
+        </p>
+        <p>
+          Чи $\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}$ ? <br>
+          (відповідь внизу, приклад 10)
+        </p>
+        <p>
+          І останнє, як би ви записали за допомогою знаку суми <br>
+          (-1)+1+(-1)+1+(-1) ? (відповідь внизу, приклад 11)
+        </p>
+
   
    
 
@@ -214,65 +295,11 @@
     
 
 
-     <h2> <i id="summationOfConstant" class="scroll">Сума константи </i></h2>
-     <p>В попередніх прикладах ви напевно помітили, що індекс
-      суми <i class="red" style="font-size: 22px;">i </i>знаходится внизу знаку
-        суми і одночасно зправа: $\sum_{\color{red}{i=1}} ^{5}{\color{red}{i}}$. <br>
-        Давайте подивимося на
-         випадок коли індекс суми знаходиться тільки внизу а зправа константа (число):</p>
-     <p class="example">
-       $ \sum_{\color{red}{i=1}} ^{\color{red}{2}}{\color{#1299e7}{4}} = 4+4$
-     </p>
-      <p>Індекс сумації <i class="red">i</i> "йде" від 1 до 2, тому число, що біля суми додається двічі:</p>
-      <p class="bold">Давайте вирішимо декілька прикладів разом а потім ви самі:</p>
-      <p class="example"> <i>Приклад 1:</i> <br><br>
-       $ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{2}} = ?$
-      </p>
-      <p > <span class="bold">Рішення</span>: тому що <i class="red">i</i> йде від 1 до 3 ми додаємо число біля суми тричі:$ \sum_{i=1} ^{3}{{2}} =2+2+2=3\cdot 2=6$  </p>
-       <br>
-      <p class="example"><i>Приклад 2:</i><br><br>
-        $ \sum_{\color{red}{i=0}} ^{\color{red}{3}}{\color{#1299e7}{2}} =?$ </p><br>
-        <p class="hideMobile"> <span class="bold">Solution</span>: тому що <i class="bold">i</i> і йде від 0 до 3, тобто ми маємо: 0,1,2,3 ми додаємо двійку чотири рази. Не три (часта помилка). <br> $  \sum_{i=0} ^{3}{{2}} =2+2+2+2=4\cdot 2=8$  </p>
-        <p class="showMobile"> <span class="bold">Solution</span>: тому що <i class="bold">i</i> і йде від 0 до 3, тобто ми маємо: 0,1,2,3 ми додаємо двійку чотири рази. Не три (часта помилка). <br> $  \sum_{i=0} ^{3}{{2}} =2+2+2+2=\\=4\cdot 2=8$  </p>
-        <p class="example"> <i>Приклад 3:</i> <br><br>
-         $ \sum_{\color{red}{i=4}} ^{\color{red}{8}}{\color{#1299e7}{1}} = ?$
-        </p><br>
-        <p class="hideMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i> йде від 4 до 8: 4,5,6,7,8. Тобто <b>i</b> набуває пяти значень. Тому ми додаємо 1 пять разів: <br> $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=5\cdot 1=5$  </p>
-        <p class="showMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i> йде від 4 до 8: 4,5,6,7,8. Тобто <b>i</b> набуває пяти значень. Тому ми додаємо 1 пять разів: <br> $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=\\=5\cdot 1=5$  </p>
-        <p class="bold"><i>Скільки разів ми додаємо константу? Правило:</i> </p>
-        <p>Від верхньої межі віднімаємо нижню та додаємо один. На Прикладі 3: 8-4+1=5.<br>
-          Від верхньої межі віднімаємо нижню та додаємо один.<br>
-          Чому ми додаємо 1? Тому що ми віднімаємо 4, але воно має бути включено, адже <i>i</i> набуває 4.
-       </p>
-
-       <p class="example"> <i>Приклад 4:</i> <br><br>
-        $ \sum_{\color{red}{i=85}} ^{\color{red}{93}}{\color{#1299e7}{1}} = ?$
-       </p><br>
-       <p class="hideMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i> йде від 85 до 93. Тобто <b>i</b> набуває 93-85+1=9 значень. Тому ми додаємо 1 девять разів: <br> $ \sum_{i=85} ^{8}{{93}} =9\cdot 1=9$  </p>
-       <p class="showMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i>  йде від 85 до 93. Тобто <b>i</b> набуває 93-85+1=9 значень. Тому ми додаємо 1 девять разів: <br> $ \sum_{i=85} ^{8}{{93}}=9\cdot 1=9$  </p>
-
-
-        <p class="bold forStudent scroll " id="summationOfConstantExamples" > Тепер приклади для тебе, порахуй суму, якщо біля знаку суми просто число 
-          (константа): <span class="smaller">
-            (<span class="blueMine">рішення</span> можеш звірити внизу)</span>:</p>
-        <div class="container2">
-       <div class="firstSet " >
-         6. $ \sum_{i=1} ^{7}{1}$ <br>
-         <br>
-         7. $ \sum_{i=0} ^{3}{3}$ <br>
-         <br>
-         8.  $ \sum_{i=1} ^{4}{4}$ 
-       </div>
-       <div class="secondSet">
-         9. $ \sum_{i=5} ^{6}{\frac{1}{2}}$ <br>
-         <br>
-         10. $ \sum_{i=10} ^{22}{5}$ <br>
-         <br>
-         11. $ \sum_{i=5} ^{25}{0}$
-
-       </div>
       
-   </div>
+      
+     
+
+  
    <div class="empty">
     Гортай вниз, але спочатку обчисли сам! :)
        </div>
@@ -282,17 +309,23 @@
        <b>2)</b> $3\cdot 1+ 3\cdot 2+3\cdot 3+3\cdot 4+3\cdot 5=45$ <br>
        <b>3)</b> $(-1)+(-2)+(-3)+(-4)=-10$<br>
        <b>4)</b> $6+7+8+9+10=40$<br>
-       <b>5)</b> $\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}=\frac{77}{60}$
-       <br> <br>
-       <b>6)</b> $1+1+1+1+1+1+1=7$<br>
-       <b>7)</b> $4\cdot 3=12$<br>
-       <b>8)</b> $4\cdot 4=16$<br>
-       <b>9)</b> $\frac{1}{2}+\frac{1}{2}=1$<br>
-       <b>10)</b> Скільки разів ми додаємо число 5? 22-10+1=13 разів.
-       Відповідь:<br>
-       <b>$13\cdot 5=65$ </b>
+       <b>5)</b> $\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}=\frac{77}{60}$<br>
+       <b>6)</b> $(2+4)+(3+4)+\\+(4+4)
+       +(5+4)=30$ 
+       <br> 
+       <b>7)</b> $\frac{(-1)^2}{2\cdot 2}+\frac{(-1)^3}{2\cdot 3}=\\
+       =\frac{1}{4}+\frac{(-1)}{6}\approx 0.083
+       $ 
+       <br> 
+       <b>8) $\sum_{i=15}^{21}i$</b> 
        <br>
-       <b>11)</b> 0<br>
+       <b>9) $\sum_{i=1}^{4}3i$</b> 
+       <br>
+       <b>10) $\sum_{i=1}^{5}\frac{1}{i}$</b> 
+       <br>
+       <b>11) $\sum_{i=1}^{5}(-1)^i$</b> 
+
+
 
    </div>
 </div>
