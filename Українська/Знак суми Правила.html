@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-664WHLFRFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-664WHLFRFZ');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Σ Знак суми - правила та тотожності з прикладами українською ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Знак суми Σ| Правила </title>
+  <link  rel="icon" type="image/png" sizes="48x48" href="/favicon48px.ico">
+  <link rel="stylesheet" href="/style2.css" />
+  <link rel="stylesheet" href="/font-awesome4/css/font-awesome.min.css" />
+   
+  <script  src="https://code.jquery.com/jquery.min.js"></script>
+  <script >
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+   loader: {load: ['ui/lazy']},
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+     jax: ["input/TeX", "output/SVG"]} 
+    );
+   </script> 
+  <script async  type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+  
+
+
+ </head>
+
+<body>
+
+<div class="logo">
+   
+   <div class="firstUl">
+    <ul>
+        <li  onclick=showSidebar() class="openMenu"><a href="#showSidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+    </ul>
+   </div>
+
+    <div class="secondUl">
+        <ul>
+            <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7	"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="thirdUl">
+     
+    </div>
+
+</div>
+
+<div class="container">
+ <nav>
+
+  <div class="sidenav">
+
+   <div class="bitch">
+  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+
+
+
+ <!--  Navigation  -->
+<div id="nav-placeholder" style="margin: 0; padding: 0;">
+  <!--  Navigation  -->  
+  
+</div>
+
+  </nav>
+
+  <div class="main">
+
+
+    <div style="font-size: 18px;"><b> 🎓 На цій сторінці ми розберемо 3 правила використання знаку суми.</b> 
+    </div>
+    <p> 
+      Якщо ви не знайомі зi знаком суми $\sum$, перейдіть на <a href="ЗнакСуми.html">  Що таке знак суми?</a>    </p>
+    <br>
+    <ul class="onPageContent" >
+      <li>
+        <b style="font-size: 24px;">Правило 1 </b><br> <b style="font-size: 22px;">"Сума константи" </b> 
+        <a href="#Сума константи"> Пояснення на прикладах </a>
+      </li>
+    </ul>
+       <p>
+          \begin{equation} 
+          \sum_{i=\color{red}{k}}^{\color{red}{n}} C=C\cdot (\color{red}{n-k+1}) 
+          \end{equation}
+        </p>
+     
+        <p>Де <b>C</b> будь-який вираз, який не містить індекс сумації "<i><b>i</b></i>".</p>
+         
+        <ul class="onPageContent"> <li>
+          <b style="font-size: 24px;"> Правило 2  </b><br>
+            <b style="font-size: 21px;">"Константу можна винести за знак суми": </b> 
+           <a href="#Константу можна винести за знак суми"> Пояснення на прикладах </a>
+        </li>
+      </ul>
+        <p>
+          \begin{equation} 
+          \sum_{i=1}^n \color{blue}{C}\cdot a_i=\color{blue}{C}\sum_{i=1}^n a_i
+          \end{equation}
+        </p>
+   
+      
+        <ul class="onPageContent"> 
+          <li>
+            <b style="font-size: 24px;">Правило 3 <br>
+            </b>
+            <a href="#Правило 3"> Пояснення на прикладах </a>
+          </li>
+        </ul>
+        
+        <p>
+          \begin{equation} 
+         \sum_{i=1}^n \color{blue}{a_i+b_i} =\sum_{i=1}^n \color{green}{a_i} +\sum_{i=1}^n \color{green}{b_i}
+          \end{equation}
+        </p>
+      
+  
+    
+       
+         <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+     <br> <br>
+     <h1 class="headingss" id="Сума константи"><i>Знак суми | Правила та приклади </i></h1>
+     <p> Наступні правила застосовуються до скінченних сум 
+      (верхня  і нижня межі є цілими числами)</p>
+  
+     <br>
+
+        
+
+    <!--<p>
+      \begin{equation} 
+      \sum_{i=\color{red}{k}}^{\color{red}{n}} C=C\cdot (\color{red}{n-k+1}) 
+      \end{equation}
+    </p> -->
+
+   
+    
+     <picture>
+      <source type="image/webp" srcset="СумаКартинка/Знак суми приклад.webp">
+      <source type="image/png" srcset="СумаКартинка/Знак суми приклад.png">
+      <img src="СумаКартинка/Знак суми приклад.png" alt="Знак суми приклад " style="width: 650px; padding-left: 25%;"> 
+      
+    </picture>
+
+
+
+    <p>В попередніх прикладах ви напевно помітили, що індекс
+     суми <i class="red" style="font-size: 22px;">i </i>знаходится внизу знаку
+     сумації і одночасно зправа напр.: $\sum_{\color{red}{i=1}} ^{5}{\color{red}{i}}$. <br>
+       Давайте подивимося на
+        випадок коли індекс суми знаходиться тільки внизу а зправа константа (
+        вираз в який не входить індекс сумації <i><b>i</b></i> ):</p>
+    <p class="example">
+      $ \sum_{\color{red}{i=1}} ^{\color{red}{2}}{\color{#1299e7}{4}} = 4+4=\color{red}{2}\cdot 4$
+    </p>
+     <p>Індекс сумації <i class="red">i</i> "йде" від 1 до 2, тому число, що біля суми додається двічі.</p>
+     
+     <p class="blockPractice">
+    <i><b> 🎓 Правило:</b></i>  константу ми додаємо стільки разів скільки є чисел між верхньою і нижньою межею знаку суми включно.
+     </p>
+
+     <p class="bold">Давайте вирішимо декілька прикладів разом а потім ви самі:</p>
+     <p class="example" > <i>Приклад 1:</i> <br><br>
+      $ \sum_{\color{red}{i=1}} ^{\color{red}{3}}{\color{#1299e7}{2}} = ?$
+     </p>
+     <p > <span class="bold">Рішення</span>: тому що <i class="red">i</i> йде від 1 до 3 між нижньою і верхньою межами є 3 числа (1,2,3) - додаємо число біля суми тричі:$ \sum_{i=1} ^{3}{{2}} =2+2+2=3\cdot 2=6$  </p>
+      <br>
+     <p class="example"><i>Приклад 2:</i><br><br>
+       $ \sum_{\color{red}{i=0}} ^{\color{red}{3}}{\color{#1299e7}{2}} =?$ </p><br>
+       <p class="hideMobile"> <span class="bold">Рішення</span>: тому що <i class="bold">i</i> і йде від 0 до 3, тобто ми маємо: 0,1,2,3 ми додаємо двійку чотири рази. Не три (часта помилка). <br> $  \sum_{i=0} ^{3}{{2}} =2+2+2+2=4\cdot 2=8$  </p>
+       <p class="showMobile"> <span class="bold">Рішення</span>: тому що <i class="bold">i</i> і йде від 0 до 3, тобто ми маємо: 0,1,2,3 ми додаємо двійку чотири рази. Не три (часта помилка). <br> $  \sum_{i=0} ^{3}{{2}} =2+2+2+2=\\=4\cdot 2=8$  </p>
+       <p class="example"> <i>Приклад 3:</i> <br><br>
+        $ \sum_{\color{red}{i=4}} ^{\color{red}{8}}{\color{#1299e7}{1}} = ?$
+       </p><br>
+       <p class="hideMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i> йде від 4 до 8: 4,5,6,7,8. Тобто <b>i</b> набуває пяти значень. Тому ми додаємо 1 пять разів: <br> $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=5\cdot 1=5$  </p>
+       <p class="showMobile" > <span class="bold">Рішення</span>: <i class="bold">i</i> йде від 4 до 8: 4,5,6,7,8. Тобто <b>i</b> набуває пяти значень. Тому ми додаємо 1 пять разів: <br> $ \sum_{i=4} ^{8}{{1}} =1+1+1+1+1=\\=5\cdot 1=5$  </p>
+       <p class="bold"><i>Скільки разів ми додаємо константу? Правило:</i> </p>
+       <p>Від верхньої межі віднімаємо нижню та додаємо один. На Прикладі 3: 8-4+1=5.<br>
+         Чому ми додаємо 1? Тому що ми відняли нижню межу 4, але вона має бути включена, адже <i>i</i> набуває 4.
+      </p>
+
+      <p class="example"> <i>Приклад 4:</i> <br><br>
+       <!--  \begin{equation}
+        \begin{split}
+       \sum_{\color{red}{i=85}} ^{\color{red}{93}}{\color{#1299e7}{3}} &= \color{red}{(93-85+1)}\cdot \color{#1299e7}{3}
+       \\ \\&=27
+       \end{split}
+       \end{equation} -->
+      </p>
+
+     <!-- <img src="СумаКартинка/Знак суми приклад 2.png" alt="Знак суми приклад " style="width: 650px; padding-left: 20%;" loading='lazy'> -->
+      
+      <picture>
+        <source type="image/webp" srcset="СумаКартинка/Знак суми приклад 2.webp">
+        <source type="image/png" srcset="СумаКартинка/Знак суми приклад 2.png">
+        <img src="СумаКартинка/Знак суми приклад 2.png" alt="Знак суми приклад " style="width: 650px; padding-left: 20%;">
+        
+      </picture>
+       
+
+      <p class="example">Приклад 5:
+      </p>
+
+      <p>
+        Константою може бути будь-що, наприклад Ейфелева вежа 🗼. Головне щоб не було індексу сумації :) 
+      </p>
+      <p class="example"> 
+       <!-- \begin{equation}
+        \begin{split}
+        \sum_{j=2}^{100} 🗼&=(100-2+1)
+         🗼\\&=99🗼
+        \end{split}
+       \end{equation} -->
+      </p>
+
+
+      <picture>
+        <source type="image/webp" srcset="СумаКартинка/Знак суми приклад 3.webp">
+        <source type="image/png" srcset="СумаКартинка/Знак суми приклад 3.png">
+        <img src="СумаКартинка/Знак суми приклад 3.png" alt="Знак суми приклад " style="width: 650px; padding-left: 20%;">
+        
+      </picture>
+       
+
+      <p>
+        - томущо індекс <i><b>j</b></i> (може бути будь яка літера, не тільки <i><b>i</b></i>) набуває 99 значень - від 2 до 100.
+      </p>
+
+
+       <p class="bold forStudent scroll " id="summationOfConstantExamples" > Тепер приклади для вас, знайдіть суму, якщо біля знаку суми константа: 
+          <span class="smaller">
+           (<span class="blueMine">рішення</span> можете звірити внизу)</span>:</p>
+       <div class="container2">
+      <div class="firstSet " >
+        1. $ \sum_{i=1} ^{7}{1}$ <br>
+        <br>
+        2. $ \sum_{i=0} ^{3}{3}$ <br>
+        <br>
+        3.  $ \sum_{i=8} ^{25}{4}$ 
+      </div>
+      <div class="secondSet">
+        4. $ \sum_{i=5} ^{6}{\frac{1}{2}}$ <br>
+        <br>
+        5. $ \sum_{i=10} ^{22}p$ <br>
+        <br>
+        6. $ \sum_{i=5} ^{25}{0}$
+      
+
+
+
+        </div>
+       </div>
+       
+        <br ><br>
+        <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+        <h2> <i id="Константу можна винести за знак суми" class="scroll">2. Константу можна винести за знак суми  </i></h2>
+        
+       <p>
+        \begin{equation} 
+        \sum_{i=1}^n \color{blue}{C}\cdot a_i=\color{blue}{C}\sum_{i=1}^n a_i
+        \end{equation}
+       </p>
+   
+        <p>
+          - подивимося на приклад: 
+        </p>
+        <p>
+          \begin{equation} 
+          \sum_{i=1}^4 \color{blue}{8}\cdot i=
+          \end{equation}
+         </p>
+         <p>
+          - тут константа це 8, тому по правилу ми можемо писати:
+         </p>
+         <p>
+          \begin{equation} 
+          =\color{blue}{8}\sum_{i=1}^4 i \quad &check;
+
+          \end{equation}
+
+         </p>
+    
+         <p>
+          <b>Пояснення: </b> <br>
+          розпишемо ліву сторону $\Big(\sum_{i=1}^4 \color{blue}{8}\cdot i\Big)$ і побачимо, що вона дорівнює правій $\Big(\color{blue}{8}\sum_{i=1}^4 i \Big)$:  
+         </p>
+         <p>
+          $\sum_{i=1}^4 \color{blue}{8}\cdot i=\color{blue}{8}\cdot 1+\color{blue}{8}\cdot 2+\\+\color{blue}{8}\cdot 3+\color{blue}{8}\cdot 4=
+          \\|винесемо \enspace 8\enspace за\enspace дужки|\\
+          = \color{blue}{8}\cdot (1+2+3+4)\\
+          | і\enspace запишемо \enspace вираз\enspace \\ в \enspace дужках \enspace за\enspace  допомогою\enspace \\ знаку \enspace
+           суми | \\
+           = \color{blue}{8}\sum_{i=1}^4 i 
+           $
+         </p>
+         <p> <b>готово </b></p>
+
+         <hr style="text-align:left;margin-left:0; margin-top: 10px;">
+
+        
+         <p>Порахуємо декілька прикладів разом: </p>
+         <p style="text-decoration: underline;"> <b>Приклад 6 </b> </p>
+         <p> Використайте Правило 2 та знайдіть суму:
+         </p>
+
+         <p>
+          $\sum_{i=5}^{7} 10\cdot (2i+1)= $ <br><br>
+          |винесемо 10 за знак суми|: <br><br>
+          $ =10\sum_{i=5}^{7}(2i+1)=$ <br><br>
+          |і тепер як завжди|: <br><br>
+          $ =10\Big(2\cdot 5+1+2\cdot 6+1+\\ +
+          2\cdot 7+1\Big)=10\cdot (11+13+15)=\\
+          =390$
+        </p>
+
+        <br>
+
+        <p>Тепер ваша черга
+        </p>
+      
+        <hr style="text-align:left;margin-left:0; margin-top: 10px;">
+
+         <p>Винесіть константу за знак суми та додайте:
+        </p>
+
+        <div class="blockPractice">
+          <p>
+            <b>7) $\sum_{i=1}^3 4\cdot i^2$</b> <br><br>
+            <b>8)</b> $\sum_{i=3}^5 \frac{1}{5i}$
+          </p>
+        </div>
+
+
+        <br ><br>
+        <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+        <h2> <i id="Правило 3" class="scroll">Правило 3 </i></h2>
+
+        <p>
+          \begin{equation} 
+         \sum_{i=1}^n \color{blue}{a_i+b_i} =\sum_{i=1}^n \color{green}{a_i} +\sum_{i=1}^n \color{green}{b_i}
+          \end{equation}
+        </p>
+      
+        <p>
+          - подивимося на приклад: 
+        </p>
+        <p>
+          $\sum_{i=1}^3 \color{blue}{i^2+3} =\sum_{i=1}^3 \color{green}{i^2} +\sum_{i=1}^3 \color{green}{3}  \quad &check;$
+
+        </p>
+        <p>
+          - вирази в сумі не обов'язково мають містити індекс сумації <i><b>i</b></i> (тут число 3).
+        </p>
+
+        <p>
+        <b>Пояснення: </b> <br>
+          розпишемо ліву сторону $\sum_{i=1}^3 \color{blue}{i^2+3}$ і побачимо, що вона дорівнює правій $\Big( \sum_{i=1}^3 \color{green}{i^2} +\sum_{i=1}^3 \color{green}{3}
+           \Big)$:  
+
+         </p>
+          <p>
+            <b>Ліва сторона: </b>
+          </p>
+          <p>
+            $\sum_{i=1}^3 \color{blue}{i^2+3}=(1^2+3)+(2^2+3)+\\
+            +(3^2+3)=$
+          </p>
+          <p>
+            |переставимо доданки місцями|
+          </p>
+          <p>
+            $=(1^2+2^2+3^2)+(3+3+3)=$
+          </p>
+          <p>
+            |очевидно що цей вираз ми можемо записати як 2 суми:|
+          </p>
+          <p>
+            =$ \sum_{i=1}^3 \color{green}{i^2} +\sum_{i=1}^3 \color{green}{3} \quad &check; $
+          </p>
+          <p>супер, ми показали, що правило працює на цьому прикладі. 
+            Не важко бачити, що воно працюватиме завжди, якщо в межах немає $\pm \infty$. Про це згодом. <br> <br>
+            Тому з чистою совістю можемо використовувати правило в подальших прикладах :) </p>
+
+            <hr style="text-align:left;margin-left:0; margin-top: 10px;">
+
+
+            <p>Порахуємо разом: </p>
+         <p style="text-decoration: underline;"> <b>Приклад 7 </b> </p>
+         <p> З використанням правил вище знайдіть суму:
+         </p>
+
+         <p>
+          $\sum_{i=2}^{3} 4\cdot i+2= $ <br><br>
+          |використаємо Правило 3 - розділимо на дві суми: | <br><br>
+          $ =\sum_{i=2}^{3} 4\cdot i+\sum_{i=2}^32=$ <br><br>
+          |в перший сумі винесемо константу 4 за  $\sum:$| <br><br>
+          $ =4\sum_{i=2}^{3} i+\sum_{i=2}^32=$<br><br>
+          |ліву суму порахуємо як завжди, праву як суму константи:| <br><br>
+          $4\cdot (2+3)+2\cdot 2=24$
+        </p>
+
+        <hr style="text-align:left;margin-left:0; margin-top: 10px;">
+
+         
+        <p>
+          Тепер ви. Використовуючи правила обчисліть суму:
+        </p>
+
+        <p class="blockPractice">
+        <b>9)</b> $\sum_{i=10}^{11} 2i +3k$ <br><br>
+        <b>10)</b> $\sum_{i=2}^4 5i -6i^2$
+
+        </p>
+
+        <br ><br>
+        <hr style="text-align:left;margin-left:0; border: 2px solid black; margin-bottom: 20px;"> 
+
+
+        <p>Що якщо в сумі багато чисел, наприклад:</p>
+        <p>
+          \begin{equation} 
+          \sum_{i=1}^{\color{red}{100}} i ?
+           \end{equation}
+        </p>
+        
+        <p>
+          - багато з вас тут впізнає суму арифметичної прогресії. Адже ми додаємо числа від 1 до 100.
+        </p>
+        <p>
+          - для тих, хто забув :) суму $s_n$ перших <b>n</b> чисел (<b>n</b> натуральне число), ми знаходимо по формулі: 
+        </p>
+        <p>
+          \begin{equation} 
+          s_n= \frac{n}{2}(1+n)
+           \end{equation}
+        </p>
+        <p>
+           $s_n$ означає те саме, що i $\sum_{i=1}^n i$ 
+        </p>
+        <p>
+          тобто:
+        </p>
+        <p>
+          \begin{equation} 
+          \begin{split}
+          \sum_{i=1}^{\color{red}{100}} i &=\frac{100}{2}(1+100)
+          \\&=5050
+          \end{split}
+           \end{equation}
+        </p>
+        
+
+
+
+
+        
+
+  <div class="empty">
+    Рішення внизу :]
+  </div>
+  <p class="blueMine"><b>Рішення</b></p>
+ 
+  <div class="container2">
+    <div class="firstSet " >
+    
+
+      <b>1)</b> $1\cdot 7=7$<br> <br>
+      <b>2)</b> $4\cdot 3=12$<br><br>
+      <b>3)</b> $18\cdot 4=72$<br><br>
+      <b>4)</b> $\frac{1}{2}+\frac{1}{2}=1$<br><br>
+      <b>5)</b> Скільки разів ми додаємо p? 22-10+1=13 разів.
+      Відповідь:<br>
+      <b>$13\cdot p$ </b>
+      <br> <br>
+      <b>6)</b> 0<br><br>
+      <b>7)</b> $\sum_{i=1}^3 4i^2=4\sum_{i=1}^3i^2=\\
+      =4(1^2+2^2+3^2)=54$<br> <br>
+      <b>8)</b> $\sum_{i=1}^3 \frac{1}{5i}=\frac{1}{5}\sum_{i=1}^3 \frac{1}{i}=\\
+      =\frac{1}{5}(\frac{1}{1}+\frac{1}{2}+\frac{1}{3})\approx 0.37$<br><br>
+      <b>9)</b> <span style="font-size: 20px;">
+        $\sum_{i=10}^{11} 2i +3k=\sum_{i=10}^{11} 2i+\\+\sum_{i=10}^{11} 3k
+      =2\sum_{i=10}^{11} i+\sum_{i=10}^{11} 3k=\\
+      \\=2(10+11)+2\cdot 3k=\\
+      =42+6k
+      $
+      <p> 3k тут константа </p>
+
+      </span>
+
+      <br><br>
+      <b>10)</b> <span style="font-size: 20px;">
+        $\sum_{i=2}^4 5i -6i^2=5\sum_{i=2}^4 i -\\ -6\sum_{i=2}^4 i^2
+        =5(2+3+4)-\\-6(2^2+3^2+4^2)=\\=-1203$
+      </span>
+
+
+
+      </div>
+     </div>
+
+
+
+</div>
+ 
+<aside>
+  
+</aside>    
+</div>
+
+
+<script src="/javascript.js"></script>
+
+
+</body>
+
+</html>
