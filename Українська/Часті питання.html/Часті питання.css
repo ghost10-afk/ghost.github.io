@@ -1,0 +1,60 @@
+
+ul {
+    
+    width: 70%;
+    margin: 0 auto;
+    list-style-type: none; 
+
+}
+
+.li {
+    border: 2px solid white;   
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    list-style-type: none; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+
+}
+ 
+
+a {
+    
+    text-decoration: none;
+
+  }
+
+
+  .grab {cursor: -webkit-grab; cursor: grab;}
+
+  .hover-item {
+    transition: 0.2s;
+  }
+  .hover-item:hover {
+    transform:translateY(5px)
+  }
+
+
+.відповідь {
+    border: 1px solid #1299e7;
+    border-radius: 10px;
+    padding: 20px 45px;
+    font-size: 24px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.footer {
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+ }
