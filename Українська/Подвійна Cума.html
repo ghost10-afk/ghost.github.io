@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-664WHLFRFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-664WHLFRFZ');
+</script>
+
+ <meta charset="UTF-8">
+ <meta name="description" content="Подвійна сума, два знаки суми  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Що таке подвійна сума, математика </title>
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48px.png">
+  <link rel="stylesheet" href="/style2.css"  />
+  <link rel="stylesheet" href="/font-awesome4/css/font-awesome.min.css" />
+
+  <script  src="https://code.jquery.com/jquery.min.js"></script>
+  <script >
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+   loader: {load: ['ui/lazy']},
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+     jax: ["input/TeX", "output/SVG"]}
+    );
+   </script> 
+  <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+    
+ </head>
+
+
+
+<body>
+
+<div class="logo">
+   
+   <div class="firstUl">
+    <ul>
+        <li  onclick=showSidebar() class="openMenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+    </ul>
+   </div>
+
+    <div class="secondUl">
+        <ul>
+            <li><span class="small"><i>you need </i></span>Math<span class="small"><i> to read the Universe </i></span><i class="fa fa-rocket" style="font-size:20px;color:#1299e7"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="thirdUl">
+     
+    </div>
+
+</div>
+
+<div class="container">
+ <nav>
+
+  <div class="sidenav">
+
+   <div class="bitch">
+  <a onclick=hideSidebar() href=#><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+</div>
+
+   <!--  Navigation  -->
+<div id="nav-placeholder" style="margin: 0; padding: 0;">
+  <!--  Navigation  -->  
+
+  </div>
+
+  </nav>
+
+  <div class="main" style="line-height: 22pt;">
+
+  <div class="NowNext"> 
+    <div class="Now" style="text-decoration: underline;"><b>На цій сторінці:
+      </b></div>
+   <!----> <div class="Next" style="text-decoration: underline;"><b> <!-- Наступна сторінка: --> <br>
+    <!-- <a href="DoubleSummationRules.html"> Подвійна сума. Правила та приклади </a> -->
+    </b></div> 
+  </div>
+
+    <ul class="onPageContent">
+      <li style="padding-bottom: 8px;">
+        <a href="#">Як рахувати подвійну суму? 
+        </a>
+      </li>
+      <li style="padding-bottom: 8px;">
+        <a href="\Українська/Подвійна Cума.html#productDoubleSum">Подвійна сума добутку  
+        </a>
+      </li>
+      <li style="padding-bottom: 8px;"><a href="\Українська/Подвійна Cума.html#doubleSumOneVariable">Подвійна сума однієї змінної 
+      </a></li>
+      <li style="padding-bottom: 40px"><a href="\Українська/Подвійна Cума.html#doubleSumConstant">Подвійна сума константи 
+      </a></li>
+
+    </ul>  
+    
+     <h1 class="headingss"><i>Як рахувати подвійну суму? 
+    </i></h1>
+      
+        
+       <div class="explanation1 general"> Розберемось на прикладі:
+       </div>   
+
+       <img src="/Українська/СумаКартинка/Подвійна сума .png" alt="Що таке подвійна сума?" style="width: 65%; padding-left: 35%; padding-top: 4%; padding-bottom: 2%;">
+
+       <!--<p class="summ" id="element2"> \[ \text{$\sum_{\color{blue}{i=1}} ^{2} \sum_{\color{red}{j=1}} ^{3}{\color{blue}{\color{blue}{i}+\color{red}{j}}} $}\]</p> -->
+       <div class=" exp2"> <i>- суму зліва ми назвемо  <span class="bold blue">зовнішньою,</span> <br>- суму з права -  <span class="bold red"> внутрішньою</span></i>  </div>  
+       <br><br>
+       <div class=" exp2"> <i>Щоб порахувати подвійну суму потрібно розуміти  <a href="\Українська/ЗнакСуми.html">Знак суми </a></i> </div>  
+     <br><br>
+       <div class=" exp3"> <span class="bold">КРОК 1:</span> рахуємо внутрішню суму як завжди, тут <i class="red">j</i> змінна,  <i class="blue">i</i> просто стала (константа).<br>
+        Знак зовнішньої суми залишаємо:</div> 
+ 
+       <p class="showOnMobile500" style="font-size: 20px;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} \sum_{\color{red}{j=1}} ^{3}{ \color{blue}{i}+\color{red}{j}} &= 
+        \sum_{\color{blue}{i=1}}^{2}(\color{blue}{i}+\color{red}{1})+\\&+
+        (\color{blue}{i}+\color{red}{2})+\\&+(\color{blue}{i}+\color{red}{3})=\\ змінюється\hspace{0.4em} тільки \hspace{0.4em} \color{red}{j}\hspace{0.4em} \\
+
+         & =\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+\color{red}{6})
+        \end{split}
+        \end{equation} 
+       </p>
+       <p class="hideOnMobile500" style="font-size: 22px; padding-left: 12%;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} \sum_{\color{red}{j=1}} ^{3}{ \color{blue}{i}+\color{red}{j}} &= 
+        \sum_{\color{blue}{i=1}}^{2}(\color{blue}{i}+\color{red}{1})+(\color{blue}{i}+\color{red}{2})+(\color{blue}{i}+\color{red}{3})=\\ 
+        \ змінюється\hspace{0.4em} тільки \hspace{0.4em} \color{red}{j},\\ \hspace{0.4em}
+        \color{blue} i \hspace{0.4em}просто\hspace{0.4em} стала\\
+         & =\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+\color{red}{6})
+        \end{split}
+        \end{equation} 
+       </p>
+       
+
+      <br>
+      <div class=" exp3"> <span class="bold">КРОК 2:</span> Потім рахуємо зовнішню суму як завжди, міняється  <span class="blue">i </span></div>  
+      <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+        \begin{equation}
+        \begin{split}
+        &\sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+6)=\\&=(3\cdot \color{blue}{1}+6)+\\&+(3\cdot \color{blue}{2}+6)=\\&
+         =9+12=21
+        \end{split}
+        \end{equation}
+      </p>
+
+      <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 15%;">
+        \begin{equation}
+        \begin{split}
+        \sum_{\color{blue}{i=1}}^{2} (3\cdot \color{blue}{i}+6)&=(3\cdot \color{blue}{1}+6)+(3\cdot \color{blue}{2}+6)=\\&
+        =9+12=21
+        \end{split}
+        \end{equation}
+      </p>
+
+      
+       <p class="general">
+        Тепер <span class="red">попробуйте порахувати наступний приклад</span> самі! 
+        Рішення можете перевірити в низу сторінки.
+        </p>
+
+      <div class="blockPractice">
+      <p class="example"> <i>Приклад 1 
+      </i> (для практики ): <br><br>
+        \begin{equation}
+        \begin{split}
+        \sum_{{i=1}}^{4}\sum_{{j=1}}^{2} i+j=?
+        \end{split}
+        \end{equation}
+      </p>
+      </div>
+      
+      <br>
+
+      <p><span class="red">Часта помилка</span> при рахуванні суми: 
+        </p> <br>
+        <div style="border: 2px solid red; padding-left: 15px;" >
+        <p style="color:red">
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)\neq 1+2$
+         </p>
+         <p>має бути 
+        </p>
+         <p>
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)=(1+1)+\\ \hspace{5em}+(2+2)$
+         </p>
+         <p> Тобто спочатку ми підставляємо 1 в обидві "i", потім так само 2 і додаємо.</p>
+         <p>Чи рівносильно:
+        </p>
+         <p style="font-size: 19px;">
+          $\sum_{{i=1}}^{2}
+          ( \color{blue}{i}+i)=\sum_{{i=1}}^{2} \color{blue}{2\cdot i}\\
+          \hspace{5em}=2\cdot 1+2\cdot 2$
+         </p>
+         <br>
+        </div>
+     
+      <hr style="text-align:left;margin-left:0">
+    
+       <br>
+       <br>
+       <br>
+       
+       <h2 style="font-size: 27px;">Давайте зробимо більше прикладів разом:
+        </h2>
+      <p>Памятайте, індексом сумації може бути будь-яка літера,  
+        <i class="bold">i</i> та  <i class="bold">j</i> є найбільш популярними.<br>
+        В наступних прикладах будемо використовувати не тільки ці літери, але і <i class="bold">l</i> чи <i class="bold">k</i>. 
+
+      </p>
+      <p
+       class="example"> <i>Приклад </i> </p>
+      <p class="example">
+         \begin{equation}
+        \begin{split}
+        \sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)=
+        \end{split}
+        \end{equation}
+      </p>
+        <p > <span class="bold">Рішення</span>: рахуємо по кроках 1 і 2,
+          <br><br>
+          перше внутрішня сума:</p>
+          <p  class="solutionSize hideOnMobile500">
+            \begin{equation}
+            \begin{split}
+            \sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)&=
+            \sum_{k=2} ^{4}(2\cdot k -1)+(2\cdot k-2)\\&=
+            \sum_{k=2} ^{4}(4\cdot k-3) \\Тепер \hspace{0.4em} зовнішня\hspace{0.4em}\\ сума\hspace{0.4em} як\hspace{0.4em}\\ завжди:
+            \\&=(4\cdot 2-3)+(4\cdot 3 -3)+
+            \\&+(4\cdot 4-3)
+            \\після\hspace{0.4em} додавання \\ \hspace{0.4em} отримаємо:
+            \\&=27
+            \end{split}
+            \end{equation}
+          </p> 
+
+          <p  class="solutionSize showOnMobile500" style="font-size: 20px;">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{k=2}}^{4}\sum_{{l=1}}^{2} (2\cdot k-l)\\&=
+            \sum_{k=2} ^{4}(2\cdot k -1)+(2\cdot k-2)\\&=
+            \sum_{k=2} ^{4}(4\cdot k-3) 
+            \\&=(4\cdot 2-3)+(4\cdot 3 -3)+
+            \\&+(4\cdot 4-3)
+            \\&=27знак суми 
+            \end{split}
+            \end{equation}
+          </p> 
+
+       
+
+        <p>
+          Тепер ваша черга.
+           Порахуйте приклади нижче,
+            рішення можете перевірити внизу.
+        </p>
+        <div class="blockPractice">
+      <p class="example" style="font-size: 22px;"><i>Приклад 2</i> (для практики)<br><br>
+          $ \sum_{k=3}^{5}\sum_{l=1}^{3} (k-2\cdot l)$ </p>
+      <br>
+
+      <p class="example"><i>Приклад 3</i> (для практики)<br><br>
+            $ \sum_{k=2}^{4}\sum_{l=2}^{4} (-k+l)$ </p>  
+        </div>
+      <br>
+      <br>
+      <br id="productDoubleSum">
+      <br >
+      <br>
+      <br >
+      <br>
+  <h2 >Добуток у подвійній сумі</h2>
+      <p class="example"> <i>Давайте порахуємо разом:
+      </i>
+        <p> Знайдіть подвійну суму $xy$ </p>
+        <p>Спочатку внутрішню 
+          суму підставляючи 1 та 2 в змінну <b>y</b>. Потім зовнішню суму, 
+          де змінна тепер <b>х</b> як завжди:</p>
+        <p class="example hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{x=1}}^{2}\sum_{{y=1}}^{2} (x\cdot y)&=\sum_{{x=1}}^{2}(x\cdot 1)+(x\cdot 2)
+          \\&=(1\cdot 1 + 1\cdot 2) + (2\cdot 1 + 2\cdot 2)
+          \\&=1+2+2+4
+          \\&=9
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="example showOnMobile500">
+          \begin{equation}
+          \begin{split}
+          &\sum_{{x=1}}^{2}\sum_{{y=1}}^{2} (x\cdot y)=\\&=\sum_{{x=1}}^{2}(x\cdot 1)+(x\cdot 2)
+          \\&=(1\cdot 1 + 1\cdot 2) +\\&+ (2\cdot 1 + 2\cdot 2)
+          \\&=1+2+2+4
+          \\&=9
+          \end{split}
+          \end{equation}
+        </p>
+
+      </p>
+
+      <p> (також можна було зразу додати х+2х=3х та рахувати простіше)</p>
+      <hr style="text-align:left;margin-left:0">
+      <p>
+        
+      </p>
+      <p class="example"> <i>Ще один приклад з діленням  разом:</i>
+        <p class="example hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{i=5}}^{6}\sum_{{j=1}}^{2} \frac{j^2}{i}&=\sum_{{i=5}}^{6} \frac{1^2}{i}
+          +\frac{2^2}{i}
+          \\&=\Big(\frac{1^2}{5}+\frac{2^2}{5}\Big) 
+          +\Big(\frac{1^2}{6}+\frac{2^2}{6}\Big)
+          \\&=\Big(\frac{1+4}{5}\Big)+\Big(\frac{1+4}{6}\Big)
+          \\&=1+\frac{5}{6}=\frac{11}{6}
+
+          
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p class="example showOnMobile500" style="font-size: 19px;">
+          \begin{equation}
+          \begin{split}
+          &\sum_{{i=5}}^{6}\sum_{{j=1}}^{2} \frac{j^2}{i}=\\&=\sum_{{i=5}}^{6} \frac{1^2}{i}
+          +\frac{2^2}{i}
+          \\&=\Big(\frac{1^2}{5}+\frac{2^2}{5}\Big) 
+          +\Big(\frac{1^2}{6}+\frac{2^2}{6}\Big)
+          \\&=\Big(\frac{1+4}{5}\Big)+\Big(\frac{1+4}{6}\Big)
+          \\&=1+\frac{5}{6}=\frac{11}{6}
+
+          
+          \end{split}
+          \end{equation}
+        </p>
+
+        <p>(можна було зразу додати $ \frac{1^2}{i}
+          +\frac{2^2}{i}=\frac{5}{i}$)</p>
+
+        
+      <hr style="text-align:left;margin-left:0">
+      <p class="example"> <i>Ще один разом</i>: 
+        <p class="example23px hideOnMobile500">
+          \begin{equation}
+          \begin{split}
+          \sum_{{i=7}}^{8}\sum_{{j=3}}^{4} \frac{j+1}{(i-1)^2}&=\sum_{{i=7}}^{8} \frac{3+1}{(i-1)^2}
+          + \frac{4+1}{(i-1)^2}
+          \\&= \Big(\frac{3+1}{(7-1)^2}+ \frac{4+1}{(7-1)^2}\Big)+
+          \\&+\Big(\frac{3+1}{(8-1)^2}+ \frac{4+1}{(8-1)^2}\Big)
+          \\&=\Big(\frac{4}{36}+\frac{5}{36}\Big)
+          +\Big(\frac{4}{49}+\frac{5}{49}\Big)
+          \\&=\frac{3}{12}+\frac{9}{49}
+          \\&=\frac{255}{588}=\frac{85}{196}
+
+          
+          \end{split}
+          \end{equation}
+          </p>
+
+          <p class="example23px showOnMobile500" style="font-size: 19px;">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{i=7}}^{8}\sum_{{j=3}}^{4} \frac{j+1}{(i-1)^2}=\\&=\sum_{{i=7}}^{8} \frac{3+1}{(i-1)^2}
+            + \frac{4+1}{(i-1)^2}
+            \\&= \Big(\frac{3+1}{(7-1)^2}+ \frac{4+1}{(7-1)^2}\Big)+
+            \\&+\Big(\frac{3+1}{(8-1)^2}+ \frac{4+1}{(8-1)^2}\Big)
+            \\&=\Big(\frac{4}{36}+\frac{5}{36}\Big)
+            +\Big(\frac{4}{49}+\frac{5}{49}\Big)
+            \\&=\frac{3}{12}+\frac{9}{49}
+            \\&=\frac{255}{588}=\frac{85}{196}
+  
+            
+            \end{split}
+            \end{equation}
+            </p>
+
+          <hr style="text-align:left;margin-left:0">
+          <p class="bold">Гарний приклад <span class="red">з <span class="blue">j</span> в степені 
+ 
+            <span class="blue">i</span> </span>(також легкий  
+            ):</p>
+
+            <p class="example "> <i>Порахуємо разом 
+            </i>: 
+              <p class="example23px hideOnMobile500">
+                \begin{equation}
+                \begin{split}
+                \sum_{{i=3}}^{4}\sum_{{j=1}}^{2} \frac{i^2}{1+j^i}&=
+                \sum_{{i=3}}^{4} \frac{i^2}{1+1^i}
+                + \frac{i^2}{1+2^i}\\часта\hspace{0.4em}\\помилка:
+                \\& \color{red} {\neq \frac{3^2}{1+1^3}+\frac{4^2}{1+1^4}}\\
+                правильно\hspace{0.4em}підставити\hspace{0.4em}3\hspace{0.4em}в\hspace{0.4em}обидва\\
+                \hspace{0.4em}дроби\hspace{0.4em}та\hspace{0.4em}4\hspace{0.4em}в\hspace{0.4em}обидва:\\
+          
+
+                \\&= \frac{\color{red}{3^2}}{1+1^\color{red}{3}}+
+                \frac{\color{red}{3^2}}{1+2^\color{red}{3}}+
+                \\&+\frac{\color{red}{4^2}}{1+1^\color{red}{4}}+
+                \frac{\color{red}{4^2}}{1+2^\color{red}{4}}
+                \\&=\frac{9}{2}+\frac{9}{9}+\frac{16}{2}+\frac{16}{17}
+                \\&=\frac{1377+306+2448+288}{306}
+                \\&=\frac{4419}{306}\\скоротимо\hspace{0.4em}
+                на\hspace{0.4em}9
+                \\&=\frac{491}{34}
+
+                \end{split}
+                \end{equation}
+              </p>
+
+                <p class="example23px showOnMobile500">
+                  \begin{equation}
+                  \begin{split}
+                  &\sum_{{i=3}}^{4}\sum_{{j=1}}^{2} \frac{i^2}{1+j^i}\\&=
+                  \sum_{{i=3}}^{4} \frac{i^2}{1+1^i}
+                  + \frac{i^2}{1+2^i}  
+                  \end{split}
+                  \end{equation}
+                  </p>
+                  <p class="showOnMobile500"><b style="font-size: 23px;">Common mistake:</b></p>
+
+                  <p class="example23px showOnMobile500">
+                  \begin{equation}
+                  \begin{split}
+                  & \color{red} {\neq \frac{3^2}{1+1^3}+\frac{4^2}{1+1^4}}\\
+                  \end{split}
+                  \end{equation}
+                  
+                  <p class="showOnMobile500"><b style="font-size: 23px;">Plug in 3 and 4 in each of 2 fractions:</b></p>
+
+                  <p class="example23px showOnMobile500" style="font-size: 21px;">
+                  \begin{equation}
+                  \begin{split}
+                  \\&= \frac{\color{red}{3^2}}{1+1^\color{red}{3}}+
+                  \frac{\color{red}{3^2}}{1+2^\color{red}{3}}+
+                  \\&+\frac{\color{red}{4^2}}{1+1^\color{red}{4}}+
+                  \frac{\color{red}{4^2}}{1+2^\color{red}{4}}
+                  \\&=\frac{9}{2}+\frac{9}{9}+\frac{16}{2}+\frac{16}{17}
+                  \\&=\frac{1377+306+2448+288}{306}
+                  \\&=\frac{4419}{306}
+                 
+                  \\&=\frac{491}{34}
+  
+                  \end{split}
+                  \end{equation}
+                  </p>
+                </p>
+
+
+
+          <p>Тепер <span class="red">ваша черга практикуватися.</span> 
+            <br>
+            Перевірити рішення можете як завжди внизу.</p>    
+
+       <div class="blockPractice">
+      <p class="example"><i>Приклад 4</i> (практика)<br><br>
+        $ \sum_{i=5}^{8}\sum_{j=3}^{5} j^3\cdot i^2$ </p>  
+          
+     <p class="example"><i>Приклад 5</i> (практика)<br><br>
+          $ \sum_{i=0}^{1}\sum_{j=1}^{2} j^2+ i^2$ </p>  
+
+     <p class="example"><i>Приклад 6</i> (практика)<br><br>
+        $ \sum_{i=5}^{7}\sum_{j=10}^{12} \frac{j^2\cdot i}{2}$ </p>  
+            
+    <p class="example"><i>Приклад 7</i> (практика)<br><br>
+       $ \sum_{i=1}^{2}\sum_{j=1}^{3} \frac{j-i}{j}$ </p>       
+       
+    <p class="example"><i>Приклад 8</i> (практика)<br><br>
+        $ \sum_{i=1}^{2}\sum_{j=1}^{3}j^i$</p>     
+
+      </div>
+     <br id="doubleSumOneVariable">
+     <br>
+    <h2 >Подвійна сума однієї змінної 
+    </h2>
+     <p>Подивимося на подвійну суму з однією
+       змінною після двох знаків суми.</p>   
+     
+         <p class="example"> <i>Приклад</i>: 
+          <p class="example">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&
+                       
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p><b>Рішення:</b> Вирішимо як і поперднi.
+            <br>
+            <br><b>Cпочатку</b> внутрішню суму з індексом  j: </p>
+            <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+              \begin{equation}
+              \begin{split}
+
+              \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&=\sum_{{i=1}}^{5} (1+2+3+4)
+              \\&=\sum_{{i=1}}^{5} 10
+
+              \end{split}
+              \end{equation} 
+             </p>
+
+             <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+              \begin{equation}
+              \begin{split}
+
+              &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j=\\&=\sum_{{i=1}}^{5} (1+2+3+4)
+              \\&=\sum_{{i=1}}^{5} 10
+
+              \end{split}
+              \end{equation} 
+             </p>
+
+             <p> тепер маємо знак суми та константу
+               (нема літери 'i', все інше це константа).
+             </p><br>
+               <div class=" exp2"> <i>(Щоб засвоїти матеріал
+                 потрібно розуміти <a href="/Українська/ЗнакСуми.html">знак суми </a></i>  та <br>
+                 <a href="/Українська/Знак суми Правила.html#Сума константи">суму константи</a>) </div>  
+            <p>Дальше ми додаємо константу 10 разів, 
+              як ми знаємо з попередніх тем:</p>
+              <p class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+                \begin{equation}
+                \begin{split}
+  
+                \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j&=\sum_{{i=1}}^{5} (1+2+3+4)
+                \\&=\sum_{{i=1}}^{5} 10
+                \\&=\color{blue}{10 +10+10+10+10}
+                \\&=\color{blue}{50}
+  
+                \end{split}
+                \end{equation} 
+               </p>
+
+               <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+                \begin{equation}
+                \begin{split}
+  
+                &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} j=\\&=\sum_{{i=1}}^{5} (1+2+3+4)
+                \\&=\sum_{{i=1}}^{5} 10
+                \\&=10 +10+10+10+10
+                \\&=50
+  
+                \end{split}
+                \end{equation} 
+               </p>
+
+              <hr style="text-align:left;margin-left:0">
+
+              <p>Порахуємо ще один, цього разу зі змінною  "i"
+              </p>
+              
+                <p class="example"> <i>Приклад</i>: 
+                  <p class="example">
+                    \begin{equation}
+                    \begin{split}
+                    \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2&
+                               
+                    \end{split}
+                    \end{equation}
+                  </p>
+        
+    <p><b>Рішення:</b> Спочатку внутрішню суму. Індекс сумації
+        'j,' але його немає біля знаку суми, тільки константа $i^2$. 
+        Тому ми додамо $i^2$
+        чотири рази (див.
+        <a href="/Українська/Знак суми Правила.html#Сума константи">Сума константи 
+        </a>)
+         <br> Тому:
+         <p  class="hideOnMobile500" style="font-size: 23px; padding-left: 17%;">
+          \begin{equation}
+          \begin{split}
+
+          \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2&=\sum_{{i=1}}^{5} 4\cdot i^2\\ \\
+         тепер \hspace{0.4em} вирішуємо\\\hspace{0.4em}як\hspace{0.4em}
+          завжди:
+          \\&=\sum_{{i=1}}^{5} 4\cdot 1^2 +4\cdot 2^2+
+          \\&+4\cdot 3^2+4\cdot 4^2+ 4\cdot 5^2
+          \\&=4\cdot (1+4+9+16+25)
+          \\&=4\cdot 55
+          \\&=220
+
+          \end{split}
+          \end{equation} 
+         </p>
+
+         <p class="showOnMobile500" style="font-size: 23px; padding-left: 17%;">
+          \begin{equation}
+          \begin{split}
+
+          &\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} i^2=\\&=\sum_{{i=1}}^{5} 4\cdot i^2
+          \\&=\sum_{{i=1}}^{5} 4\cdot 1^2 +4\cdot 2^2+
+          \\&+4\cdot 3^2+4\cdot 4^2+ 4\cdot 5^2
+          \\&=4\cdot (1+4+9+16+25)
+          \\&=4\cdot 55
+          \\&=220
+
+          \end{split}
+          \end{equation} 
+         </p>
+
+         <hr style="text-align:left;margin-left:0"> 
+         <p> Останній разом, дальше ви самі:
+        </p>
+        
+          <p class="example23px">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}                    
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p>Порахуємо внутрішню суму. Знову,
+              $i^{2\cdot i}$ є просто константою, тому що  немає індексу сумації 'j'
+               . Скільки разів ми додаємо $i^{2\cdot i}$? 
+               Стільки, скільки є чисел між 10 і 15 включно.
+               Тобто $15-10+1=6$ разів
+                  (перевірте: 10, 11, 12, 13, 14, 15). <br>Отримаємо:
+          </p>
+
+          <p class="example23px hideOnMobile500">
+            \begin{equation}
+            \begin{split}
+            \sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}&= \sum_{{i=5}}^{7} 6\cdot i^{2\cdot i}    
+            \\i\hspace{0.4em}тепер\hspace{0.4em}як\hspace{0.4em}завжди
+            \\&=6\cdot 5^{2\cdot 5}+6\cdot 6^{2\cdot 6}+6\cdot 7^{2\cdot 7}
+            \\&=6\cdot( 5^{10}+6^{12}+7^{14})
+            \\&=4082457724860
+            \end{split}
+            \end{equation}
+          </p>
+
+          <p class="example23px showOnMobile500">
+            \begin{equation}
+            \begin{split}
+            &\sum_{{i=5}}^{7}\sum_{{j=10}}^{15} i^{2\cdot i}=\\&= \sum_{{i=5}}^{7} 6\cdot i^{2\cdot i}    
+            \\&=6\cdot 5^{2\cdot 5}+6\cdot 6^{2\cdot 6}+6\cdot 7^{2\cdot 7}
+            \\&=6\cdot( 5^{10}+6^{12}+7^{14})
+            \\&=4082457724860
+            \end{split}
+            \end{equation}
+          </p>
+
+
+          <p> Тепер ваша черга.
+            Якщо виникнуть проблеми перечитайте кроки 1 і 2, або перейдіть 
+            по ссилкам та ознайомтесь з попередніми темами.
+
+          </p>
+
+           <br>
+          <div class="blockPractice">
+            <p class="example"><i>Приклад 9</i> (практика)<br><br>
+              $ \sum_{i=8}^{9}\sum_{j=1}^{5} i$ </p>    
+              <p class="example"><i>Приклад 10</i> (практика)<br><br>
+                $ \sum_{i=1}^{3}\sum_{j=15}^{20} (i-3)^2$ </p> 
+                <p class="example"><i>Приклад 11</i> (практика)<br><br>
+                  $ \sum_{i=10}^{12}\sum_{j=2}^{4} j^3$ </p>  
+                  <p class="example"><i>Приклад 12</i> (практика)<br><br>
+                    $ \sum_{i=1}^{3}\sum_{j=30}^{32} i^i$ </p>      
+      
+            </div>
+
+            <br id="doubleSumConstant">
+            <p>Що якщо немає жодного 
+              з індексів сумації біля знаків суми?</p>
+
+            <h2 >Подвійна сума константи</h2>
+            <p>Подивимося на наступну подвійну
+               суму без змінних "i" та "j":</p>
+
+              <p class="example"> <i>Приклад</i>: 
+                <p class="example">
+                  \begin{equation}
+                  \begin{split}
+                  \sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k&
+                             
+                  \end{split}
+                  \end{equation}
+                </p>
+
+              <p><b>Рішення:</b> тут ми маємо тільки сталу (константу) 5k.
+              <br>
+              Тому ми додамо 5к чотири рази: (тому що j йде від 1 до 
+              4):   
+            </p>
+            <p class="hideOnMobile500">
+             <b>1.</b> $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=\sum_{{i=1}}^{5}4\cdot 5k=\sum_{{i=1}}^{5}20k$
+            </p>
+            <p class="showOnMobile500">
+              <b>1.</b> $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=\sum_{{i=1}}^{5}4\cdot 5k=
+              \\ =\sum_{{i=1}}^{5}20k$
+             </p>
+            <p><b>2.</b> тепер:<br>
+              $\sum_{{i=1}}^{5}20 k=5\cdot 20k=100k$
+            </p>
+            <p><b> Отримаємо:</b> 
+              $\sum_{{i=1}}^{5}\sum_{{j=1}}^{4} 5k=100k$
+            </p>
+            <br>
+            <hr style="text-align:left;margin-left:0"> 
+            <br>
+            <br>
+           <p>Сталою може бути будь-що, не тільки літери. 
+          </p>
+          <p class="example"> <i>Вирішимо разом:
+          </i>: 
+            <p class="example23px">
+              \begin{equation}
+              \begin{split}
+              \sum_{{i=1}}^{5}\sum_{{j=1}}^{6} &#128515;&
+                         
+              \end{split}
+              \end{equation}
+            </p>
+            <p><b>Рішення:</b> спочатку додамо емодзі 6х: <br> <br>
+              $\sum_{{i=1}}^{5}\sum_{{j=1}}^{6} &#128515;=\sum_{{i=1}}^{5}6\cdot  &#128515;$ <br><br>
+              дальше 5х: 
+        <br><br>
+             $\sum_{{i=1}}^{5}6\cdot  &#128515;=5\cdot 6\cdot &#128515;=30\cdot &#128515;$
+            </p>
+            
+            <p>Все, що не містить індексу сумації є сталою. </p>
+
+
+               <br>
+               <div class="blockPractice">
+                 <p class="example"><i>Приклад 13</i> (практика)<br><br>
+                   $ \sum_{i=0}^{6}\sum_{j=3}^{8} p$ </p>    
+                   <p class="example"><i>Приклад 14</i> (практика)<br><br>
+                    $ \sum_{i=1}^{6}\sum_{j=4}^{9} 1$ </p>     
+                    <p class="example"><i>Приклад 15</i> (практика)<br><br>
+                      $ \sum_{i=7}^{10}\sum_{j=1}^{12} &#128508;$ </p> 
+                    
+           
+                 </div>
+       
+
+                 <div class="empty">
+                  Рішення в кінці сторінки. Порахуйте самі та перевірте.
+                </div>
+                <p class="blueMine"><b>Рішення</b></p>
+              <div class="sollutions " style="font-size: 20px;">
+                  <b>1.</b> 32<br>
+                  <b>2.</b> 0 <br>
+                  <b>3.</b> 0<br>
+                  <b>4.</b> 37584<br>
+                  <b>5.</b> 12<br>
+                  
+                  <b>6.</b> 3285<br>
+                  <b>7.</b> 0.5<br>
+                  <b>8.</b> 20<br><br>
+                  <b>9.</b> 85<br>
+                  <b>10.</b> 30<br>            
+                  <b>11.</b> 297<br>
+                  <b>12.</b> 96<br>
+                  <br>
+                  <b>13.</b> 42p<br>
+                  <b>14.</b> 36<br>
+                  <b>15.</b> 48&#128508;<br>
+
+          
+              </div>
+</div>
+ 
+<aside>
+    aside
+</aside>    
+</div>
+
+
+<script src="/javascript.js"></script>
+
+ 
+</body>
+
+</html>
